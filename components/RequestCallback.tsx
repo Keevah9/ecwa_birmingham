@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Fragment, useRef, useContext, useState } from "react";
+//@ts-ignore
 import { Dialog, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/pro-solid-svg-icons";
