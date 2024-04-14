@@ -128,21 +128,21 @@ export const FEATURES = [
   {
     title: 'Real maps can be offline',
     icon: '/map.svg',
-    variant: 'green',
+    variant: 'blue',
     description:
       'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
   },
   {
     title: 'Set an adventure schedule',
     icon: '/calendar.svg',
-    variant: 'green',
+    variant: 'blue',
     description:
       "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
   },
   {
     title: 'Technology using augment reality',
     icon: '/tech.svg',
-    variant: 'green',
+    variant: 'blue',
     description:
       'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
   },
@@ -218,19 +218,19 @@ body {
 
 @layer utilities {
   .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+    @apply  border-white bg-white px-8 py-3 text-blue-50
   }
   .btn_white_text  { 
     @apply  border-white bg-white px-8 py-3 text-gray-90
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+  .btn_blue  { 
+    @apply  border-blue-50 bg-blue-50 px-8 py-5 text-white
   }
-  .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+  .btn_dark_blue { 
+    @apply  bg-blue-100 px-8 py-4 text-white transition-all hover:bg-black
   }
-  .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  .btn_dark_blue_outline  { 
+    @apply border-gray-20 bg-blue-100 px-8 py-5 text-white
   }
   
   .max-container {
@@ -328,7 +328,7 @@ body {
 
   /* Hero */
   .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center 
   }
 
   /* Camp */
@@ -343,7 +343,7 @@ body {
 
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-blue-100 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
   }
 }
 
@@ -375,7 +375,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        green: {
+        blue: {
           50: '#30AF5B',
           90: '#292C27',
         },

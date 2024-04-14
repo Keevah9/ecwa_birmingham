@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export'
+  images: {
+    domains: ["cms-ecwabirmingham.onrender.com", "cms-ecwabirmingham.onrender.com/uploads", "localhost", "127.0.0.1"],
+    minimumCacheTTL: 60,
+  },
 }
 
 module.exports = nextConfig
