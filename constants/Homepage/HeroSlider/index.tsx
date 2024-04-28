@@ -174,17 +174,14 @@ import Shadow from "../../../../public/img/Rectangle.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 //@ts-ignore
-import { Video } from '@splidejs/splide-extension-video';
-import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css';
-import { ModalContext } from "@/constants/lib/context/demo-modal";
-import { getStrapiMedia } from "@/constants/lib/util/media";
 
-import ArticleCard from "@/components/article-card";
+import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css';
+
+
 import ReactMarkdown from "react-markdown";
-import { TypeAnimation } from "react-type-animation";
+
 import { motion } from "framer-motion";
-import { ImageList } from "@material-ui/core";
-import rehypeRaw from "rehype-raw";
+
 // import Generating from "./Generating";
 // import Notification from "./Notification";
 // import CompanyLogos from "./CompanyLogos";
@@ -241,22 +238,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                 {props.HeroSlider.map((data: any, index: number) => (
                   // console.log(`${getStrapiMedia(data.Image.data.attributes.url)}`)
                   <React.Fragment key={index}>
-                    {data.VimeoLink ? (
-                      <SplideSlide>
-                        <div className="relative max-h-[560px] min-h-[370px] md:min-h-[440px] lg:min-h-[560px] overflow-hidden">
-                          <video autoPlay loop playsInline muted preload="auto" poster="" className="absolute lg:static top-0 left-0 right-0 bottom-0 min-h-[370px] lg:min-h-[560px] w-full h-full scale-[1.7] lg:scale-100">
-                            <source src={data.VimeoLink} />
-                          </video>
-                          <div className="absolute top-0 left-0 right-0 bottom-0 flex items-cente justify-center flex-col xs:pt-[80px] xs:pb-[60px] md:container text-cente text-white min-h-[370px] md:min-h-[440px] lg:min-h-[560px]">
-                            <h2 className="xs:text-[33px] xs:leading-tight xs:p-2 md:text-[45px] lg:text-[60px] font-bold drop-shadow-[0_15px_15px_rgba(0,0,0,1)]"> {data.Title} </h2>
-                            {data.ButtonLabel != null && (
-                              <Button type={"button"} title={""} variant={""} />
-                            )}
-                          </div>
-                        </div>
-                      </SplideSlide>
-
-                    ) : (
+                   
                       <SplideSlide key={index}>
                         <div className={`${data.VimeoLink != null ? 'hidden' : ''}  xs:w-full xs:bg-no-repeat xs:bg-cover xs:bg-bottom md:px-[5%] flex flex-col py-[3%] lg:px-[10%] text-center max-container min-h-[370px md:min-h-[440px lg:h-[690px `}>
                           <motion.div
@@ -268,7 +250,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                             <div className="xs:pt-[80px] xs:pb-[60px] md:container text-center text-white ">
                               <span className=" text-[24px]">text {data.Subtitle}</span>
                                 <span className="inline-block relative">
-                                  Brainwave{" "}
+                                 
                                   
                                 </span>
                               
@@ -283,7 +265,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                                 <div className="max-w-2xl h-[4rem] mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
                               <div className="flex justify-center text-center mt-12 gap-8">
                                 {data.ButtonLabel != null && (
-                                  <><Button type={"button"} title={data.ButtonLabel} link="/" variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>
+                                <><Button type={"button"} title={data.ButtonLabel} link={data.ButtonLink} variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>
                                 )}
                               </div>
 
@@ -308,7 +290,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                           </motion.div> */}
                         </div>
                       </SplideSlide>
-                    )}
+                 
                   </React.Fragment>
                 ))}
               </SplideTrack>

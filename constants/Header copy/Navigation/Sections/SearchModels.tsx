@@ -18,14 +18,7 @@ const models = [
         label: "Children",
         link: "kia/sportage",
     },
-    {
-        label: "Sound",
-        link: "ford/puma",
-    },
-    {
-        label: "Logistics",
-        link: "/volkswagen/golf",
-    },
+    
 ]
    
 function SearchModels() {
@@ -33,7 +26,7 @@ function SearchModels() {
         <>
             <h5 className={"mb-6 uppercase text-ecwaorange font-black text-[18px]"}>Volunteer</h5>
             <ul className={"list-none"}>
-                {models.map((model, index) => {
+                {/* {models.map((model, index) => {
                     return (
                         <li className={"mb-3"} key={index}>
                             <Link href={`/cars/${model.link}`}>
@@ -43,7 +36,7 @@ function SearchModels() {
                             </Link>
                         </li>
                     )
-                })}
+                })} */}
             </ul>
         </>
     )
