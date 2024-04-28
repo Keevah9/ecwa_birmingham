@@ -22,7 +22,7 @@ function ContactIcon(props: IconProps) {
         case "Phone":
             return (
                 <FontAwesomeIcon
-                    color={"#4A0AF7"}
+                    color={"#FF6A47"}
                     size={"2x"}
                     icon={faPhone}
                     className={"mr-6"}
@@ -31,7 +31,7 @@ function ContactIcon(props: IconProps) {
         case "Email":
             return (
                 <FontAwesomeIcon
-                    color={"#4A0AF7"}
+                    color={"#FF6A47"}
                     size={"2x"}
                     icon={faPaperPlane}
                     className={"mr-6"}
@@ -40,7 +40,7 @@ function ContactIcon(props: IconProps) {
         case "SMS":
             return (
                 <FontAwesomeIcon
-                    color={"#4A0AF7"}
+                    color={"#FF6A47"}
                     size={"2x"}
                     icon={faMobile}
                     className={"mr-6"}
@@ -49,7 +49,7 @@ function ContactIcon(props: IconProps) {
         case "Live Chat":
             return (
                 <FontAwesomeIcon
-                    color={"#4A0AF7"}
+                    color={"#FF6A47"}
                     size={"2x"}
                     icon={faCommentDots}
                     className={"mr-6"}
@@ -70,7 +70,7 @@ export default function ContactBlock(props: LinkBlockProps) {
                             }`}
                         title={props.label}
                     >
-                        <ContactIcon icon={props.label} />
+                        <div className="mt-8"><ContactIcon icon={props.label} /></div>
                         <div
                             className={
                                 "flex w-full items-center justify-between font-medium"
@@ -81,10 +81,10 @@ export default function ContactBlock(props: LinkBlockProps) {
                                     "flex flex-col items-start justify-center"
                                 }
                             >
-                                <span className={"mr-5 font-bold"}>
+                                <span className={"mr-5  hover:opacity-60 text-ecwadarkblue font-black  text-ecwadarkblue mb-2"}>
                                     {props.label}
                                 </span>
-                                <span className={""}>{props.description}</span>
+                                <p className="text-[16px]">{props.description}</p>
                             </div>
                         </div>
                     </a>
@@ -95,7 +95,7 @@ export default function ContactBlock(props: LinkBlockProps) {
                         }`}
                     title={props.label}
                 >
-                    <ContactIcon icon={props.label} />
+                    <div className="mt-8"><ContactIcon icon={props.label} /></div>
                     <div
                         className={
                             "flex w-full items-center justify-between font-medium"
@@ -106,14 +106,14 @@ export default function ContactBlock(props: LinkBlockProps) {
                                 "flex flex-col items-start justify-center"
                             }
                         >
-                            <span className={"mr-5 font-bold"}>
+                            <span className={"mr-5  hover:opacity-60 text-ecwadarkblue font-black  text-ecwadarkblue mb-2"}>
                                 {props.label}
                             </span>
-                            <span className={""}>{props.description}</span>
+                            <p className="text-[16px]">{props.description}</p>
                         </div>
                     </div>
                 </span>
-            
+
             }
         </li>
     );

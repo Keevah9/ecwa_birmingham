@@ -18,6 +18,11 @@ export type SingleStrapiPageResponse = {
 };
 
 export type FlexibleStrapiPageResponse = {
+  ButtonOneLink: string | undefined;
+  ButtonTwoLink: string | undefined;
+  ButtonTwo: string | undefined;
+  ButtonOne: string | undefined;
+  ButtonOne: string | undefined;
   HasPortfolioandQuoteButtons: boolean;
   FeaturedImage: any;
   canonicalURL: any;

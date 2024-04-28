@@ -123,7 +123,27 @@ export default function Header({ global, header }) {
           </div>
         </div>
       </div> */}
-      <header className={`shadow-md sticky transition-shadow duration-300 z-[40] top-0 w-full border  bg-white`}>
+      <div className="bg-[#223B50]">
+        <div className={" cms-container hidden items-center justify-between py-1 text-[13px] text-white lg:flex"}
+        >
+          <p className="text-[13px] text-white">
+            Need help? Our friendly team are on hand to help
+            <a href={`tel:${header.TelephoneNumber}`} className="pl-1 text-[13px] text-white "
+            >
+              {header.TelephoneNumber}
+            </a>
+          </p>
+          {/* <div className="pt-1">
+            <Socials
+              FbLink
+              TwLink={header.Twitter}
+              IgLink={header.Instagram}
+              InLink={header.Linkedin}
+            />
+          </div> */}
+        </div>
+      </div>
+      <header className={`drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] sticky transition-shadow duration-300 z-[40] top-0 w-full border `}>
         <div className={"py-0 "}>
           <div className={"max-container relative flex w-full items-center border justify-between py-4"}
           >
@@ -141,16 +161,13 @@ export default function Header({ global, header }) {
             <div className="flex h-fit text-center gap-4 justify-center  border xl:w-full w-full lg:items-center 2xl:gap-10">
               <Navigation navLinks={NAV_LINKS} />
               <div className="hidden gap-2 xl:gap-3 lg:flex">
-                
-                  
-                    <div onClick={() => setModalVisible(true)}>
+
+
+                <div onClick={() => setModalVisible(true)}>
                   <div className=" flex items-center">
                     <Button type={"button"} title={"text"} variant={""} />
                   </div>
-                    </div>
-                    
-              
-
+                </div>
               </div>
             </div>
           </div>
@@ -164,7 +181,7 @@ export default function Header({ global, header }) {
 
       {!isHome && (
         <div className="cms-container pt-6 mb-6">
-          <div className=" items-center justify-center text-xs font-light text-[#757474]  md:h-[45px] md:rounded-full md:text-sm md:font-medium">
+          <div className=" items-center justify-center text-xs font-light  md:h-[45px] md:rounded-full md:text-sm md:font-medium">
             <Breadcrumbs
               rootLabel="Home"
               listClassName={"flex flex-wrap link flex-row text-[16px]"}

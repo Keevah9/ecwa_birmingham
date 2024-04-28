@@ -1,24 +1,21 @@
 import React, { ReactElement, useContext, useState } from "react";
 import OneColumnContentBlock from "../blocks/one-column-content";
-import FAQsBlock from "../blocks/faqs-block";
-import GridGalleryBlock from "../blocks/grid-gallery";
-import StepListsBlock from "../blocks/step-lists";
-import WorksBlock from "../blocks/some-of-our-works.tsx";
-import HasNoHiddenCostsBlock from "../blocks/has-noHidden-costs";
 // import BlogSliderReviews from "../blocks/blog-slider-reviews";
 import { NextPageWithLayout } from "../../types/global";
-import HasHappyCustomersBlock from "../blocks/has-happy-customers";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import rehypeRaw from "rehype-raw";
-import BlogCaseStudiesBlock from "../blocks/blog-case-studies";
-import BlogSingleColumnBlock from "../blocks/blog-single-column";
-import BlogBannerBlock from "../blocks/image-block";
-import ExhibitionStandBlock from "../blocks/exhibition-stands.tsx";
 import { FlexibleStrapiPageResponse } from "@/constants/lib/types/strapi";
 import ImageBlock from "../blocks/image-block";
 import TwoColumnContentBlock from "../blocks/TwoColContent";
 import SEO from "@/components/SEO";
 import Layout from "@/constants/layout";
+import GalleryBlock from "../blocks/gallery";
+import HasHistoryBlock from "../blocks/has-history";
+import HasVolunteersBlock from "../blocks/has-volunteers";
+import GridGalleryBlock from "../blocks/grid-gallery";
+import Button from "@/components/Button";
+import HasMinistriesBlock from "../blocks/has-ministries";
+import HasSermonsBlock from "../blocks/has-sermons";
 
 type LocalProps = {
   data?: FlexibleStrapiPageResponse;
@@ -36,9 +33,14 @@ const sectionComponents = {
   "flexible.one-column-content": OneColumnContentBlock,
   // "flexible.fa-qs": FAQsBlock,
   "flexible.grid-item-content": GridGalleryBlock,
-  "flexible.some-of-our-works": TwoColumnContentBlock,
-  "flexible.gallery": GridGalleryBlock,
-  "flexible.featured-image": ImageBlock
+  "flexible.two-column-content": TwoColumnContentBlock,
+  "flexible.gallery": GalleryBlock,
+  // "flexible.gallery": GalleryBlock,
+  // "flexible.featured-image": ImageBlock,
+  'flexible.has-history': HasHistoryBlock,
+  'flexible.has-volunteers': HasVolunteersBlock,
+  'flexible.has-ministries': HasMinistriesBlock,
+  'flexible.has-services': HasSermonsBlock
 };
 
 const Section = ({ sectionData }: FlexibleComponentProps) => {
@@ -57,26 +59,19 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
 
   return (
     <>
-      <SEO seoData={props?.data?.SEO} title={props?.data?.Title} canonical={props?.data?.SEO?.canonicalURL} />
-      <section
-        className={`cms-container overflow-splide  relative overflow-hidden  lg:overflow-visible ${
-          props?.data?.HasQuoteComponent
-            ? "flex flex-col justify-between gap-10 lg:flex-row"
-            : ""
-        } `}
+      {/* <SEO seoData={props?.data?.SEO} title={props?.data?.Title} canonical={props?.data?.SEO?.canonicalURL} /> */}
+      <div
+        className={`max-containe overflow-splide ${//@ts-ignore
+          props?.data?.PageBackground === 'blue' && 'bg-ecwadarkblue'}  relative overflow-hidden  lg:overflow-visible`}
       >
-        <div
-          className={` ${
-            props?.data?.HasQuoteComponent ? "lg:w-[57%] 2xl:w-[62%]" : "w-full"
-          } `}
-        >
+        
           <div
-            className={` ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""}  text-left  `}
+          className={` h-[650px] flex flex-col justify-center items-center overflow-splide max-container ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""}  text-left  `}
           >
             <div className=" max-w-6xl overflow-hidden">
               <h1 className=" capitalize mb-8">{props?.data?.PageTitle}</h1>
               {props?.data?.PageIntroductoryContent && (
-                <div className="max-w-5xl strapiPage pb-4 text-left  xl:max-w-[50rem] lg:pb-0">
+                <div className="max-w-5xl strapiPage pb-4 text-center mx-auto  xl:max-w-[60rem] ">
                   <ReactMarkdown className="markdown flexible-component" rehypePlugins={[rehypeRaw]}>
                     {props.data?.PageIntroductoryContent ||
                       props.data?.PageIntroductoryContent}
@@ -84,11 +79,17 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
                 </div>
               )}
             </div>
+          <div className="flex justify-center text-center mt-12 gap-8">
+            {//@ts-ignore
+            props.data?.ButtonOne != null && (
+              <><Button type={"button"} title={props.data?.ButtonOne} link={props.data?.ButtonOneLink} variant={"btn_orange"} /><Button type={"button"} title={props.data?.ButtonTwo} link={props.data?.ButtonTwoLink} /></>
+            )}
+          </div>
           </div>
 
           <div className={"relative"}>
             <div>
-              {/* {props.data.Pages?.map((section: SectionProps) => {
+              {props.data?.Pages?.map((section: SectionProps) => {
                 return (
                   <>
                     <div>
@@ -99,16 +100,16 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
                     </div>
                   </>
                 );
-              })} */}
+              })}
             </div>  
           </div>
-        </div>
+      
         {/* {props?.data?.HasQuoteComponent && (
           <div className={` relative mx-auto min-h-full xl:mx-0 lg:w-[38%] 2xl:w-[33%] `}>
             <QuoteModalComponent />
           </div>
         )} */}
-      </section>
+      </div>
     </>
   );
 };

@@ -21,15 +21,14 @@ export default function MenuToggle() {
 
     return (
         <>
-            <div
-                className={
-                    "flex cursor-pointer appearance-none items-center p-2 pl-0 text-2xl lg:hidden"
+            <div className={
+                    "flex cursor-pointer appearance-none items-center py-4 pl-0 text-2xl lg:hidden"
                 }
                 onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
             >
                 <span
                     className={`flex h-[39px] w-[39px] items-center justify-center rounded-full ${
-                        mobileMenuVisible ? "bg-mint" : ""
+                        mobileMenuVisible ? "" : ""
                     }`}
                 >
                     <FontAwesomeIcon
@@ -37,8 +36,8 @@ export default function MenuToggle() {
                         fixedWidth
                         className={
                             mobileMenuVisible
-                                ? "text-dynamicblue"
-                                : "text-black"
+                                ? "text-ecwadarkblue text-2xl"
+                                : "text-ecwadarkblue text-2xl"
                         }
                     />
                 </span>

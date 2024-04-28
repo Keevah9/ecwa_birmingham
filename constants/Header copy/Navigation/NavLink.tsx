@@ -10,14 +10,14 @@ export default function NavLink(props: NavLinkProps) {
     return (
         <>
             {(props.url === '/') ? (
-                <div className={"flex py-10 relative group-hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-dynamicblue after:absolute after:left-4 after:right-4 after:top-[100px] px-2 text-[15px] xl:px-4 xl:text-base cursor-pointer"}>
+                <a className={"flex py-10 relative group-hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-ecwadarkblue after:absolute after:left-4 after:right-4 z-10 after:top-[100px] px-2 text-[15px] xl:px-4 xl:text-[18px] cursor-pointer"}>
                     {props.label}
-                </div>
+                </a>
             ) : (
                 <Link href={props.url}>
                     <a
                         title={props.label}
-                        className={"flex py-10 relative group-hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-dynamicblue after:absolute after:left-4 after:right-4 after:top-[100px] px-2 text-[15px] xl:px-4 xl:text-base"}
+                        className={"flex py-8 relative group-hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-ecwadarkblue z-10 after:absolute after:left-4 after:right-4 after:top-[90px] px-2 text-[15px] xl:px-4 xl:text-[18px]"}
                     >
                         {props.label}
                     </a>

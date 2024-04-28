@@ -70,7 +70,7 @@ export default function CallToAction() {
                                 <div className="flex items-center justify-center mr-4 h-[47px] min-w-[35px]">
                                     <Image src={item.Icon.data!.attributes.url} width={item.Icon.data!.attributes.width} height={item.Icon.data!.attributes.height} alt="14 Day moneyback guarantee" priority />
                                 </div>
-                                <div className="text-dynamicblue lg:pr-8 xl:pr-14 2xl:pr-8 text-sm 2xl:text-base">{item.Content ? item.Content : ''}</div>
+                                <div className="text-ecwadarkblue lg:pr-8 xl:pr-14 2xl:pr-8 text-sm 2xl:text-base">{item.Content ? item.Content : ''}</div>
                             </div>
                         </SplideSlide>
                     ))}</>
@@ -83,11 +83,11 @@ export default function CallToAction() {
                                     <div className="flex items-center justify-center mr-4 h-[47px] min-w-[35px]">
                                         <FontAwesomeIcon
                                             icon={faSpinnerThird}
-                                            className={"text-2xl text-dynamicblue"}
+                                            className={"text-2xl text-ecwadarkblue"}
                                             spin
                                         />
                                     </div>
-                                    <div className="text-dynamicblue lg:pr-8 xl:pr-14 2xl:pr-8 text-sm 2xl:text-base">
+                                    <div className="text-ecwadarkblue lg:pr-8 xl:pr-14 2xl:pr-8 text-sm 2xl:text-base">
 
                                     </div>
                                 </div>
