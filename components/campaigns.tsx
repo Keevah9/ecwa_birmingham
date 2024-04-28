@@ -11,7 +11,7 @@ export default function Campaigns() {
             <div className=" absolut lg:w-1/2 bg-ecwadarkblue right-10  max-containe py-20 lg:py-0 left-0 flex items-center justify-center  ">
                 <div className=" w-fit shadow-m  text-center flex flex-col justify-center items-center  rounded-[10px] ">
                     <h2 className=" mt-4  text-white border-b-4 border-ecwaorange">Events</h2>
-                    
+
                     <p className=" mb-10 mt-6 text-white max-w-lg px-4 lg:px-0 lg:max-w-80">Your small donation will help us to provide education to undeYour small donation will help us to provide education to und</p>
                     <div className="mb-10 grid grid-cols-2 text-center items-center content-centr sm:grid-cols-3 sm:grid-cols-4 gap-4">
                         <div className="drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  bg-white rounded-[6px] py-4 px-5 text-center">
@@ -31,7 +31,7 @@ export default function Campaigns() {
                             <p className="text-[14px]">Seconds</p>
                         </div>
                     </div>
-                    <Button type={"button"} title={"View All Events"} link="/"  />
+                    <Button type={"button"} title={"View All Events"} link="/" />
                 </div>
 
             </div>
@@ -46,7 +46,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        < Link href="/" className="underline capitalize text-ecwadarkblue font-[600]"> <a href="">Event details </a></Link>
+                        <Button type={"button"} title={" Event Details"} link="/" />
                     </div>
                 </div>
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-center gap-6 w-fit px-6 py-4 bg-white">
@@ -56,7 +56,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        < Link href="/" className="underline capitalize text-ecwadarkblue font-[600]"> <a href="">Event details </a></Link>
+                        <Button type={"button"} title={" Event Details"} link="/" />
                     </div>
                 </div>
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-center gap-6 w-fit px-6 py-4 bg-white">
@@ -66,7 +66,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        < Link href="/" className="underline capitalize text-ecwadarkblue font-[600]"> <a href="">Event details </a></Link>
+                        <Button type={"button"} title={" Event Details"} link="/" />
                     </div>
                 </div>
 
