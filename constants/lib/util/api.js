@@ -29,7 +29,7 @@ export async function fetchAPI(path, options = {}) {
 
 // global data
 export async function getGlobalData() {
-    const global = await fetchAPI(`/global`)
+    const global = await fetchAPI(`/global?populate=deep`)
     return global
 }
 
@@ -72,7 +72,11 @@ export async function getMenu(id) {
     const menu = await fetchAPI(`/menus/${id}?populate=deep`)
     return menu
 }
+export async function getFaqs() {
+    const faqs = await fetchAPI("/frequently-asked-question?populate=deep");
+    return faqs;
 
+}
 // pages
 export async function getPageData(params, slug) {
     const pagesData = await fetchAPI(

@@ -1,11 +1,23 @@
 import Camp from "@/components/Camp";
-import Features from "@/components/Features";
+import Features from "@/components/TwoColContent";
 import GetApp from "@/components/GetApp";
 import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
 import HeroSlider from "@/constants/Homepage/HeroSlider";
+import HeroSliderTest from "@/constants/Homepage/indexx";
 import { getHome } from "@/constants/lib/util/api";
 import { GetStaticProps } from "next";
+import Donate from "@/components/Donate";
+import AchievementsSection from "@/constants/Homepage/HeroSlider/Achievement";
+import Benefits from "@/components/Benefits";
+import Services from "@/components/Services";
+import Roadmap from "@/components/Roadmap";
+import ProjectsSection, { projectsData } from "@/components/Projects";
+import Volunteer from "@/components/volunteer";
+import Campaigns from "@/components/campaigns";
+import Button from "@/components/Button";
+import HasSermonsBlock from "@/constants/cms/blocks/has-sermons";
+import Heading from "@/components/Heading";
 
 export const getStaticProps: GetStaticProps = async () => {
   const home = await getHome();
@@ -22,12 +34,33 @@ export default function Home(props: any) {
   return (
     <>
 <HeroSlider HeroSlider={props.home.HeroSlider}/>
+
       <Hero />
-      <Camp />
+      {/* <Camp /> */}
       <Guide />
-      <section><h1 className="border-4 text-80 max-container padding-container">{props.home.PageTitle}</h1></section>
+      {/* <Services/> */}
       <Features />
-      <GetApp />
+     
+      <div > <HasSermonsBlock/>
+        <div className="mx-auto w-40 flex justify-center -mt-20 mb-28 lg:mb-32">
+          <Button type={"button"} title="See all Sermons" style variant="btn"  link="/sermons" />
+        </div></div>
+      <Campaigns />
+      <HeroSliderTest />
+      <div>
+        <section className="max-container overflow-splide"><Heading tag="Our Ministries" title="How We Serve God" className={undefined} text={undefined} /></section>
+        <div className="-mt-12"> <Roadmap /></div>
+      </div>
+     
+      
+      
+      {/* <Donate /> */}
+      {/* <Volunteer/> */}
+      
+      <Benefits />
+      <Donate />
+      
+      {/* <GetApp /> */}
       
     </>
   )

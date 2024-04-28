@@ -26,17 +26,17 @@ export default function LinkBlock(props: LinkBlockProps) {
                         }
                     >
                         <div>
-                            <span className={"hover:opacity-60"}>
+                            <span className={"hover:opacity-60 text-ecwadarkblue"}>
                                 {props.label}
                             </span>
-                            <div className={"mt-2 text-sm opacity-50"}>
+                            <div className={"mt-2 text-[16px]"}>
                                 {props.description}
                             </div>
                         </div>
 
                         <FontAwesomeIcon
                             icon={faAngleRight}
-                            className={"ml-4"}
+                            className={"ml-4 mt-2"}
                         />
                     </div>
                 </a>

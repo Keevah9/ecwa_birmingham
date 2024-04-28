@@ -18,7 +18,7 @@ export default function StandardLink(props: StandardLinkProps) {
                 </div>
             ) : (
                 <Link href={props.url}>
-                    <a className={props.highlight ? 'text-dynamicblue text-sm relative hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-dynamicblue after:absolute after:left-0 after:right-0 after:bottom-[-5px]' : 'relative hover:after:opacity-100 after:opacity-0 after:h-[4px] after:bg-dynamicblue after:absolute after:left-0 after:right-0 after:bottom-[-5px]'}>
+                    <a className={props.highlight ? 'text-ecwadarkblue text-[16px] relative hover:after:opacity-100 after:opacity-0  after:h-[4px] after:bg-ecwadarkblue after:absolute after:left-0 after:right-0 after:bottom-[-5px]' : 'relative pb-1 mb-2 hover:after:opacity-100 after:opacity-0 after:h-[3px] after:bg-ecwadarkblue after:absolute after:left-0 after:right-0 after:bottom-[-1px]'}>
                         {props.label}
                     </a>
                 </Link>

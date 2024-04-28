@@ -1,18 +1,22 @@
 import Link from "next/link";
 import React from "react";
 import LinkBlock from "../LinkBlock";
+import Button from "@/components/Button";
 
 export default function SearchGetStarted() {
     return (
         <>
-            <h5 className={"mb-6 text-dynamicblue font-medium text-[18px]"}>Get started</h5>
+            <h5 className={"mb-6 uppercase text-ecwaorange font-black text-[18px]"}>ECWA BIRMINGHAM</h5>
             <ul className={"list-none"}>
-                <LinkBlock label={"caruno process"} description={"Buying a caruno car is easy. Here's everything you need to know."} url={"/about-us/how-it-works"} />
-                {/* <LinkBlock label={"Buying guides"} description={"Read our useful guides about buying, leasing, finance and more."} url={"/"} dummy={true} /> */}
-                {/* <LinkBlock label={"Help me choose"} description={"Let us do the hard work and find the right caruno car for you."} url={"/help-me-choose"} /> */}
-                <Link href={"/cars"}>
-                    <a title={"Browse all used cars"} className={"hidden h-[60px] w-full items-center justify-center rounded-full bg-dynamicblue text-lg font-bold text-white hover:cursor-pointer lg:inline-flex"}>Browse all used cars</a>
-                </Link>
+                {/* <LinkBlock label={"who we are"} description={"Buying a caruno car is easy. Here's everything you need to know."} url={"/about-us/#who-we-are"} /> */}
+                <LinkBlock label={"Our Mision & Vision"} description={" Veritatis nihil ipsam in fugit"} url={"/about-us/#mission"} dummy={true} />
+                <LinkBlock label={"ECWA History"} description={" quia ab quasi cum dolorem deleniti voluptatibus. "} url={"/about-us/#our-history"} />
+                <LinkBlock label={"Services"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/services"} dummy={true} />
+                {/* <LinkBlock label={"Team"} description={"Let us do the hard work and find the right caruno car for you."} url={"/help-me-choose"} /> */}
+                <LinkBlock label={"Our Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries"} dummy={true} />
+                {/* <LinkBlock label={"Prayer"} description={"Read our useful guides about buying, leasing, finance and more."} url={"/about-us/#mission-and-vision"} dummy={true} /> */}
+                <Button title="Contact us" link="/contact-us" variant="btn"/>
+                
             </ul>
         </>
     )

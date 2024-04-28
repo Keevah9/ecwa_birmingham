@@ -80,22 +80,22 @@ function MobileNavigation() {
     return (
         <>
             <ul className={"list-none border-t"}>
-                <NavLink label={"Search cars"}>
+                <NavLink label={"About Us"}>
                     <>
                         <div
                             className={
                                 "mt-4 rounded-lg bg-[#F6F3FF] p-1 py-3 pt-4 text-center text-sm font-medium"
                             }
                         >
-                            Finding your next car is easy with caruno
-                            <Link href={"/cars"}>
+                            Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            <Link href={"/about-us"}>
                                 <a
-                                    title={"Search all cars"}
+                                    title={"About Us"}
                                     className={
-                                        "mx-5 my-2 flex items-center justify-center rounded-full bg-dynamicblue px-4 py-4 font-bold text-white"
+                                        "mx-5 my-2 flex items-center justify-center rounded-full bg-ecwadarkblue px-4 py-4 font-bold text-white"
                                     }
                                 >
-                                    Search all cars
+                                    About us
                                 </a>
                             </Link>
                         </div>
@@ -110,7 +110,7 @@ function MobileNavigation() {
                         </div>
                     </>
                 </NavLink>
-                <NavLink label={"Car finance"}>
+                <NavLink label={"Ministries"}>
                     <>
                         <div className={"my-10"}>
                             <CarFinanceGetStarted />
@@ -120,7 +120,7 @@ function MobileNavigation() {
                         </div>
                     </>
                 </NavLink>
-                <NavLink label={"Why caruno?"}>
+                <NavLink label={"Services"}>
                     <>
                         <div className={"my-10"}>
                             <WhyFinance />
@@ -128,6 +128,11 @@ function MobileNavigation() {
                         <div className={"mb-10"}>
                             <WhyFaqs />
                         </div>
+                    </>
+                </NavLink>
+                <NavLink label={"Sermons"} >
+                    <>
+                        
                     </>
                 </NavLink>
                 <NavLink label={"Support"}>
@@ -144,14 +149,14 @@ function MobileNavigation() {
               
             </ul>
 
-            <Link href={"/apply-now"}>
+            <Link href={"/contact-us"}>
                 <a
-                    title={"Check my eligibility"}
+                    title={"Contact us"}
                     className={
-                        "mx-5 my-2 mt-4 flex items-center justify-center rounded-full bg-dynamicblue px-4 py-4 font-bold text-white"
+                        "mx-5 my-2 mt-4 flex items-center justify-center rounded-full bg-ecwadarkblue px-4 py-4 font-bold text-white"
                     }
                 >
-                    Check my eligibility
+                    Contact Us
                 </a>
             </Link>
         </>

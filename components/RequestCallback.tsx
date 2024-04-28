@@ -14,11 +14,16 @@ import Alert from "./Alert";
 
 declare const window: any;
 
-export default function RequestCallBack() {
+interface RequestProps{
+bg?: string,
+data?: any
+}
+export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
   const { modalVisible, setModalVisible } = useContext(ModalContext);
   const cancelButtonRef = useRef(null);
   const [success, setSuccess] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  console.log(modalVisible)
   const [formData, setFormData] = useState({
     floorWidth: "",
     floorLength: "",
@@ -41,6 +46,7 @@ export default function RequestCallBack() {
     file: "",
     query: "false",
     marketing: "false",
+    request: ""
   });
   const [formError, setFormError] = useState<string>("");
   const emailValid = (email: string) => {
@@ -65,18 +71,20 @@ export default function RequestCallBack() {
   const submit = async (values: any) => {
     window.grecaptcha.ready(() => {
       window.grecaptcha
-        .execute("6LceYMcnAAAAAH8LX7ElKqv-CupIf0lJbJx6d-a2", {
+        .execute("", {
           action: "submit",
         })
         .then((token: string) => {
           setSubmitting(true);
           axios
-            .post("https://unique.use-fuse.com/rest/v2/enquiry", {
+            .post("", {
               metadata: {
                 query: formData.query,
                 marketing: formData.marketing,
                 companyName: formData.companyName,
+                request: selectedItem.title,
               },
+              request: selectedItem.title,
               enquiryUrl: "",
               forename: formData.forename,
               surname: "",
@@ -133,6 +141,7 @@ export default function RequestCallBack() {
   };
   const [isSubscribed, setIsSubscribed] = useState(true);
   const [isMarketing, setIsMarketing] = useState(true);
+  // console.log(props.data)
   return (
     <Transition.Root show={modalVisible} as={Fragment}>
       <Dialog
@@ -150,7 +159,7 @@ export default function RequestCallBack() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-0 transition-opacity md:bg-opacity-75" />
+          <div className={`fixed inset-0  transition-opacity `}  />
         </Transition.Child>
         <div className="fixed inset-0 z-10  overflow-y-auto">
           <div className="flex min-h-full items-center justify-center text-center md:p-4">
@@ -163,45 +172,42 @@ export default function RequestCallBack() {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="absolute bottom-0 left-0 right-0 top-0 h-full w-full transform  overflow-auto bg-white px-6 py-6 text-left shadow-xl transition-all sm:rounded-xl md:relative md:my-8  md:w-[90%] lg:max-w-6xl lg:p-0">
+              <Dialog.Panel className="absolute bottom-0 left-0 right-0 top-0 h-full w-full transform  overflow-auto bg-white px-6 text-left shadow-xl transition-all sm:rounded-xl md:relative md:my-8  md:w-[90%] lg:max-w-6xl lg:p-0" style={{ backgroundColor: `${selectedItem.backgroundUrl}` }}>
                 <div>
                   <div
                     onClick={() => setModalVisible(false)}
-                    className="absolute right-2 top-2 mx-auto mb-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full sm:-top-2 sm:mt-8 lg:right-6 lg:top-2 lg:mb-0 "
+                    className="absolute right-2 top-2 sm:right-6 mx-auto mb-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full sm:-top-2 sm:mt-10 lg:right-6 lg:top-2 lg:mb-0 "
                   >
                     <FontAwesomeIcon
                       icon={faTimes}
-                      className="text-2xl text-[#C3CAD9]"
+                      className="text-4xl text-white"
                     />
-                  </div>                 
-                      {success ? (
-                        <div className="flex h-[25rem] flex-col justify-center text-center">
-                          <FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className="text-8xl text-blue-600"
-                          />
-                          <h4 className="mb-2 mt-8 text-[28px] font-bold">
-                            Your form has been submitted!
+                  </div>
+                  {success ? (
+                    <div className="flex h-[25rem] flex-col justify-center text-center">
+                      <FontAwesomeIcon
+                        icon={faCheckCircle}
+                        className="text-8xl text-white"
+                      />
+                      <h4 className="mb-2 mt-8 leading-[32px]">
+                        Your form has been submitted!
+                      </h4>
+                      {/* <p className="leading-8">
+                        {selectedItem.content}
+                      </p> */}
+                    </div>
+                  ) : (
+                    <div className="mb-26 gap-6 h-full justify-between  lg:flex">
+                      <div className="relative mt-8 rounded-md pt-6 w-full sm:mt-12 lg:mt-0 lg:w-[45%] lg:rounded-none   ">
+                        <div className="rounded-[10px] px-8 lg:mt-10 lg:max-w-lg lg:px-10 ">
+                          <h4 className="leading-[32px] text-white lg:mt-6 ">
+                           {selectedItem.title}
                           </h4>
-                          <p className="leading-8">
-                            Thank you! We will be in contact with you shortly.
-                          </p>
-                        </div>
-                      ) : (
-                        <div className="mb-26 h-full justify-between gap-16 lg:flex">
-                          <div className="relative mt-8 rounded-md bg-uniquedarkgrey pt-6 sm:mt-12 lg:mt-0 lg:w-1/2 lg:rounded-none lg:pb-[8rem] xl:pb-[7rem] 2xl:pb-[4.8rem]  ">
-                            <div className="max-w-xl rounded-[10px] px-8 lg:mt-10 lg:max-w-lg lg:px-10 ">
-                              <h2 className="text-[22px] font-black  leading-[35px] text-[#F04A48] lg:mt-6 lg:text-[30px] lg:leading-[45px]">
-                                Not sure where to start? Our expert team are on
-                                hand to help!
-                              </h2>
-                              <div className="flex items-center justify-between gap-4 pb-6 lg:pb-0">
-                                <p className=" mt-8 max-w-[12rem] text-[15px] font-light text-white sm:max-w-[20rem] sm:text-[18px] lg:max-w-full">
-                                  Our friendly team will give you a call back to
-                                  have an informal chat about your exhibition
-                                  stand and guide you through your options.
-                                </p>
-                                {/* <div className="absolute bottom-3 right-2 block min-w-[106px] sm:static sm:min-h-[130px] sm:min-w-[145px] lg:hidden ">
+                          <div className="flex items-center justify-between gap-4 pb-6 lg:pb-0">
+                            <p className=" mt-8 text-white lg:max-w-full">
+                                {selectedItem.content}
+                            </p>
+                            {/* <div className="absolute bottom-3 right-2 block min-w-[106px] sm:static sm:min-h-[130px] sm:min-w-[145px] lg:hidden ">
                                   <Image
                                     src={MobileModalImage}
                                     unoptimized
@@ -212,9 +218,9 @@ export default function RequestCallBack() {
                                     quality={100}
                                   />
                                 </div> */}
-                              </div>
-                            </div>
-                            {/* <div className="-bottom-20 -right-10 hidden lg:relative lg:block ">
+                          </div>
+                        </div>
+                        {/* <div className="-bottom-20 -right-10 hidden lg:relative lg:block ">
                               <Image
                                 src={DesktopModalImage}
                                 priority
@@ -225,139 +231,194 @@ export default function RequestCallBack() {
                                 alt="desktop modal image"
                               />
                             </div> */}
-                          </div>
+                      </div>
 
-                          <div className=" w-full pt-4 lg:w-1/2 lg:pb-8 lg:pt-12">
-                            {formError && (
-                              <div className={"mt-6 lg:mt-12 lg:w-[93%]"}>
-                                <Alert type={"error"} message={formError} />
-                              </div>
-                            )}
-                            <div className=" md:max-w-xl">
-                              <Dialog.Title
-                                as="h2"
-                                className="mb-5 mt-6 text-[18px] font-black  text-[#F04A48] lg:mb-10 lg:text-[23px]"
-                              >
-                                Request A Callback
-                              </Dialog.Title>
+                      <div className=" w-full px-8 lg:px-0 pt-4 lg:w-[55%] lg:pb-8 lg:pt-12">
+                        {formError && (
+                          <div className={"mt-6 lg:mt-12 lg:w-[93%]"}>
+                            <Alert type={"error"} message={formError} />
+                          </div>
+                        )}
+                        <div className=" md:max-w-xl">
+                          <Dialog.Title
+                            as="h4"
+                            className="text-white mb-4"
+                          >
+                            Volunteer for {selectedItem.title}
+                          </Dialog.Title>
+                        </div>
+                        <div className="request lg:w-[95%]">
+                          <div className="gap-5 lg:flex lg:gap-3">
+                            <FormInput
+                              type={"text"}
+                              label={"First name"}
+                              value={formData.companyName}
+                              required
+                              onChange={(e) => {
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  companyName: e.target.value,
+                                }));
+                              }}
+                            />
+                            <FormInput
+                              type={"text"}
+                              label={"Last name"}
+                              value={formData.forename}
+                              required
+                              onChange={(e) => {
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  forename: e.target.value,
+                                }));
+                              }}
+                            />
+                          </div>
+                          <div className="gap-5 lg:flex lg:gap-3">
+                            <FormInput
+                              type={"number"}
+                              label={"Contact number"}
+                              value={formData.phoneNumber}
+                              required
+                              onChange={(e) => {
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  phoneNumber: e.target.value,
+                                }));
+                              }}
+                            />
+                            <FormInput
+                              type={"email"}
+                              label={"Email"}
+                              value={formData.email}
+                              required
+                              onChange={(e) => {
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  email: e.target.value,
+                                }));
+                              }}
+                            />
+                          </div>
+                            <div className="gap-5 lg:flex lg:gap-3">
+                              <FormInput
+                                type={"text"}
+                                label={"Address"}
+                                value={formData.phoneNumber}
+                                required
+                                onChange={(e) => {
+                                  setFormData((prevState) => ({
+                                    ...prevState,
+                                    phoneNumber: e.target.value,
+                                  }));
+                                }}
+                              />
+                            
                             </div>
-                            <div>
-                              <div className="gap-5 lg:flex lg:gap-0">
-                                <FormInput
-                                  type={"text"}
-                                  label={"Company"}
-                                  value={formData.companyName}
-                                  required
-                                  onChange={(e) => {
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      companyName: e.target.value,
-                                    }));
-                                  }}
-                                />
-                                <FormInput
-                                  type={"text"}
-                                  label={"Contact name"}
-                                  value={formData.forename}
-                                  required
-                                  onChange={(e) => {
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      forename: e.target.value,
-                                    }));
-                                  }}
-                                />
-                              </div>
-                              <div className="gap-5 lg:flex lg:gap-0">
-                                <FormInput
-                                  type={"number"}
-                                  label={"Contact number"}
-                                  value={formData.phoneNumber}
-                                  required
-                                  onChange={(e) => {
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      phoneNumber: e.target.value,
-                                    }));
-                                  }}
-                                />
-                                <FormInput
-                                  type={"email"}
-                                  label={"Email"}
-                                  value={formData.email}
-                                  required
-                                  onChange={(e) => {
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      email: e.target.value,
-                                    }));
-                                  }}
-                                />
-                              </div>
-                              <div className="w-full pb-3 ">
-                                <FormInput
-                                  type={"textarea"}
-                                  label={"Message"}
-                                  value={formData.message}
-                                  required
-                                  otherOptions
-                                  onChange={(e) => {
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      message: e.target.value,
-                                    }));
-                                  }}
-                                />
-                              </div>
-                              <div className="my-4 inline cursor-pointer flex-row-reverse justify-start gap-4 ">
-                                <input
-                                  id="query"
-                                  name="query"
-                                  type="checkbox"
-                                  className="mr-2 inline w-fit "
-                                  value={
-                                    isSubscribed === true ? "true" : "false"
-                                  }
-                                  onChange={(e) => {
-                                    setIsSubscribed((prev) => !prev);
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      query: e.target.value,
-                                    }));
-                                  }}
-                                />
-                                <label htmlFor="query" className="-mt-1 inline text-[12px] font-normal">
-                                  I’m happy to be contacted with regard to my
-                                  query only.
-                                </label>
-                              </div>
-                              <div className="mt-2 block cursor-pointer flex-row-reverse justify-start gap-4 ">
-                                <input
-                                  name="marketing"
-                                  id="marketing"
-                                  type="checkbox"
-                                  className="mr-2 inline w-fit "
-                                  value={
-                                    isMarketing === true ? "true" : "false"
-                                  }
-                                  onChange={(e) => {
-                                    setIsMarketing((current) => !current);
-                                    setFormData((prevState) => ({
-                                      ...prevState,
-                                      marketing: e.target.value,
-                                    }));
-                                  }}
-                                />
-                                <label htmlFor="marketing" className="-mt-1 inline text-[12px] font-normal">
-                                  I don’t mind my details being used for
-                                  marketing purposes.
-                                </label>
-                              </div>
-                              <span
-                                className="mb-5 mt-8 block text-center lg:w-[93%]"
-                                onClick={validateAndCreate}
-                              >
-                                {/* <DynamicButton
+                            <div className="mb-2 mt-3 inline-block cursor-pointer flex-row-reverse justify-start gap-4 ">
+                              <input
+                                id="query"
+                                name="query"
+                                type="radio"
+                                className="mr-2 inline w-fit "
+                                // value={
+                                //     isSubscribed === true ? "true" : "false"
+                                // }
+                                onChange={(e) => {
+                                  setIsSubscribed((prev) => !prev);
+                                  setFormData((prevState) => ({
+                                    ...prevState,
+                                    query: e.target.value,
+                                  }));
+                                }} />
+                              <label htmlFor="query" className="-mt-1 inline text-[16px] font-normal">
+                               Student
+                              </label>
+                            </div>
+                            <div className="mb-4 block cursor-pointer flex-row-reverse justify-start gap-4 ">
+                              <input
+                                id="query"
+                                name="query"
+                                type="radio"
+                                className="mr-2 inline w-fit "
+                                // value={
+                                //     isSubscribed === true ? "true" : "false"
+                                // }
+                                onChange={(e) => {
+                                  setIsSubscribed((prev) => !prev);
+                                  setFormData((prevState) => ({
+                                    ...prevState,
+                                    query: e.target.value,
+                                  }));
+                                }} />
+                              <label htmlFor="query" className="-mt-1 inline text-[16px] font-normal">
+                                Employee
+                              </label>
+                            </div>
+                          <div className="w-full pb-3 ">
+                            <FormInput
+                              type={"textarea"}
+                              label={"Do you have any additional message?"}
+                              value={formData.message}
+                              required
+                              otherOptions
+                              onChange={(e) => {
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  message: e.target.value,
+                                }));
+                              }}
+                            />
+                          </div>
+                          <div className="my-4 inline cursor-pointer flex-row-reverse justify-start gap-4 ">
+                            <input
+                              id="query"
+                              name="query"
+                              type="checkbox"
+                              className="mr-2 inline w-fit "
+                              value={
+                                isSubscribed === true ? "true" : "false"
+                              }
+                              onChange={(e) => {
+                                setIsSubscribed((prev) => !prev);
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  query: e.target.value,
+                                }));
+                              }}
+                            />
+                            <label htmlFor="query" className="-mt-1 inline text-[12px] font-normal">
+                              I’m happy to be contacted with regard to my
+                              query only.
+                            </label>
+                          </div>
+                          <div className="mt-2 block cursor-pointer flex-row-reverse justify-start gap-4 ">
+                            <input
+                              name="marketing"
+                              id="marketing"
+                              type="checkbox"
+                              className="mr-2 inline w-fit "
+                              value={
+                                isMarketing === true ? "true" : "false"
+                              }
+                              onChange={(e) => {
+                                setIsMarketing((current) => !current);
+                                setFormData((prevState) => ({
+                                  ...prevState,
+                                  marketing: e.target.value,
+                                }));
+                              }}
+                            />
+                            <label htmlFor="marketing" className="-mt-1 inline text-[12px] font-normal">
+                              I don’t mind my details being used for
+                              marketing purposes.
+                            </label>
+                          </div>
+                          <span
+                            className="mb-5 mt-8 block text-center lg:w-[93%]"
+                            onClick={validateAndCreate}
+                          >
+                            {/* <DynamicButton
                                   data-callback="handleSubmit"
                                   data-sitekey={
                                     "6LceYMcnAAAAAH8LX7ElKqv-CupIf0lJbJx6d-a2"
@@ -366,11 +427,11 @@ export default function RequestCallBack() {
                                     }`}
                                   label={"Request a callback"}
                                 /> */}
-                              </span>
-                            </div>
-                          </div>
+                          </span>
                         </div>
-                      )}                    
+                      </div>
+                    </div>
+                  )}
                 </div>
               </Dialog.Panel>
             </Transition.Child>

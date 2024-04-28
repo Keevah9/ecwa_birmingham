@@ -12,22 +12,33 @@ import Button from "@/components/Button";
 export default function Header({ global, header }: any) {
     function MainHeader() {
         return (
-            <nav className={` max-container flex items-center`}>
-                <MenuToggle />
-                <div className={"w-4/12 md:w-auto"}>
-                    <Link href={"/"}>
-                        <a className={"flex"}>
-                            <Logo />
-                        </a>
-                    </Link>
+            <nav className={` max-container flex justify-between items-center`}>
+                <div className="flex items-center gap-4">
+                    <MenuToggle />
+                    <div className={"w-2/12 lg:4/12 md:w-auto"}>
+                        <Link href={"/"}>
+                            <a className={"flex"}>
+                                <Logo />
+                            </a>
+                        </Link>
+                    </div>
                 </div>
                 <Navigation />
-                <Button
-                    type="button"
-                    title="About Us"
-                    variant="btn_blue"
-                    link='/about-us'
-                />
+                <div className="flex ">
+                    {/* <Button
+                        type="button"
+                        title="I am new"
+                        // variant={"btn "}
+                        link='/join-us'
+                    />
+                    <Button
+                        type="button"
+                        title="Give"
+                        variant="btn_blue"
+                        link='/donate'
+                    /> */}
+                    <Button type={"button"} title={'I am new'} variant={"btn"} link="/join-us" /><Button type={"button"} link="/" title={'Give'}  />
+                </div>
             </nav>
         );
     }
@@ -60,9 +71,29 @@ export default function Header({ global, header }: any) {
     }
     return (
         <>
-            
+            <div className="bg-ecwadarkblue">
+                <div className={" max-container hidden items-center justify-center gap-6 py-2 text-[15px] text-white lg:flex"}
+                >
+                    <p className="text-[15px] font-bold text-white">
+                        Do you have a prayer request?
+                        
+                    </p>
+                    <div>
+                        <Button type={"submit"} link='/' title={"Click Here"} variant={"btn !text-white"}/>
+                        
+                    </div>
+                    {/* <div className="pt-1">
+                        <Socials
+                            FbLink
+                            TwLink={header.Twitter}
+                            IgLink={header.Instagram}
+                            InLink={header.Linkedin}
+                        />
+                    </div> */}
+                </div>
+            </div>
             <header
-                className={`shadow-md sticky duration-300 z-[40] top-0 w-f border bg-white ${stickyHeaderClass}`}
+                className={`drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] sticky duration-300 z-[40] top-0 w-f border bg-white ${stickyHeaderClass}`}
             >
                 
                     <MainHeader/>

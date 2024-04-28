@@ -51,15 +51,15 @@ export default function FormInput(props: FormFieldProps) {
   return (
     <div className={` ${props.isSortCode ? "d-flex" : "w-full"}`}>
       <label className={` label`}>
-        <span>
+        <p>
           {props.label}
           {props.required && (
-            <>{ <sup className="text-[#F04A48]">*</sup>}</>
+            <>{ <sup className="text-ecwaorange">*</sup>}</>
           )}
-        </span>
+        </p>
         {props.feedbackLabel && (
           <div
-            className={`mt-1 border-4 text-sm text-red-700 sm:ml-auto sm:mt-0 ${textColor}`}
+            className={`mt-1 border-4 text-sm text-ecwaorange sm:ml-auto sm:mt-0 ${textColor}`}
           >
             <FontAwesomeIcon icon={faExclamationTriangle} className={"mr-1"} />{" "}
             {props.feedbackLabel}
@@ -99,7 +99,8 @@ export default function FormInput(props: FormFieldProps) {
             maxLength={props.maxLength}
             autoComplete={props.autoComplete ? props.autoComplete : undefined}
             defaultValue={props.defaultValue ? props.defaultValue : ""}
-            className={`appearance-none bg-white text-[16px]  ${
+            placeholder={props.placeholder}
+            className={`appearance-none !rounded-[5px] text-black text-[16px]  ${
               props.type === "textarea" && "col-span-full row-span-4"
             } ${props.otherOptions ? "modal-textfield " : "field "} ${
               props.fullWidth && "w-[100%]"
