@@ -1,7 +1,6 @@
 import React, { ReactElement, useContext, useState } from "react";
 import OneColumnContentBlock from "../blocks/one-column-content";
 // import BlogSliderReviews from "../blocks/blog-slider-reviews";
-import { NextPageWithLayout } from "../../types/global";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import rehypeRaw from "rehype-raw";
 import { FlexibleStrapiPageResponse } from "@/constants/lib/types/strapi";
@@ -16,6 +15,7 @@ import GridGalleryBlock from "../blocks/grid-gallery";
 import Button from "@/components/Button";
 import HasMinistriesBlock from "../blocks/has-ministries";
 import HasSermonsBlock from "../blocks/has-sermons";
+import { NextPageWithLayout } from "@/constants/lib/types/global";
 
 type LocalProps = {
   data?: FlexibleStrapiPageResponse;

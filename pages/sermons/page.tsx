@@ -5,8 +5,8 @@ import axios from "axios"
 import { NextSeo } from "next-seo"
 import Link from "next/link"
 import { ReactElement } from "react"
-import { NextPageWithLayout } from "../../constants/types/global"
 import BlogCard from "../../components/blog-card"
+import { NextPageWithLayout } from "@/constants/lib/types/global"
 
 export const getStaticProps = async () => {
     const res = await axios.get(getStrapiURL(`/blogs?populate=*&pagination[pageSize]=100&sort=publishedAt:desc`))

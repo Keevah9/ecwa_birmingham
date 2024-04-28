@@ -22,7 +22,6 @@ export type FlexibleStrapiPageResponse = {
   ButtonTwoLink: string | undefined;
   ButtonTwo: string | undefined;
   ButtonOne: string | undefined;
-  ButtonOne: string | undefined;
   HasPortfolioandQuoteButtons: boolean;
   FeaturedImage: any;
   canonicalURL: any;

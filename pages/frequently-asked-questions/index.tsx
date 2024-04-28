@@ -3,10 +3,11 @@ import dynamic from "next/dynamic";
 import { ReactElement } from "react";
 import { GetStaticProps } from "next";
 import "@splidejs/react-splide/css";
-import { NextPageWithLayout } from "@/constants/types/global";
+
 import SEO from "@/components/SEO";
 import Layout from "../../constants/layout";
 import { getFaqs } from "@/constants/lib/util/api";
+import { NextPageWithLayout } from "@/constants/lib/types/global";
 const FAQs = dynamic(() => import('../../components/faq/FAQComponent'));
 
 //use miion faq
@@ -40,7 +41,7 @@ const FrequentlyAskedQuestions: NextPageWithLayout = (props: any) => {
           <QuoteModalComponent />
         </div> */}
       </section>
-      
+
     </>
   
   );
