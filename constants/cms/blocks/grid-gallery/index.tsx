@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import axios from "axios";
-import { useRouter } from "next/router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinnerThird } from "@fortawesome/pro-solid-svg-icons";
+
 import { StrapiGlobalResponse } from "@/constants/lib/types/global";
 import { getGlobalData } from "@/constants/lib/util/api";
 import Pagination from "@/components/pagination";

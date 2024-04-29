@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentDots } from "@fortawesome/pro-regular-svg-icons/faCommentDots";
-import { faMobile } from "@fortawesome/pro-regular-svg-icons/faMobile";
-import { faPaperPlane } from "@fortawesome/pro-regular-svg-icons/faPaperPlane";
-import { faPhone } from "@fortawesome/pro-regular-svg-icons/faPhone";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCommentDots } from "@fortawesome/pro-regular-svg-icons/faCommentDots";
+// import { faMobile } from "@fortawesome/pro-regular-svg-icons/faMobile";
+// import { faPaperPlane } from "@fortawesome/pro-regular-svg-icons/faPaperPlane";
+// import { faPhone } from "@fortawesome/pro-regular-svg-icons/faPhone";
 import React from "react";
 
 interface LinkBlockProps {
@@ -21,39 +21,25 @@ function ContactIcon(props: IconProps) {
     switch (props.icon) {
         case "Phone":
             return (
-                <FontAwesomeIcon
-                    color={"#FF6A47"}
-                    size={"2x"}
-                    icon={faPhone}
-                    className={"mr-6"}
-                />
+                <></>
+                // <FontAwesomeIcon
+                //     color={"#FF6A47"}
+                //     size={"2x"}
+                //     icon={faPhone}
+                //     className={"mr-6"}
+                // />
             );
         case "Email":
             return (
-                <FontAwesomeIcon
-                    color={"#FF6A47"}
-                    size={"2x"}
-                    icon={faPaperPlane}
-                    className={"mr-6"}
-                />
+                <></>
             );
         case "SMS":
             return (
-                <FontAwesomeIcon
-                    color={"#FF6A47"}
-                    size={"2x"}
-                    icon={faMobile}
-                    className={"mr-6"}
-                />
+                <></>
             );
         case "Live Chat":
             return (
-                <FontAwesomeIcon
-                    color={"#FF6A47"}
-                    size={"2x"}
-                    icon={faCommentDots}
-                    className={"mr-6"}
-                />
+                <></>
             );
         default:
             return null;

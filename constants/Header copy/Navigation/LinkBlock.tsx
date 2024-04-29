@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/pro-regular-svg-icons/faAngleRight";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAngleRight } from "@fortawesome/pro-regular-svg-icons/faAngleRight";
 import React from "react";
 
 interface LinkBlockProps {
@@ -34,10 +34,10 @@ export default function LinkBlock(props: LinkBlockProps) {
                             </div>
                         </div>
 
-                        <FontAwesomeIcon
+                        {/* <FontAwesomeIcon
                             icon={faAngleRight}
                             className={"ml-4 mt-2"}
-                        />
+                        /> */}
                     </div>
                 </a>
             </Link>

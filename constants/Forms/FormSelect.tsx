@@ -1,9 +1,9 @@
-import {
-  faChevronDown,
-  faExclamationTriangle,
-  faSort,
-} from "@fortawesome/pro-light-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faChevronDown,
+//   faExclamationTriangle,
+//   faSort,
+// } from "@fortawesome/pro-light-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //@ts-ignore
 import Select from "react-select";
 import React from "react";
@@ -86,10 +86,10 @@ export default function FormSelect(props: FormSelectProps) {
               : "right-[20px] bottom-[20px] lg:right-[20px]  "
             }  pointer-events-none absolute   flex  items-center justify-center rounded-[5px]  lg:bottom-[3px]  lg:h-[52px] `}
         >
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             icon={faChevronDown}
             className={"text-base text-uniqueprimarybodylg:text-sm"}
-          />
+          /> */}
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { faPlus, faMinus, faAngleDown, faAngleUp } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlus, faMinus, faAngleDown, faAngleUp } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface FAQProps {
   question: string;
@@ -29,11 +29,11 @@ export function FAQS(props: FAQProps) {
         {props.joinUs && <span className="h-12 text-center text-[25px] items-center justify-center w-12  text-ecwadarkblue bg-ecwaorange rounded-full inline-flex text-center mr-3">{props.number}</span>}  {props.question}
         </div>
         
-        {props.joinUs ? <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
-          <FontAwesomeIcon icon={FaqOpen ? faAngleUp : faAngleDown} className={`${props.joinUs && 'text-white text-[22px]'}`} />
+        {/* {props.joinUs ? <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
+          <FontAwesomeIcon icon={FaqOpen ? '+' : '-'} className={`${props.joinUs && 'text-white text-[22px]'}`} />
         </span> : <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
           <FontAwesomeIcon icon={FaqOpen ? faMinus : faPlus} className={`${props.joinUs && 'text-white text-[22px]'}`} />
-        </span>}
+        </span>} */}
       </div>
 
       <div

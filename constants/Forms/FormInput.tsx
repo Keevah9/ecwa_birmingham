@@ -1,5 +1,5 @@
-import { faExclamationTriangle } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faExclamationTriangle } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface FormFieldProps {
@@ -61,7 +61,7 @@ export default function FormInput(props: FormFieldProps) {
           <div
             className={`mt-1 border-4 text-sm text-ecwaorange sm:ml-auto sm:mt-0 ${textColor}`}
           >
-            <FontAwesomeIcon icon={faExclamationTriangle} className={"mr-1"} />{" "}
+            {/* <FontAwesomeIcon icon={faExclamationTriangle} className={"mr-1"} />{" "} */}
             {props.feedbackLabel}
           </div>
         )}

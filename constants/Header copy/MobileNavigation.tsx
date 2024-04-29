@@ -1,10 +1,10 @@
 import React, { ReactChild, useState, useEffect } from "react";
 import Link from "next/link";
-import { faAngleRight } from "@fortawesome/pro-regular-svg-icons/faAngleRight";
-import { faAngleLeft } from "@fortawesome/pro-regular-svg-icons/faAngleLeft";
-import { faCircleUser } from "@fortawesome/pro-solid-svg-icons/faCircleUser";
-import { faRightFromBracket } from "@fortawesome/pro-solid-svg-icons/faRightFromBracket";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAngleRight } from "@fortawesome/pro-regular-svg-icons/faAngleRight";
+// import { faAngleLeft } from "@fortawesome/pro-regular-svg-icons/faAngleLeft";
+// import { faCircleUser } from "@fortawesome/pro-solid-svg-icons/faCircleUser";
+// import { faRightFromBracket } from "@fortawesome/pro-solid-svg-icons/faRightFromBracket";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchGetStarted from "./Navigation/Sections/SearchGetStarted";
 import SearchMakes from "./Navigation/Sections/SearchMakes";
 import SearchModels from "./Navigation/Sections/SearchModels";
@@ -48,10 +48,10 @@ function NavLink(props: NavLinkProps) {
                     className={`flex items-center p-5 text-lg`}
                 >
                     {props.label}
-                    <FontAwesomeIcon
+                    {/* <FontAwesomeIcon
                         icon={faAngleRight}
                         className={"ml-auto"}
-                    />
+                    /> */}
                 </div>
             </li>
             <div
@@ -63,7 +63,7 @@ function NavLink(props: NavLinkProps) {
                     onClick={() => setMenuSectionOpen(false)}
                     className={"cursor-pointer"}
                 >
-                    <FontAwesomeIcon icon={faAngleLeft} className={"mr-3"} />
+                    {/* <FontAwesomeIcon icon={faAngleLeft} className={"mr-3"} /> */}
                     Back
                 </div>
                 {props.children}

@@ -166,8 +166,8 @@ import Notification from "@/components/Notification";
 import Generating from "@/components/Generating";
 import React, { useContext } from "react";
 import "@splidejs/react-splide/css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 import Shadow from "../../../../public/img/Rectangle.png";
 
 //@ts-ignore

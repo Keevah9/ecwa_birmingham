@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinnerThird } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSpinnerThird } from "@fortawesome/pro-solid-svg-icons";
 import MenuGroup from "./MenuGroup";
 import { getStrapiMedia } from "@/constants/lib/util/media";
 import SearchGetStarted from "@/constants/Header copy/Navigation/Sections/SearchGetStarted";
@@ -33,11 +33,7 @@ function NavLink(props: NavLinkProps) {
             )}
             <span className=" relative mb-4 block h-[15rem] w-[15rem] ">
               {props.loading ? (
-                <FontAwesomeIcon
-                  icon={faSpinnerThird}
-                  className={" absolute left-[35%] top-32 text-2xl"}
-                  spin
-                />
+               <></>
               ) : (
                 <Image
                   style={{ borderRadius: "10px" }}

@@ -5,8 +5,8 @@ import Image from "next/image";
 //@ts-ignore
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/pro-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/pro-solid-svg-icons"
 import { useRouter } from "next/router";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
@@ -192,12 +192,12 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
                               )}
                           </SplideTrack>
                           <div className={` splide__arrows  lg:-mt-8 lg:block`}>
-                            <button className="splide__arrow splide__arrow--prev">
+                            {/* <button className="splide__arrow splide__arrow--prev">
                               <FontAwesomeIcon icon={faArrowRight} />
                             </button>
                             <button className="splide__arrow splide__arrow--next">
                               <FontAwesomeIcon icon={faArrowRight} />
-                            </button>
+                            </button> */}
                           </div>
                         </Splide>
                       </div>

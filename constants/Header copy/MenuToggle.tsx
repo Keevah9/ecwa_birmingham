@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/pro-light-svg-icons/faBars";
-import { faTimes } from "@fortawesome/pro-light-svg-icons/faTimes";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/pro-light-svg-icons/faBars";
+// import { faTimes } from "@fortawesome/pro-light-svg-icons/faTimes";
 import MobileNavigation from "./MobileNavigation";
 import { useRouter } from "next/router";
 
@@ -31,7 +31,7 @@ export default function MenuToggle() {
                         mobileMenuVisible ? "" : ""
                     }`}
                 >
-                    <FontAwesomeIcon
+                    {/* <FontAwesomeIcon
                         icon={mobileMenuVisible ? faTimes : faBars}
                         fixedWidth
                         className={
@@ -39,7 +39,7 @@ export default function MenuToggle() {
                                 ? "text-ecwadarkblue text-2xl"
                                 : "text-ecwadarkblue text-2xl"
                         }
-                    />
+                    /> */} +
                 </span>
             </div>
             {mobileMenuVisible && (
