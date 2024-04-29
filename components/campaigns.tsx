@@ -31,7 +31,7 @@ export default function Campaigns() {
                             <p className="text-[14px]">Seconds</p>
                         </div>
                     </div>
-                    <Button type={"button"} title={"View All Events"} link="/" />
+                    <div className="w-40 mt-3"><Button type={"button"} title={"View All Events"} link="/" style/></div>
                 </div>
 
             </div>

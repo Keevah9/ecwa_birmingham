@@ -38,6 +38,11 @@ export default function LinkBlock(props: LinkBlockProps) {
                             icon={faAngleRight}
                             className={"ml-4 mt-2"}
                         /> */}
+                       
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="#022147" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
+                        </svg>
                     </div>
                 </a>
             </Link>

@@ -93,11 +93,11 @@ const HeroSlider = (props:  HeroSliderProps) => {
                             className="col-span-8 place-self-center text-center "
                           >
                             <div className="xs:pt-[80px] xs:pb-[60px] md:container text-center text-white ">
-                              <span className=" text-[24px]">text {data.Subtitle}</span>
-                                <span className="inline-block relative">
+                              <span className=" text-[24px]">{data.SubTitle}</span>
+                                {/* <span className="inline-block relative">
                                  
                                   
-                                </span>
+                                </span> */}
                               
                               <h1 className="drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)] text-white text-center mb-1 xs:leading-tight font-black"> {data.Title} </h1>
                                 <Image
@@ -107,7 +107,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                                   height={28}
                                   alt="Curve"
                                 />
-                                <div className="max-w-2xl h-[4rem] mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
+                                <div className="max-w-2xl h-[3rem] mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
                               <div className="flex justify-center text-center mt-12 gap-8">
                                 {data.ButtonLabel != null && (
                                 <><Button type={"button"} title={data.ButtonLabel} link={data.ButtonLink} variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>
@@ -163,19 +163,20 @@ const HeroSlider = (props:  HeroSliderProps) => {
                 {/* <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" /> */}
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[10rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                    {heroIcons.map((icon, index) => (
+                  <ul className="hidden absolute -left-[10rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
+                    {/* {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={icon} />
                       </li>
-                    ))}
+                    ))} */}
+                    <li className="p-5">Jesus Christ is the TRUTH, WAY & LIFE</li>
                   </ul>
                 </ScrollParallax>
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[1rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Ecwa Birmingham"
                   />
                 </ScrollParallax>
               </div>

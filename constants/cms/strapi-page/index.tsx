@@ -61,8 +61,9 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
     <>
       {/* <SEO seoData={props?.data?.SEO} title={props?.data?.Title} canonical={props?.data?.SEO?.canonicalURL} /> */}
       <div
-        className={`max-containe overflow-splide ${//@ts-ignore
-          props?.data?.PageBackground === 'blue' && 'bg-ecwadarkblue'}  relative overflow-hidden  lg:overflow-visible`}
+        className={`max-containe overflow-splide  ${//@ts-ignore
+          props?.data?.PageBackground === 'yellow' && 'bg-[#FCCE33]'}  ${//@ts-ignore
+          props?.data?.PageBackground === 'blue' && 'bg-ecwadarkblue'}  ${props?.data?.PageBackground === 'pink' && 'bg-[#DD90F0] text-white'} relative overflow-hidden  lg:overflow-visible`}
       >
         
           <div

@@ -145,7 +145,7 @@ const Guide = () => {
           We are here...
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className=" max-w-xl leading-[32px]"> To join hands together, to take a step further to Jesus</h2>
+          <h2 className=" max-w-xl"> To join hands together, to take a step further to Jesus</h2>
           <p className=" xl:max-w-[520px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib</p>
         </div>
       </div>

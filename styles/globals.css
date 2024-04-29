@@ -14,7 +14,7 @@
 }
 
 body {
-  @apply font-sans
+  @apply font-exo
 }
 
 .container-fw {
@@ -260,10 +260,10 @@ html {
 }
 
 p,
-li {
-  @apply text-[18px] text-[#7b7b7b]
+li, a {
+  @apply text-[18px] 
 }
-
+ /* text-[#7b7b7b] */
 span {
   @apply text-[#F9864B] text-[20px] font-black capitalize
 }
@@ -356,4 +356,6 @@ body{
 h3, h4, h5, h6{
   @apply leading-[35px]
  }
-
+.faq .markdown p{
+  @apply text-white
+}

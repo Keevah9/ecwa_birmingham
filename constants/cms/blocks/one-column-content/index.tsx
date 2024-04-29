@@ -80,9 +80,10 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
      
       <section className={`${props.data.override === 'blue' && ' bg-ecwadarkblue py-12'} ${props.data.override === 'orange' && 'bg-ecwadarkblue'}`}>
         <div className="max-container overflow-splide">
+          {/* <span className="absolute -top-[10px]"></span> */}
           {props?.data.SectionTitle && (
             <h2 className={`${props.data.override === 'blue' && '!text-white'}`} >
-              <span className="absolute -top-[120px]"></span>
+              {/* <span className="absolute -top-[10px]"></span> */}
               {props?.data.SectionTitle}
 
             </h2>

@@ -22,7 +22,7 @@ interface MegaMenuDropdownProps {
 
 function MegaMenuDropdown(props: MegaMenuDropdownProps) {
     return (
-        <div className={` h-[100vh] transition ease-out duration-300 absolute top-[102px] xl:top-[90px] left-0 right-0 pointer-events-none ${props.partExchange ? 'px-0' : 'px-6'} ${props.forceOpenDev ? 'flex' : 'opacity-0 -translate-y-1'} group-hover:opacity-100 group-hover:translate-y-0`}>
+        <div className={` h-[100vh] transition ease-out duration-300 absolute top-[85px] xl:top-[90px] left-0 right-0 pointer-events-none ${props.partExchange ? 'px-0' : 'px-6'} ${props.forceOpenDev ? 'flex' : 'opacity-0 -translate-y-1'} group-hover:opacity-100 group-hover:translate-y-0`}>
             <div className={`pointer-events-none group-hover:pointer-events-auto  bg-white rounded-b-xl ${props.fullWidth ? 'w-full' : 'w-auto'} mx-auto  ${props.partExchange ? 'lg:p-6 xl:p-12' : 'px-12 pt-12 pb-20'} drop-shadow-menu`}>
                 {props.children}
             </div>
