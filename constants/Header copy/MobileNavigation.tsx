@@ -15,6 +15,7 @@ import WhyFaqs from "./Navigation/Sections/WhyFaqs";
 import SupportHelp from "./Navigation/Sections/SupportHelp";
 import SupportFaqs from "./Navigation/Sections/SupportFaqs";
 import { useRouter } from "next/router";
+import Button from "@/components/Button";
 
 
 interface NavLinkProps {
@@ -42,20 +43,19 @@ function NavLink(props: NavLinkProps) {
 
     return (
         <>
-            <li className={"cursor-pointer border-b"}>
+            <li className={"cursor-pointer border-b border-ecwadarkblue"}>
                 <div
                     onClick={() => setMenuSectionOpen(true)}
-                    className={`flex items-center p-5 text-lg`}
+                    className={`flex justify-between items-center px-6 py-5 text-lg`}
                 >
                     {props.label}
-                    {/* <FontAwesomeIcon
-                        icon={faAngleRight}
-                        className={"ml-auto"}
-                    /> */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#022147" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
+                    </svg>
                 </div>
             </li>
             <div
-                className={`h-mobileNavHeight absolute top-0 left-0 right-0 bottom-0 transform overflow-scroll border-t bg-white p-6 pb-20 transition duration-200 ease-in-out ${
+                className={`h-mobileNavHeight z-10 absolute top-0 left-0 right-0 bottom-0 transform overflow-scroll border-t bg-white p-6 pb-20 transition duration-200 ease-in-out ${
                     menuSectionOpen ? "translate-x-0" : "translate-x-full"
                 }`}
             >
@@ -79,32 +79,23 @@ function MobileNavigation() {
 
     return (
         <>
-            <ul className={"list-none border-t"}>
+            <ul className={"list-none border-t border-ecwadarkblue"}>
                 <NavLink label={"About Us"}>
                     <>
-                        <div
+                        <p
                             className={
-                                "mt-4 rounded-lg bg-[#F6F3FF] p-1 py-3 pt-4 text-center text-sm font-medium"
+                                "mt-4 rounded-lg flex flex-col justify-center text-center gap-5 bg-ecwadarkblue text-white p-1 py-3 pt-4 items-center "
                             }
                         >
                             Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            <Link href={"/about-us"}>
-                                <a
-                                    title={"About Us"}
-                                    className={
-                                        "mx-5 my-2 flex items-center justify-center rounded-full bg-ecwadarkblue px-4 py-4 font-bold text-white"
-                                    }
-                                >
-                                    About us
-                                </a>
-                            </Link>
-                        </div>
+                            <Button type={"button"} link="/about-us" title={'About us'} />
+                        </p>
                         <div className={"mt-8 mb-10"}>
                             <SearchGetStarted />
                         </div>
-                        <div className={"mb-10"}>
+                        {/* <div className={"mb-10"}>
                             <SearchMakes />
-                        </div>
+                        </div> */}
                         <div className={"mb-10"}>
                             <SearchModels />
                         </div>
@@ -146,19 +137,12 @@ function MobileNavigation() {
                     </>
                 </NavLink>
                 
-              
+                <div className="px-5 mt-8 z-0">
+                    <Button type={"button"} link="/contact-us" variant="btn" title={'Contact Us'} />
+                    <Button type={"button"} link="/give" title={'Give'} />
+                </div> 
             </ul>
-
-            <Link href={"/contact-us"}>
-                <a
-                    title={"Contact us"}
-                    className={
-                        "mx-5 my-2 mt-4 flex items-center justify-center rounded-full bg-ecwadarkblue px-4 py-4 font-bold text-white"
-                    }
-                >
-                    Contact Us
-                </a>
-            </Link>
+            
         </>
     );
 }

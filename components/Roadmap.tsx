@@ -25,8 +25,7 @@ export default function Roadmap(props: MinistriesProps) {
             return (
               <Link href={`${item.url}`} key={item.id}>
                 <a
-                  className={`md:flex hover:bg-ecwaorange hover:!text-white even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] mb-6 lg:mb-0 border-ecwaorange border border-b-4 ${props.isHome ? ' ' : 'border-ecwaorange'}  ${item.colorful ? "border- bg-conic-gradien" : "bg-n-6"
-                    }`}
+                  className={`md:flex hover:bg-ecwaorange hover:!text-white even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] mb-6 lg:mb-0 border-ecwaorange border border-b-4 ${props.isHome ? ' ' : 'border-ecwaorange'} `}
                   key={item.id}
                 >
                   <div className="relative  bg-n-8 rounded-[2.4375rem] overflow-hidden ">
@@ -40,12 +39,10 @@ export default function Roadmap(props: MinistriesProps) {
                       />
                     </div>
                     <div className="relative p-6 z-1 xl:p-15">
-                      <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                      <div className="flex items-center justify-between max-w-[27rem] ">
                       </div>
 
-                      <div className="mb-10  -my-10 -mx-15">
-                       
-                      </div>
+                      
                       <h4 className="h4 mb-4 hover:text-white ">{item.title}</h4>
                       <p className=" hover:text-white  text-n-4">{item.text}</p>
                     </div>

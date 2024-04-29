@@ -20,7 +20,7 @@ interface ArticleCardProps {
 function ArticleCard(props: ArticleCardProps) {
   return (
 
-    <div className={`mb- bg-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] border-b-8 rounded-[12px]  border-ecwadarkblue border-2  px-4 py-6 lg:px-8 lg:py-8 w-full `}>
+    <div className={`mb- bg-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.3) border-b-8 rounded-[12px]  border-ecwadarkblue border-2  px-4 py-6 lg:px-8 lg:py-8 w-full `}>
       {/* <Link href={`${props.link}`} title={props.title}>
           <a className="" itemScope itemType="http://schema.org/Blog"> */}
       <div>

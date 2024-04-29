@@ -9,17 +9,18 @@ export default function HasHistoryBlock(props: any) {
   return (
     <>
       {props?.data?.HasHistory && (
-        <section className="relative h-full bg-ecwadarblue overflow-auto">
-          <div className="bg- max-container overflow-splide text-white text-cente py-8 relative">
-            <div className="flex h-full text-center justify-center items-center overflow-aut flex-col w-full h-full">
+        <section className="relative h-ful bordr bg-ecwadarblue overflow-auto">
+          <span id="our-history" className=""></span>
+          <div className="bg- max-container overflow-splide text-cente py- relative">
+            <div className="flex h-ful text-center justify-center items-center overflow-aut flex-col w-full h-full">
               <span className=" uppercase ">Our History</span>
               <h2 className="">History of ECWA</h2>
-              <p className=" mb-4">
+              <p className=" mb-4 text-black">
                 The Evangelical Church Winning All, previously known as the Evangelical Church of West Africa, is one of the largest Christian denominations in Nigeria, with over ten million members. ECWA is a partner church of the international Christian mission organization, Serving In Mission (SIM), formerly Sudan Interior Mission. ECWA was founded in 1954 when the SIM-related churches (initially in Nigeria) came together to form an indigenous body. Since that time, mission stations, Bible Schools, academic schools, and medical programs have been transferred to ECWA leadership.
               </p>
               <div> <Button type={"button"} title={"Test"} variant="btn" /></div>
             </div>
-            <div className="max-container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+            <div className="max-container mx-auto flex flex-col items-start md:flex-row ">
               {/* <div className="flex h-full overflow-auto flex-col w-full sticky h-full md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
               <span className=" uppercase tracking-loose">Our History</span>
               <h2 className="">SIM/ECWA History</h2>
@@ -41,7 +42,7 @@ export default function HasHistoryBlock(props: any) {
                       <div className="order-1 sm:w-6/12 sm:pr-8 py-4 text-left">
                         <span className="mb-3 text-base text-ecwaorange">1893</span>
                         <h4 className="mb-3 font-bold text-lg md:text-2xl">SIM/ECWA History</h4>
-                        <p className=" ">
+                        <p className=" text-black">
                           SIM is an international, interdenominational Christian mission organization. It was established in 1893 by its three founders, Walter Gowans and Rowland Bingham of Canada and Thomas Kent of the United States.
                         </p>
                       </div>
@@ -51,7 +52,7 @@ export default function HasHistoryBlock(props: any) {
                       <div className="order-1  sm:w-6/12 sm:pl-8 py-4 text-left">
                         <span className="mb-3 text-base text-ecwaorange">Vision for SIM</span>
                         <h4 className="mb-3 font-bold text-lg md:text-2xl">The Founding of SIM in Africa</h4>
-                        <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                        <p className=" leading-snug  text-opacity-100">
                           The vision for SIM (and ECWA) was first born in the heart of a woman – Margaret (Craig) Gowans.</p>
                         <p className="py-2">
                           Margaret Craig was born in 1836 in Hamilton, Lanarkshire, Scotland, and married a brewer in Kilmarnock named John Gowans (1836-1906) in 1861. She was the first person in SIM/ECWA history to have a vision to take the gospel to the Soudan, which then led to what we know today as ECWA. They had nine children and emigrated to Toronto, Canada, in 1879.. Mrs. Gowans fervently believed that world-wide missions was an important part of the church’s calling. It was due, in part, to her influence that two of their children became missionaries. Annie, their oldest, went to China in 1892. Walter, their fifth child, went to the Sudan. According to Bingham, Mrs. Gowans told him about her son’s call to go to the Sudan where 60-90million people “lived without a single Christian missionary.”</p>
@@ -67,7 +68,7 @@ export default function HasHistoryBlock(props: any) {
                       <div className="order-1 sm:w-6/12 sm:pr-8 py-4 text-left">
                         <span className="mb-3 text-base text-ecwaorange"> The Three Founders</span>
                         <h4 className="mb-3 font-bold text-lg md:text-2xl">The First Attempt</h4>
-                        <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                        <p className=" leading-snug ">
                           Walter Gowans was a Scottish Canadian. His parents were pillars of the Presbyterian Church. His Sister was a missionary to China. He, Walter, was the first of the three founders to feel the burden of the Soudan. Kent and Bingham joined him in England to prepare to leave for the Soudan.</p>
                         <p className="py-2">
                           Thomas Kent was an American, from Buffalo NY, a Congregationalist (Baptist). He was later invited to join Gowans and Bingham in UK to prepare to go to the Soudan.

@@ -20,12 +20,13 @@ interface TwoColContentProps {
 
 export default function TwoColumnContentBlock(props: TwoColContentProps) {
   return (
-    <section className={`px-6 max-container overflow-splide sm:px-8 lg:px-10 xl:px-8  xl:w-[90% mx-auto max-w-[1300px 2xl:w-[85%  ${props.HasBackgroundColor ? "bg-[#EFF6F9]" : ""
+    <section className={`px-6 max-container relative overflow-splide sm:px-8 lg:px-10 xl:px-8  xl:w-[90% mx-auto max-w-[1300px 2xl:w-[85%  ${props.HasBackgroundColor ? "bg-[#EFF6F9]" : ""
       }`}
     >
-
+      <span className="absolute -top-[10px]"></span>
       <div className="block mb-6 lg:hidden">
         <h2 className="">
+          {/* <span className="absolute -top-[100px]"></span> */}
           {//@ts-ignore
           props?.data.SectionTitle}
 
@@ -44,6 +45,7 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
           props?.data.SectionTitle && (
             <div className=" hidden lg:block">
               <h2 className={` capitalize mb-6 `}>
+                  {/* <span className="absolute -top-[100px]"></span> */}
                 {//@ts-ignore
                 props?.data.SectionTitle}
 
@@ -53,7 +55,9 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
           {//@ts-ignore
           props?.data.SectionContent && (
             <div className="two-col ">
+               
               <ReactMarkdown className="markdown" rehypePlugins={[rehypeRaw]}>
+                
                 {//@ts-ignore
                 props?.data.SectionContent}
               </ReactMarkdown>

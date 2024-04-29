@@ -99,8 +99,8 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
-    colorful: true,
-    url: "/ministries/children-ministries"
+    color: '#FCCE33',
+    url: "/ministries/childrens-ministries"
   },
   {
     id: "1",
@@ -109,6 +109,7 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
+    
     url: "/ministries/men-ministries"
   },
   {
@@ -262,7 +263,7 @@ export const benefits = [
     backgroundUrl: "#032F70",
     iconUrl: "/benefits/icon-1.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/sound',
+    // url: '/volunteer/sound',
    
   },
   {
@@ -283,7 +284,7 @@ export const benefits = [
     backgroundUrl: "#FF6A47",
     iconUrl: "/benefits/icon-3.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/guest-services',
+    // url: '/volunteer/guest-services',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   }, 
   // FFD08B  FF6A47 7ADB78  7B30CF 
@@ -304,7 +305,7 @@ export const benefits = [
     backgroundUrl: "#7ADB78",
     iconUrl: "/benefits/icon-1.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/ushering',
+    // url: '/volunteer/ushering',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -314,7 +315,7 @@ export const benefits = [
     backgroundUrl: "#FA8D41 ",
     iconUrl: "/benefits/icon-2.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/logistics',
+    // url: '/volunteer/logistics',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -324,7 +325,7 @@ export const benefits = [
     backgroundUrl: "#032F70",
     iconUrl: "/benefits/icon-1.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/outreach',
+    // url: '/volunteer/outreach',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -344,7 +345,7 @@ export const benefits = [
     backgroundUrl: "#7ADB78 ",
     iconUrl: "/benefits/icon-3.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/events',
+    // url: '/volunteer/events',
      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -354,7 +355,7 @@ export const benefits = [
     backgroundUrl: "#DD90F0",
     iconUrl: "/benefits/icon-4.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/prayer-team',
+    // url: '/volunteer/prayer-team',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -364,7 +365,7 @@ export const benefits = [
     backgroundUrl: "#7B30CF",
     iconUrl: "/benefits/icon-1.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/media',
+    // url: '/volunteer/media',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
   {
@@ -374,7 +375,7 @@ export const benefits = [
     backgroundUrl: "#FA8D41 ",
     iconUrl: "/benefits/icon-2.svg",
     imageUrl: "/ecwa-logo.png",
-    url: '/volunteer/welfare',
+    // url: '/volunteer/welfare',
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.",
   },
 ];
@@ -564,7 +565,7 @@ export const Invloved_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', url: '123-456-7890' },
+    { label: 'Church', url: '123-456-7890' },
     { label: 'Email Officer', url: 'ecwa@gmail.com' },
   ],
 };

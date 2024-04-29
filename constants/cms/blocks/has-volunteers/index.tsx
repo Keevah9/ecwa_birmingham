@@ -21,9 +21,9 @@ export default function HasVolunteersBlock(props: any) {
           <p className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-7`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib
           </p>
-          ${router.asPath === "/volunteer" ? 
+          {router.asPath === "/volunteer" ? 
           //@ts-ignore
-          <VolunteerContainer data={benefits} /> : <div><VolunteerContainer data={benefitSlice} /> <div className="mt-16 text-center"> <Button title="Sell more" link="/volunteer" type={"button"} /></div></div>}
+          <VolunteerContainer data={benefits} /> : <div><VolunteerContainer data={benefitSlice} /> <div className="mt-16 text-center"> <Button title="See more" link="/volunteer" type={"button"} /></div></div>}
 
 
         </section>

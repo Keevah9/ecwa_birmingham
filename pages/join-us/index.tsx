@@ -214,7 +214,7 @@ export default function JoinUs() {
     const [isSubscribed, setIsSubscribed] = useState(true);
     const [isMarketing, setIsMarketing] = useState(true);
     return (
-        <><div className=" min-h-[650px] flex flex-col justify-center items-center text-center bg-ecwaorange">
+        <><div className=" min-h-[630px] flex flex-col justify-center items-center text-center bg-ecwaorange">
             <div className="max-container overflow-splide">
                 <h1 className="mb-7">New to Church?</h1>
                 <p className="my-6 text-white max-w-5xl mx-auto">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
@@ -228,8 +228,8 @@ export default function JoinUs() {
                 </div>
             </div>
         </div>
-            <section className="max-container">
-                <h2 className="lg:text-center -mb-20">  These are the next steps for you</h2>
+            <section className="">
+                <h2 className="lg:text-center max-container leading-[35px] -mb-12 lg:-mb-20">  These are the next steps for you</h2>
                 <div className="max-w-5xl mx-auto">
 
                     <FAQs data={joinUs} joinUs number />
@@ -275,17 +275,33 @@ export default function JoinUs() {
                 <div>
                     <h2>At Ecwa, we pursue:</h2>
                     <p>lorem</p>
-                    <div className="grid mt-6 gap-4 bg-ecwadarkblue rounded-[5px] px-6 py-8 grid-cols-4">
-                        <p className="text-white"> Life at the speed of intention</p>
-                        <p className="text-white"> Life at the speed of intention</p>
-                        <p className="text-white">
+                    <div className="grid mt-6 gap-4 bg-ecwadarkblue rounded-[5px] px-6 py-8 sm:grid-cols-3 lg:grid-cols-4">
+                        <p className="text-white flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                          Life at the speed of intention</p>
-                        <p className="text-white">
+                        <p className="text-white flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                          Life at the speed of intention</p>
-                        <p className="text-white"> Life at the speed of intention</p>
-                        <p className="text-white"> Life at the speed of intention</p>
-                        <p className="text-white"> Life at the speed of intention</p>
-                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
+                        <p className="text-white  flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg> Life at the speed of intention</p>
                     </div>
                 </div>
             </section>

@@ -130,7 +130,7 @@ const VolunteerContainer = (props: VolunteerDataProps) => {
 
                 </SplideTrack>
             </Splide> 
-            <div className="hidden lg:grid gap-6 grid-cols-3 ">
+            {/* <div className="hidden xl:grid gap-6 grid-cols-3 ">
                 {props.data.map((item) => (
                     <div
                         className="block shadow-xl relative p-0.5 rounded-[5px] bg-no-repeat bg-[length:100%_100%] md:max-w-[27rem] "
@@ -159,7 +159,7 @@ const VolunteerContainer = (props: VolunteerDataProps) => {
                         <ClipPath />
                     </div>
                 ))}
-            </div>
+            </div> */}
             <div className="fle lg:hidden flex-wra gri ">
                 {/* Your Splide slider code */}
             </div>

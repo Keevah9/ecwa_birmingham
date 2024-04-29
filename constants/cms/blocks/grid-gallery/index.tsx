@@ -82,6 +82,7 @@ export default function GridGalleryBlock(props: any) {
     return (
         <>
             <section className="max-container overflow-splide">
+                <span className="absolute -top-[10px]"></span>
                 {props?.data.SectionTitle && (
                     <h2 className={`${props.data.override === 'blue' && '!text-white'}`} >
                         <span className="absolute -top-[120px]"></span>
@@ -90,7 +91,7 @@ export default function GridGalleryBlock(props: any) {
                     </h2>
                 )}
                 {props?.data.SectionContent && (
-                    <div className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-2 lg:pb-0`}>
+                    <div className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-8`}>
                         <ReactMarkdown className={`${props.data.override === 'blue' && 't-white'} markdown`} rehypePlugins={[rehypeRaw]}>
                             {props?.data.SectionContent}
                         </ReactMarkdown>
@@ -154,7 +155,7 @@ export default function GridGalleryBlock(props: any) {
                                 })}
 
                             </SplideTrack>
-                        </Splide> : <div className="grid gap-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8">
+                        </Splide> : <div className="grid gap-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 ">
                             {props.data.GridItems.map((item: any) => {
                                 return (
                                     <ArticleCard link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import LinkBlock from "../LinkBlock";
+import Button from "@/components/Button";
 
 const models = [
     {
@@ -25,7 +27,8 @@ function SearchModels() {
     return (
         <>
             <h5 className={"mb-6 uppercase text-ecwaorange font-black text-[18px]"}>Volunteer</h5>
-            <ul className={"list-none"}>
+            <ul className={"mt-4"}>
+                <Button title="Serve with us" variant="btn" link="/volunteer"/>
                 {/* {models.map((model, index) => {
                     return (
                         <li className={"mb-3"} key={index}>

@@ -2,7 +2,7 @@ import { About_LINKS, FOOTER_CONTACT_INFO, FOOTER_LINKS, Invloved_LINKS, SOCIALS
 import Logo from '@/constants/Logo';
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { ReactNode, useState } from 'react'
 
 interface FooterProps{
    id:number;
@@ -10,21 +10,127 @@ interface FooterProps{
    label: string
 }
 
+interface AccordionBlockProps {
+  title: string;
+  children: ReactNode;
+}
+interface NavLinkProps {
+  url: string;
+  label: string;
+  category?: boolean;
+}
+
+function NavLink(props: NavLinkProps) {
+  return (
+    <li>
+      <Link href={`/${props.url}`} legacyBehavior>
+        <span
+          title={props.label}
+          className={
+            "mb-3 flex items-center justify-between  text-[15px] font-light capitalize text-white lg:mb-0 xl:text-[16px]"
+          }
+        >
+          {props.label}{" "}
+          {props.category && (
+            <span className='text-white -mr-4'> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+            </svg></span>
+          )}
+        </span>
+      </Link>
+    </li>
+  );
+}
+
+function AccordionBlock(props: AccordionBlockProps) {
+  const [accordionOpen, setAccordionOpen] = useState(false);
+  return (
+    <>
+      <div>
+        <h3
+          className={`flex items-center justify-between border-b-2 text-[18px] font-bold lg: lg:text-[18px] ${accordionOpen && "border-none"
+            }  text-white border-ecwaorange  py-4`}
+          onClick={() => setAccordionOpen(!accordionOpen)}
+        >
+          {props.title}
+          {accordionOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14" />
+          </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7 7V5" />
+          </svg>}
+          
+        </h3>
+        {accordionOpen && (
+          <p className="border-b-2 border-ecwaorange tex-white px-4 p-0 ">
+            {props.children}{" "}
+          </p>
+        )}
+      </div>
+    </>
+  );
+}
+
 const Footer = ({ footer }:any) => {
   return (
-    <footer className="flexCenter bg-ecwadarkblue min-h-[550px]">
-      <div className="padding-containr overflow-splide max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-between lg:flex-row">
-          <div className='flex  lg:w-60'>
+    <footer className="lg:flexCente bg-ecwadarkblue min-h-[570px]">
+      <div className='flex max-container w-full text-center pt-16 '>
+        
+          <div className='flex flex-col w-full justify-center'>
             <Link href="/" >
-              <div className='flex flex-col justify-start'>
-                <a className="pb-6  w-fit"><Logo /></a>
-                <p className='mt-4 text-white'>Address</p>
-              </div>
-            </Link>
-         </div>
-
-          <div className='flex flex-wrap sm:justify-between md:flex-1'>
+            <a className="pb-6 mx-auto lg:w-60"><Logo /></a>
+          </Link>
+            <p className='mt-2  text-white text-center '>1st Ariel Scout, Birmingham</p>
+          </div>
+       
+      </div>
+      <div className="padding-containr  py-10 overflow-splide max-container flex w-full flex-col gap-14">
+        <div className="flex flex-col items-start justify-between lg:flex-row">
+         
+<div className='w-full flex flex-col mt-6 lg:mt-0 gap-4'>
+            <div className='block w-full lg:hidden'><div className=" border-t- list-none border-[#223B50]">
+              <AccordionBlock title={FOOTER_LINKS[0].title}>
+                <ul className={"list-none p-0 pb-3"}>
+                  {FOOTER_LINKS[0].links.map((link: any) => (
+                    <NavLink
+                      category
+                      key={link.id}
+                    url={link.url}
+                      label={link.label}
+                    />
+                  ))}
+                </ul>
+              </AccordionBlock>
+            </div>
+            <div>
+              <AccordionBlock title={About_LINKS[0].title}>
+                <ul className={"list-none p-0 pb-3"}>
+                    {About_LINKS[0].links.map((link: any) => (
+                    <NavLink
+                      category
+                      key={link.id}
+                      url={link.url}
+                      label={link.label}
+                    />
+                  ))}
+                </ul>
+              </AccordionBlock>
+            </div>
+              <AccordionBlock title={Invloved_LINKS[0].title}>
+                <ul className={"list-none p-0 pb-3"}>
+                  {Invloved_LINKS[0].links.map((link: any) => (
+                    <NavLink
+                      category
+                      key={link.id}
+                      url={link.url}
+                      label={link.label}
+                    />
+                  ))}
+                </ul>
+              </AccordionBlock>
+            </div>
+            </div>
+</div>
+          <div className='lg:flex hidden flex-wrap sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns, index) => (
               <FooterColumn title={columns.title} key={index}>
                 <ul className="regular-1   flex flex-col gap-4 text-gray-">
@@ -83,6 +189,7 @@ const Footer = ({ footer }:any) => {
                   {SOCIALS.links.map((link: FooterProps) => (
                     <li key={link.id}>
                       <Link href={`${link.url}`} >
+                        {/* <a href="">{link.label}</a> */}
                         <Image src={link.label} alt="logo" width={24} height={24} />
                       </Link>
                     </li>
@@ -104,12 +211,12 @@ const Footer = ({ footer }:any) => {
                 </ul>
               </FooterColumn>
             </div> */}
-          d</div>
+          </div>
         </div>
 
-        <div className="border border-ecwaorange" />
-        <p className="w-full text-center text-white">2024 ECWA Birmingham | All rights reserved</p>
-      </div>
+        
+      <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
+     
     </footer>
   )
 }

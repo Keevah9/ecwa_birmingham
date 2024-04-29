@@ -23,17 +23,26 @@ export function FAQS(props: FAQProps) {
         itemType="https://schema.org/Question"
       >
         <div
-          className={`mr-3  w-full list-none  font-bold leading-[22px] ${props.joinUs ? 'text-[22px] m text-white' : 'text-[18px] text-ecwadarkblue'}`}
+          className={`mr-3  w-full list-none leading-[32px] font-bold leading-[22px] ${props.joinUs ? 'text-[22px] flex sm:items-center text-white ' : 'text-[18px] text-ecwadarkblue'}`}
           itemProp="name"
         >
-        {props.joinUs && <span className="h-12 text-center text-[25px] items-center justify-center w-12  text-ecwadarkblue bg-ecwaorange rounded-full inline-flex text-center mr-3">{props.number}</span>}  {props.question}
+          {props.joinUs && <span className=" h-12 max-w-12 text-center text-[25px] items-center justify-center lg:w-12  text-ecwadarkblue bg-ecwaorange rounded-full inline-flex flex-grow text-center mr-3">{props.number}</span>}  <p className={`${props.joinUs ? ' text-[18px] sm:text-[22px] max-w-[10rem] sm:max-w-[20rem] md:max-w-full flex items-center text-white ' : 'text-[18px] text-ecwadarkblue'}  leading-[30px]`}>{props.question}</p>
         </div>
         
-        {/* {props.joinUs ? <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
-          <FontAwesomeIcon icon={FaqOpen ? '+' : '-'} className={`${props.joinUs && 'text-white text-[22px]'}`} />
+        {props.joinUs ? <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
+          {FaqOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 15 7-7 7 7" />
+          </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+          </svg>}
+       
         </span> : <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">
-          <FontAwesomeIcon icon={FaqOpen ? faMinus : faPlus} className={`${props.joinUs && 'text-white text-[22px]'}`} />
-        </span>} */}
+            {FaqOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 15 7-7 7 7" />
+            </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+            </svg> }
+        </span>}
       </div>
 
       <div

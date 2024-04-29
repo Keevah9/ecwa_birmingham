@@ -6,7 +6,7 @@ import FormInput from "@/constants/Forms/FormInput"
 
 export default function Donate() {
     return (
-        <section  className="xs:w-full xs:bg-no-repeat xs:bg-cover xs:bg-left relative bg-ecwadarkblu text flex items-cente relative lg:flex-row flex-col-reverse min-h-[670px]">
+        <section  className=" relative lg:flex-row flex-col-reverse ">
 
             <div className="  w-full gap-8 overflow-splide max-container  left-0 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left ">
                 <div> <h2 className="text-center lg:text-left lg:max-w-xl max-w-2xl mb-4 lg:mb-12">We believe in Teamwork through Trust and Respect Each Other. Enthusiastic Communication with Clients</h2>
@@ -20,8 +20,8 @@ export default function Donate() {
                     </h2>
                     <p className=" mb-8">Your small donation will help us to provide education to undeYour small donation will help us to provide education to und</p>
                     <div className="flex gap-2 bg-ecwadarkblu items-center borde pb-0">
-                        <FormInput type={"email"} />
-                        <Button type={"button"} title={"Subscribe"} variant={" cursor-pointer  btn"} />
+                        <FormInput type={"email"} style={`h-[45px]  border`} placeholder="Email address"/>
+                        <div className="-mt-2"><Button type={"button"} title={"Subscribe"} variant={" cursor-pointer  btn"} /></div>
                     </div>
                 </div>
                 <div className="lg:hidden block mt-8"><Button type={"button"} title={"Donate"} link="/donate" /></div>

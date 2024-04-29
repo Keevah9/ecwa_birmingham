@@ -19,7 +19,7 @@ function FAQs(props: FAQProps) {
   return (
     <>
       {props.data?.length > 0 && (
-        <section className= {` ${props.joinUs && 'bg-ecwadarkblu  px-8 '} ${props.isHomepage && " max-w-3xl md:mx-auto"} `}>
+        <section className= {` ${props.joinUs && 'bg-ecwadarkblu px-4 lg:px-8 '} ${props.isHomepage && " max-w-3xl md:mx-auto"} `}>
           {router.pathname === "/frequently-asked-questions" || router.pathname === "/join-us" ? (
             ""
           ) : (
@@ -36,13 +36,13 @@ function FAQs(props: FAQProps) {
           ? '' : 'border-t`}>
             {props.data?.map((questions: any) => {
               return (
-                <div key={questions.id} className={`blog ${props.joinUs && 'py-'}`}>
+                <div key={questions.id} className={` ${props.joinUs && 'faq'}`}>
                   <FAQS joinUs={props.joinUs} number={questions.id} question={questions.Question}>
 
                     <ReactMarkdown rehypePlugins={[rehypeRaw]} className={`markdown ${props.joinUs && '!text-white'}`}>{questions.Answer}</ReactMarkdown>
-                    {props.number && <div className="flex mt-8 gap-3">
-                      <Button type={'button'} link={`${questions.btnLink1}`} title= {`${questions.btnLabel1}`} variant = {'btn_orange'} />
-                      <Button type={'button'} link={`${questions.btnLink2}`} title={`${questions.btnLabel2}`} variant={'btn !text-white'}/></div>}
+                    {props.number && <div className="flex mt-8 gap-3 ">
+                      <div className="w-32"> <Button type={'button'} link={`${questions.btnLink1}`} style title={`${questions.btnLabel1}`}  /></div>
+                      <div className="w-40"><Button type={'button'} link={`${questions.btnLink2}`} style title={`${questions.btnLabel2}`} variant={'btn !text-white'} /></div></div>}
                   </FAQS>
                 </div>
               );
