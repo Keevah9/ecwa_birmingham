@@ -1,12 +1,12 @@
-import {
-  faFacebookF,
-  faInstagram,
-  faTwitter,
-  faLinkedin,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+// import {
+//   faFacebookF,
+//   faInstagram,
+//   faTwitter,
+//   faLinkedin,
+//   faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Link from "next/link";
 import React from "react";
 
 interface SocialProps {
@@ -20,7 +20,7 @@ interface SocialProps {
 const Socials = (props: SocialProps) => {
   return (
     <div className={`h-fit ${props.style && 'w-full items-center justify-center'} flex w-full`}>
-      {props.FbLink && <Link href={`https://www.facebook.com/UniqueExhibitions/`} legacyBehavior>
+      {/* {props.FbLink && <Link href={`https://www.facebook.com/UniqueExhibitions/`} legacyBehavior>
         <a title="facebook" target={"_blank"}
           className={` ${props.style ? 'w-[40px]' : ' w-[40px] lg:h-[26px lg:w-[25px]'} cursor-pointer  rounded-full ${props.color ? "text-[#F04A48]" : "text-[#FFF]"
             }`}
@@ -51,7 +51,7 @@ const Socials = (props: SocialProps) => {
         >
           <FontAwesomeIcon icon={faYoutube} className={` ${props.style ? 'text-[23px] max-h-[25px] lg:text-[24px] pb-[1.4px]  pl-1' : 'text-2xl lg:pl-3 pb-[1.4px] lg:text-[22px]'}  `} />
         </a>
-      </Link>}
+      </Link>} */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowLeft, faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 //@ts-ignore
 const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
   //@ts-ignore
@@ -34,10 +34,10 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
           <ul className=" flex flex-row items-center justify-between sm:gap-6 pt-1">
             <li className="cursor-pointer flex items-center" onClick={prevPage}>
               <span className="font-normal  text-uniqueprimarybody">
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   icon={faArrowLeft}
                   className="mr-2 text-[#49525E]"
-                />
+                /> */}
 
               </span>
               <span className="hidden sm:block">Previous</span>
@@ -69,10 +69,10 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
             <li className="cursor-pointer flex items-center" onClick={nextPage}>
               <span className="hidden sm:block">Next</span>
               <span className="font-normal text-[#49525E]">
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   icon={faArrowRight}
                   className="ml-2 text-[#49525E]"
-                />
+                /> */}
               </span>
             </li>
           </ul>

@@ -2,8 +2,8 @@ import axios from "axios";
 import { Fragment, useRef, useContext, useState } from "react";
 //@ts-ignore
 import { Dialog, Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheckCircle } from "@fortawesome/pro-solid-svg-icons";
 import Image from "next/image";
 //@ts-ignore
 // import TagManager from "react-gtm-module";
@@ -178,17 +178,14 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
                     onClick={() => setModalVisible(false)}
                     className="absolute right-2 top-2 sm:right-6 mx-auto mb-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full sm:-top-2 sm:mt-10 lg:right-6 lg:top-2 lg:mb-0 "
                   >
-                    <FontAwesomeIcon
-                      icon={faTimes}
-                      className="text-4xl text-white"
-                    />
+                    X
                   </div>
                   {success ? (
                     <div className="flex h-[25rem] flex-col justify-center text-center">
-                      <FontAwesomeIcon
+                      {/* <FontAwesomeIcon
                         icon={faCheckCircle}
                         className="text-8xl text-white"
-                      />
+                      /> */}
                       <h4 className="mb-2 mt-8 leading-[32px]">
                         Your form has been submitted!
                       </h4>

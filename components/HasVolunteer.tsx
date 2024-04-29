@@ -1,8 +1,4 @@
-import Image from "next/image";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faSpinnerThird } from "@fortawesome/pro-solid-svg-icons";
+
 
 import { useEffect, useState } from "react";
 import axios from "axios";

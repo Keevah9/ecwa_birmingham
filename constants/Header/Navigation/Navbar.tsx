@@ -41,13 +41,13 @@
 // export default Navbar
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState, useContext, useRef } from "react";
 dynamic
-import { faBars } from "@fortawesome/pro-solid-svg-icons";
+// import { faBars } from "@fortawesome/pro-solid-svg-icons";
 import { useRouter } from "next/router";
 import Breadcrumbs from "nextjs-breadcrumbs";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+// import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 import dynamic from "next/dynamic";
 
@@ -149,11 +149,11 @@ export default function Header({ global, header }) {
           >
             <div className="flex border w-fi justify-between items-center gap-6 lg:gap-4 ">
               <div className="my-2  md:block lg:hidden">
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   icon={faBars as IconProp}
                   onClick={() => setSlideoutOpen(true)}
                   className={"cursor-pointer text-[30px]"}
-                />
+                /> */} +
               </div>
               <Logo />
             </div>

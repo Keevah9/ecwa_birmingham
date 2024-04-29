@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, {
   useState,
@@ -10,15 +10,15 @@ import React, {
 //@ts-ignore
 import { Dialog, Transition } from "@headlessui/react";
 // import { navLinksTypes } from "../Header/Header";
-import {
-  faPlus,
-  faMinus,
-  faAngleRight,
-} from "@fortawesome/pro-regular-svg-icons";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faClose } from "@fortawesome/pro-regular-svg-icons";
-import { Fragment } from "react";
-import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
+// import {
+//   faPlus,
+//   faMinus,
+//   faAngleRight,
+// } from "@fortawesome/pro-regular-svg-icons";
+// import { IconProp } from "@fortawesome/fontawesome-svg-core";
+// import { faClose } from "@fortawesome/pro-regular-svg-icons";
+// import { Fragment } from "react";
+// import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 import { CompanyMenu, ExhibitionStandsMenu } from "./Navigation";
 //@ts-ignore
 // import useMobileDetect from 'use-mobile-detect-hook';
@@ -49,10 +49,7 @@ function NavLink(props: NavLinkProps) {
         >
           {props.label}{" "}
           {props.category && (
-            <FontAwesomeIcon
-              icon={faArrowRight as IconProp}
-              className="float-right hover:cursor-pointer mr-2"
-            />
+            <></>
           )}
         </a>
       </Link>
@@ -72,11 +69,11 @@ function AccordionBlock(props: AccordionBlockProps) {
           onClick={() => setAccordionOpen(!accordionOpen)}
         >
           {props.title}
-
+{/* 
           <FontAwesomeIcon
             icon={accordionOpen ? faMinus : faPlus}
             className="border-none hover:cursor-pointer text-lg"
-          />
+          /> */}
         </h3>
         {accordionOpen && <div className="p-0 pl-8 pr-2 font-sans">{props.children} </div>}
       </div>

@@ -2,8 +2,8 @@ import "styles/globals.css";
 import { useEffect } from "react";
 import App from "next/app";
 import type { AppProps } from "next/app";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import Script from "next/script";
 // import { DefaultSeo } from "next-seo";
@@ -16,7 +16,7 @@ import Layout from "@/constants/layout";
 export default function MyApp({ Component, pageProps }: AppProps) {
   //@ts-ignore
   const { global } = pageProps;
-  config.autoAddCss = false;
+  // config.autoAddCss = false;
   const [modalVisible, setModalVisible] = useState(false);
   const [quoteModalVisible, setQuoteModalVisible] = useState(false);
 

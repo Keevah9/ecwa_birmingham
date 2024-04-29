@@ -6,8 +6,8 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import FAQs from "@/components/faq/FAQComponent";
 import React from "react";
-import { faPlus, faMinus, faArrowRight, faCheck, faCheckCircle } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlus, faMinus, faArrowRight, faCheck, faCheckCircle } from "@fortawesome/pro-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface FAQProps {
     question: string;
@@ -254,7 +254,7 @@ export default function JoinUs() {
 
                     </p>
 
-                    <p className="my-2">                  <span>Honor</span> – Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.)
+                    <p className="my-2">                  <span>Honor</span> – Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
                     </p>
                     <p> <span>Internal Integrity</span> – Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</p>
 
@@ -276,38 +276,16 @@ export default function JoinUs() {
                     <h2>At Ecwa, we pursue:</h2>
                     <p>lorem</p>
                     <div className="grid mt-6 gap-4 bg-ecwadarkblue rounded-[5px] px-6 py-8 grid-cols-4">
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
-                        <p className="text-white"><FontAwesomeIcon
-                            icon={faCheckCircle}
-                            className={"text-md text-ecwaorange mt-1 relative mr-2"}
-                        /> Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white">
+                         Life at the speed of intention</p>
+                        <p className="text-white">
+                         Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
+                        <p className="text-white"> Life at the speed of intention</p>
                     </div>
                 </div>
             </section>
