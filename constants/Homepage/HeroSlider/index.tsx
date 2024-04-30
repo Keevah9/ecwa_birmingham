@@ -173,7 +173,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[1rem] w-[18rem] lg:flex"
-                    title="Ecwa Birmingham"
+                    title="ECWA Birmingham"
                   />
                 </ScrollParallax>
               </div>
