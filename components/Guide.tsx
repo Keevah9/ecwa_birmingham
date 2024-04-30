@@ -4,8 +4,10 @@ import Camp from './Camp'
 import ClipPath from '@/assets/svg/ClipPath'
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide'
 import Button from './Button'
-
-export const GuideItem = () => {
+interface GuideProps{
+  Bg?: boolean
+}
+export const GuideItem = (props: GuideProps) => {
   return (
 
     <>
@@ -71,9 +73,9 @@ export const GuideItem = () => {
             className="splide__splide"
           >
 
-            <div className='flex flex-col justify-center items-cente py-7 h-[13rem] px-6 bg-ecwadarkblue'>
-              <h4 className='text-white leading-[32px] mb-3'>All your heart</h4>
-              <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. </p>
+              <div className='flex rounded-[5px] flex-col justify-center items-cente py-7 h-[13rem] px-6 bg-ecwaorange'>
+              <h4 className='text-whit leading-[32px] mb-3'>All your heart</h4>
+              <p className='text-whit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. </p>
             </div>
 
 
@@ -83,9 +85,9 @@ export const GuideItem = () => {
               className="splide__splide"
             >
 
-            <div className=' flex flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange'>
-              <h4 className='text-white  leading-[32px] mb-3'>Praise</h4>
-                <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className={` flex rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkbue' : 'bg-white '}`}>
+              <h4 className='text-whit  leading-[32px] mb-3'>Praise</h4>
+                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -95,9 +97,9 @@ export const GuideItem = () => {
               className="splide__splide"
             >
 
-            <div className='flex flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwadarkblue'>
-              <h4 className='text-white leading-[32px] mb-3'>Worships</h4>
-                <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className='flex  rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange'>
+              <h4 className='text-whit leading-[32px] mb-3'>Worships</h4>
+                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -107,9 +109,9 @@ export const GuideItem = () => {
               className="splide__splide"
             >
 
-            <div className='flex flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange'>
-              <h4 className='text-white leading-[32px] mb-3'>Prayers</h4>
-                <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkbue' : 'bg-white '}`}>
+              <h4 className='text-whit leading-[32px] mb-3'>Prayers</h4>
+                <p className={``}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -119,9 +121,9 @@ export const GuideItem = () => {
               className="splide__splide"
             >
 
-            <div className='flex flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwadarkblue '>
-                <h4 className='text-white leading-[32px] mb-3'>Bible Study</h4>
-                <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className='flex flex-col rounded-[5px] justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange '>
+                <h4 className='text-whit leading-[32px] mb-3'>Bible Study</h4>
+                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -135,8 +137,10 @@ export const GuideItem = () => {
       </div></> 
   )
 }
-
-const Guide = () => {
+interface GuideConProps{
+  Bg?: boolean
+}
+const Guide = (props:GuideConProps) => {
   return (
     <section className="flexCente flex-col">
       <div className="padding-containe overflow-splide max-container w-full pb-">
@@ -145,16 +149,16 @@ const Guide = () => {
           We are here...
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className=" max-w-xl"> To join hands together, to take a step further to Jesus</h2>
+          <h2 className=" max-w-xl leading-[35px]"> To join hands together, to take a step further to Jesus</h2>
           <p className=" xl:max-w-[520px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib</p>
         </div>
       </div>
       {/* <Camp/> */}
-      <GuideItem/>
+      <GuideItem Bg ={props.Bg}/>
 
       {/* <div className="flexCenter max-container relative w-full">
         <Image 
-          src="/boat.png"
+          src="/boat.pn
           alt="boat"
           width={1440}
           height={580}

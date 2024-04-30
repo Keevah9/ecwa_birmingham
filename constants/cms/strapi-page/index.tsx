@@ -16,6 +16,7 @@ import Button from "@/components/Button";
 import HasMinistriesBlock from "../blocks/has-ministries";
 import HasSermonsBlock from "../blocks/has-sermons";
 import { NextPageWithLayout } from "@/constants/lib/types/global";
+import { ScrollParallax } from "react-just-parallax";
 
 type LocalProps = {
   data?: FlexibleStrapiPageResponse;
@@ -67,12 +68,15 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
       >
         
           <div
-          className={` h-[650px] flex flex-col justify-center items-center overflow-splide max-container ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""}  text-left  `}
-          >
-            <div className=" max-w-6xl overflow-hidden">
-              <h1 className=" capitalize mb-8">{props?.data?.PageTitle}</h1>
+          className={`  ${//@ts-ignore
+            props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[650px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
+        >
+          <div className="max-container max-w-6xl overflow-hidden">
+            <h1 className={`max-container ${//@ts-ignore
+              props?.data?.SectionBg === 'blue' && 'text-white'} capitalize mb-8`}>{props?.data?.PageTitle}</h1>
               {props?.data?.PageIntroductoryContent && (
-                <div className="max-w-5xl strapiPage pb-4 text-center mx-auto  xl:max-w-[60rem] ">
+              <div className={`max-w-5xl strapiPage pb-4 text-center mx-auto  xl:max-w-[50rem] ${//@ts-ignore
+                props?.data?.SectionBg === 'blue' && 'text-white'} `}>
                   <ReactMarkdown className="markdown flexible-component" rehypePlugins={[rehypeRaw]}>
                     {props.data?.PageIntroductoryContent ||
                       props.data?.PageIntroductoryContent}
@@ -80,6 +84,7 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
                 </div>
               )}
             </div>
+        
           <div className="flex justify-center text-center mt-12 gap-8">
             {//@ts-ignore
             props.data?.ButtonOne != null && (

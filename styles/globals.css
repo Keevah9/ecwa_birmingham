@@ -63,7 +63,7 @@ html {
   }
 
   section {
-    @apply my-20 lg:my-32
+    @apply my-16 lg:my-32
   }
 
   .max-container {
@@ -350,7 +350,7 @@ body{
 
  .overflow-splide .splide__track {
    overflow: visible !important;
-   @apply overflow-visible lg:overflow-hidden;
+   @apply overflow-visible xl:overflow-hidden;
  }
 
 h3, h4, h5, h6{

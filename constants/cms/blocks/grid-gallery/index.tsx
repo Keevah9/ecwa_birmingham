@@ -127,7 +127,7 @@ export default function GridGalleryBlock(props: any) {
                                     },
                                     "540": {
                                         arrows: false,
-                                        perPage: 2,
+                                        perPage: 1.2,
                                     },
                                     "360": {
                                         arrows: false,

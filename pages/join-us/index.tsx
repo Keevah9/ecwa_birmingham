@@ -64,13 +64,18 @@ const joinUs = [
     },
     {
         id: 2,
-        Question: "Sign up for a home group",
-        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p> <div className='flex gap-6'> <Button type = { 'button'} link='/' title = { 'Sign up'} variant = { 'btn'}/></div > "
+        Question: "Discover volunteer opportunities",
+        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p> ",
+        btnLabel1: "Learn more",
+        BtnLink1: "/volunteer",
+        
     },
     {
         id: 3,
-        Question: "Discover volunteer opportunities",
-        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p> <div className='flex gap-6'><Button type = { 'button'} link='/' title = { 'Become a Volunteer'} variant = { 'btn'} /> </div > "
+        Question: "Our Minstries",
+        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>  ",
+        btnLabel1: "Learn more",
+        BtnLink1: "/ministries",
     },
 ]
 const joinusFaq = [
@@ -218,7 +223,6 @@ export default function JoinUs() {
             <div className="max-container overflow-splide">
                 <h1 className="mb-7">New to Church?</h1>
                 <p className="my-6 text-white max-w-5xl mx-auto">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-
                     Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</p>
 
           

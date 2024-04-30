@@ -109,7 +109,7 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
-    
+
     url: "/ministries/men-ministries"
   },
   {
@@ -511,22 +511,22 @@ export const About_LINKS = [
       },
       {
         id: 4,
-        url: "/history",
+        url: "/about-us/history",
         label: 'ECWA history',
       },
       {
         id: 2,
         url: "/vision",
-        label: 'vision',
+        label: '/about-us/#vision',
       },
       {
         id: 5,
-        url: "/misions",
+        url: "/about-us/#misions",
         label: 'Misions',
       },
       {
         id: 3,
-        url: "/leaders",
+        url: "/about-us/#our-leaders",
         label: 'Leaders',
       },
       
@@ -538,24 +538,19 @@ export const Invloved_LINKS = [
   {
     title: 'Get Involved',
     links: [
-      {
-        id: 1,
-        url: "/group",
-        label: 'Group',
-      },
 
       {
-        id: 4,
+        id: 1,
         url: "/Volunteer",
         label: 'Serve',
       },
       {
-        id: 4,
+        id: 2,
         url: "/join-us",
         label: 'I am new',
       },
       {
-        id: 4,
+        id: 3,
         url: "/donate",
         label: 'Give',
       },
@@ -575,23 +570,19 @@ export const SOCIALS = {
   links: [
     {
       id: 1,
-      url: "/facebook.svg",
-      label: '/facebook.svg',
+      url: "/facebook.com",
+      label: '/fb.svg',
     },
     {
       id: 2,
-      url: "/instagram.svg",
-      label: '/instagram.svg',
+      url: "/instagram.com",
+      label: '/ig.svg',
     },
-    {
-      id: 3,
-      url: '/twitter.svg',
-      label: '/twitter.svg',
-    },
+   
     {
       id: 4,
-      url: '/youtube.svg',
-      label: '/youtube.svg',
+      url: '/youtube.com',
+      label: '/yt.svg',
     }
   ],
 };
