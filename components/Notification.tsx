@@ -36,7 +36,7 @@ const Notification = ({ className, title }: any) => {
                             </li>
                         ))} */}
                     </ul>
-                    <div className="text-[16px]">ECWA Birmingham</div>
+                    <div className="text-[16px] text-ecwadarkblue">ECWA Birmingham</div>
                 </div>
             </div>
         </div>
