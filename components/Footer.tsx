@@ -128,6 +128,39 @@ const Footer = ({ footer }:any) => {
                 </ul>
               </AccordionBlock>
             </div>
+            <div className="flex lg:hidden mt-6 text-center justify-center items-center flex-col gap-5">
+              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+                {FOOTER_CONTACT_INFO.links.map((link) => (
+                  <Link
+                    href="/"
+                    key={link.label}
+                    className="flex gap-4 md:flex-col lg:flex-row"
+                  >
+                    <div>
+                      <p className="whitespace-nowrap text-white">
+                        {link.label}:
+                      </p>
+                      <p className="medium-14 whitespace-nowrap text-white">
+                        {link.url}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </FooterColumn>
+              <FooterColumn>
+                <ul className=" -mt-3 flex gap-4 ">
+                  {SOCIALS.links.map((link: FooterProps) => (
+                    <li key={link.id}>
+                      <Link href={`${link.url}`} >
+                        {/* <a href="">{link.label}</a> */}
+                        <Image src={link.label} alt="logo" width={24} height={24} />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </FooterColumn>
+            </div>
+
             </div>
 </div>
           <div className='lg:flex hidden flex-wrap sm:justify-between md:flex-1'>

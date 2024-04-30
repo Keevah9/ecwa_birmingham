@@ -25,12 +25,16 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
     >
       <span className="absolute -top-[10px]"></span>
       <div className="block mb-6 lg:hidden">
-        <h2 className="">
+        <h2 className="leading-[35px]">
           {/* <span className="absolute -top-[100px]"></span> */}
           {//@ts-ignore
           props?.data.SectionTitle}
 
         </h2>
+        {//@ts-ignore
+        props?.data.FlipContent &&
+          <>{//@ts-ignore
+            props?.data?.Image?.data?.attributes?.url ? <div className="w-full lg:w-1/2 relative h-[350px] lg:h-[400px] "> <Image style={{borderRadius:'10px'}} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}</> }
       </div>
 
       <div className={`flex w-full justify-center items-center ${//@ts-ignore
@@ -44,7 +48,7 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
           {//@ts-ignore
           props?.data.SectionTitle && (
             <div className=" hidden lg:block">
-              <h2 className={` capitalize mb-6 `}>
+              <h2 className={` capitalize mb-6 leading-[35px]`}>
                   {/* <span className="absolute -top-[100px]"></span> */}
                 {//@ts-ignore
                 props?.data.SectionTitle}
@@ -94,7 +98,9 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
         </div>
         
         {//@ts-ignore
-        props?.data?.Image?.data?.attributes?.url ? <div className="lg:w-1/2 relative h-[400px] "> <Image src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}
+        !props?.data.FlipContent &&
+          <>{//@ts-ignore
+            props?.data?.Image?.data?.attributes?.url ? <div className="w-full  lg:w-1/2 relative  h-[350px] lg:h-[400px] "> <Image style={{ borderRadius: '10px' }} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}</>}
       </div>
     </section>
   );

@@ -104,21 +104,22 @@ const Business = () => (
     <div className={`relativ flex mb-8 lg:flex-row flex-col items-cente`}>
       <div >
         <span>About Us</span>
-        <h2>
+        <h2 className="leading-[35px]">
           Lorem ipsum dolor sit amet
         </h2>
-        <p className={`${styles.paragraph}  mb-8 max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph}  mb-8 max-w-[470px] mt-3`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.
         </p>
 
-        <Button title="More about us" link="/about-us" variant="btn" />
+        <div className="w-40 lg:block hidden"><Button title="More about us" style link="/about-us" variant="btn" /></div>
       </div>
 
-      <div className={`${layout.sectionImg} flex-col`}>
+      <div className={` flex-col`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index} />
         ))}
       </div>
+      <div className="w-40 block mt-8 mx-auto lg:hidden"><Button title="More about us" style link="/about-us" variant="btn" /></div>
    </div>
     <AchievementsSection />
   </section>

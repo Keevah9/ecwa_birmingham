@@ -41,8 +41,8 @@ function FAQs(props: FAQProps) {
 
                     <ReactMarkdown rehypePlugins={[rehypeRaw]} className={`markdown ${props.joinUs && '!text-white'}`}>{questions.Answer}</ReactMarkdown>
                     {props.number && <div className="flex mt-8 gap-3 ">
-                      <div className="w-32"> <Button type={'button'} link={`${questions.btnLink1}`} style title={`${questions.btnLabel1}`}  /></div>
-                      <div className="w-40"><Button type={'button'} link={`${questions.btnLink2}`} style title={`${questions.btnLabel2}`} variant={'btn !text-white'} /></div></div>}
+                      {questions.btnLabel1 && <div className="w-32"> <Button type={'button'} link={`${questions.btnLink1}`} style title={`${questions.btnLabel1}`} /></div>}
+                      {questions.btnLabel2 && <div className="w-40"><Button type={'button'} link={`${questions.btnLink2}`} style title={`${questions.btnLabel2}`} variant={'btn !text-white'} /></div>}</div>}
                   </FAQS>
                 </div>
               );

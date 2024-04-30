@@ -41,15 +41,12 @@ const HeroSlider = (props:  HeroSliderProps) => {
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem] bg-ecwadarkblue"
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
-      id="hero"
+      className=" bg-ecwadarkblue"
+     
     >
       <div className=" relative" ref={parallaxRef}>
         <div className="relative z-  bg-ecwadarkblu mx-auto text-center mb-[3.875rem md:mb- lg:mb-[6.25rem">
-          <div className="xs:mx-auto z-10 heroslider max-h-[560px] md:min-h-[440px] lg:min-h-[700px] min-h-[370px] bg-ecwadarkblu">
+          <div className="xs:mx-auto z-10 heroslider   ">
             <Splide
               hasTrack={false}
               options={{
@@ -85,14 +82,14 @@ const HeroSlider = (props:  HeroSliderProps) => {
                   <React.Fragment key={index}>
                    
                       <SplideSlide key={index}>
-                        <div className={`${data.VimeoLink != null ? 'hidden' : ''}  xs:w-full xs:bg-no-repeat xs:bg-cover xs:bg-bottom md:px-[5%] flex flex-col py-[3%] lg:px-[10%] text-center max-container min-h-[370px md:min-h-[440px lg:h-[690px `}>
+                      <div className={`${data.VimeoLink != null ? 'hidden' : ''}  xs:w-full xs:bg-no-repeat flex-col justify-center items-center max-h-[560px max-container px-6 min-h-[560px] lg:min-h-[700px] xs:bg-cover xs:bg-bottom md:px-[5%] flex flex-col py-] lg:px-[10%] text-center  `}>
                           <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5 }}
-                            className="col-span-8 place-self-center text-center "
+                            className="col-span- place-self-center text-center "
                           >
-                            <div className="xs:pt-[80px] xs:pb-[60px] md:container text-center text-white ">
+                            <div className=" md:container text-center text-white ">
                               <span className=" text-[24px]">{data.SubTitle}</span>
                                 {/* <span className="inline-block relative">
                                  
@@ -175,7 +172,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[1rem] w-[18rem] xl:flex"
+                    className="hidden absolute -right-[5.5rem] bottom-[1rem] w-[18rem] lg:flex"
                     title="Ecwa Birmingham"
                   />
                 </ScrollParallax>

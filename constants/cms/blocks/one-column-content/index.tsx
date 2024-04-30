@@ -12,6 +12,7 @@ import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { getStrapiMedia } from "@/constants/lib/util/media";
 import Button from "@/components/Button";
+import { GuideItem } from "@/components/Guide";
 
 interface OneColumnContentProp {
   IsHomepage: any;
@@ -22,6 +23,7 @@ interface OneColumnContentProp {
 }
 
 interface OneColumnContentListsProp {
+  hasVideo: any;
   override: string;
   StepListsTitle: string;
   HasBackgroundImage: boolean;
@@ -82,7 +84,7 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
         <div className="max-container overflow-splide">
           {/* <span className="absolute -top-[10px]"></span> */}
           {props?.data.SectionTitle && (
-            <h2 className={`${props.data.override === 'blue' && '!text-white'}`} >
+            <h2 className={`leading-[35px] ${props.data.override === 'blue' && '!text-white'}`} >
               {/* <span className="absolute -top-[10px]"></span> */}
               {props?.data.SectionTitle}
 
@@ -110,24 +112,12 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
               </ReactMarkdown>
             </div>
           )}
-          {props?.data.Video && (
-            <div className="one-col mb-2 hidden py-4 lg:block">
-              <video
-                loop
-                playsInline
-                preload="auto"
-                controls={true}
-                autoPlay={props?.data.VideoAutoPlay}
-                muted={props?.data.VideoMuted}
-                className="aspect-video w-full overflow-hidden rounded-lg"
-              >
-                <source src={props.data.Video} />
-              </video>
-            </div>
+          {props?.data.hasVideo && (
+            <GuideItem/>
           )}
 
           {props?.data?.OneColMultipleLists.length > 0 ?
-            <>{props?.data?.OneColMultipleLists.length <= 4 && <div className={`  grid-cols-1 grid grid-cols-2 lg:grid-cols-3  mt-10 gap-10 `}>
+            <>{props?.data?.OneColMultipleLists.length <= 4 && <div className={`  grid-cols-1 grid sm:grid-cols-2 lg:grid-cols-3  mt-10 gap-10 `}>
               {props?.data?.OneColMultipleLists?.map((item: OneColumnContentListsProp) => {
                 return (
                   <div key={item.id}>

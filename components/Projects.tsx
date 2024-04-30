@@ -88,7 +88,7 @@ const ProjectsSection = (props:ProjectProps) => {
             <h2 className="text-center ">
                 Our Sermons
             </h2>
-            <div className=" flex mb-6 flex-row justify-center items-center gap-2 py-6">
+            <div className=" flex mb-6 flex-row flex-wra lg:justify-center overflow-x-scroll min-w-screen items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     name="All"
@@ -135,13 +135,17 @@ const ProjectsSection = (props:ProjectProps) => {
                         type: "loop",
                         autoplay: true,
                         breakpoints: {
-                            "1024": {
+                            "1200": {
+                                arrows: false,
+                                perPage: 2.2,
+                            },
+                            "1000": {
                                 arrows: false,
                                 perPage: 2,
                             },
-                            "920": {
+                            "760": {
                                 arrows: false,
-                                perPage: 2,
+                                perPage: 1.3,
                             },
                             "540": {
                                 arrows: false,
