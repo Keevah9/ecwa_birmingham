@@ -106,8 +106,8 @@ const HeroSlider = (props:  HeroSliderProps) => {
                                 />
                                 <div className="max-w-2xl h-[3rem] mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
                               <div className="flex justify-center text-center mt-12 gap-8">
-                                {data.ButtonLabel != null && (
-                                <><Button type={"button"} title={data.ButtonLabel} link={data.ButtonLink} variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>
+                                {data.ButtonLabel && (
+                                <><Button type={"button"} title={data.ButtonLabel} link={`/${data.ButtonUrl}`} variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>
                                 )}
                               </div>
 
