@@ -227,7 +227,7 @@ export default function JoinUs() {
 
           
                 <div className="flex mt-10 justify-center gap-6">
-                    <Button type={"button"} title={"Questions"} variant={"btn border-4 !border-white"} />
+                    <Button type={"button"} title={"Questions"} variant={"btn border-4 !border-white"} link="/frequently-asked-questions" />
                     <Button type={"button"} title={"Contact Us"} link="/contact-us" />
                 </div>
             </div>

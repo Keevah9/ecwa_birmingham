@@ -69,7 +69,7 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
         
           <div
           className={`  ${//@ts-ignore
-            props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[650px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
+            props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[600px] lg:h-[650px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
         >
           <div className="max-container max-w-6xl overflow-hidden">
             <h1 className={`max-container ${//@ts-ignore
@@ -87,9 +87,13 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
         
           <div className="flex justify-center text-center mt-12 gap-8">
             {//@ts-ignore
-            props.data?.ButtonOne != null && (
-              <><Button type={"button"} title={props.data?.ButtonOne} link={props.data?.ButtonOneLink} variant={"btn_orange"} /><Button type={"button"} title={props.data?.ButtonTwo} link={props.data?.ButtonTwoLink} /></>
+            props.data?.ButtonOne && (
+              <><Button type={"button"} title={props.data?.ButtonOne} link={props.data?.ButtonOneLink} variant={"btn_orange"} /></>
             )}
+            {//@ts-ignore
+              props.data?.ButtonTwo  ? (
+                <><Button type={"button"} title={props.data?.ButtonTwo} link={props.data?.ButtonTwoLink} /></>
+              ) :  ''}
           </div>
           </div>
 
