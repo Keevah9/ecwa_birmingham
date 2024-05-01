@@ -88,7 +88,7 @@ const ProjectsSection = (props:ProjectProps) => {
             <h2 className="text-center ">
                 Our Sermons
             </h2>
-            <div className=" flex mb-6 flex-row flex-wra lg:justify-center overflow-x-scroll min-w-screen items-center gap-2 py-6">
+            <div className=" flex mb-6 flex-row flex-wra md:justify-center overflow-x-scroll min-w-screen items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     name="All"

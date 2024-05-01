@@ -84,9 +84,9 @@ import Button from "./Button";
 import AchievementsSection from "@/constants/Homepage/HeroSlider/Achievement";
 
 const FeatureCard = ({ icon, title, content, index }: any) => (
-  <div className={`flex flex-row pb-3 rounded-[20px] ${index !== features.length - 1 ? "" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+  <div className={`flex items-start flex-row pb-3 rounded-[20px] ${index !== features.length - 1 ? "" : "mb-0"} feature-card`}>
+    <div className={`w-[64px] h-[64px]  rounded-full  bg-dimBlue`}>
+      <img src={icon} alt="star" className="w-[50%] mt-2 h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className=" ">
@@ -101,7 +101,7 @@ const FeatureCard = ({ icon, title, content, index }: any) => (
 
 const Business = () => (
   <section id="features" className={`  max-container overflow-splide`}>
-    <div className={`relativ flex mb-8 lg:flex-row flex-col items-cente`}>
+    <div className={`relativ flex lg:gap-8 mb-8 lg:flex-row flex-col items-cente justify-between`}>
       <div >
         <span>About Us</span>
         <h2 className="leading-[35px]">
@@ -114,7 +114,7 @@ const Business = () => (
         <div className="w-40 lg:block hidden"><Button title="More about us" style link="/about-us" variant="btn" /></div>
       </div>
 
-      <div className={` flex-col`}>
+      <div className={` flex-col flex lg:w-[45%]`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index} />
         ))}

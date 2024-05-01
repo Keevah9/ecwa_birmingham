@@ -46,7 +46,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        <Button type={"button"} title={" Event Details"} link="/" />
+                        <Button type={"button"} title={" Event Details"} link="/events/event-one" />
                     </div>
                 </div>
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-start lg:items-center gap-6 w-fit px-6 py-4 bg-white">
@@ -56,7 +56,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        <Button type={"button"} title={" Event Details"} link="/" />
+                        <Button type={"button"} title={" Event Details"} link="/events/event-two" />
                     </div>
                 </div>
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-start lg:items-center gap-6 w-fit px-6 py-4 bg-white">
@@ -66,7 +66,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Your small donation will help us to provide education to unde</p>
-                        <Button type={"button"} title={" Event Details"} link="/" />
+                        <Button type={"button"} title={" Event Details"} link="/events/event-three" />
                     </div>
                 </div>
 
