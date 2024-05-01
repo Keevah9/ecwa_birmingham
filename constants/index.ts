@@ -511,13 +511,13 @@ export const About_LINKS = [
       },
       {
         id: 4,
-        url: "/about-us/history",
+        url: "/about-us/#our-history",
         label: 'ECWA history',
       },
       {
         id: 2,
-        url: "/vision",
-        label: '/about-us/#vision',
+        label: "Vision",
+        url: '/about-us/#vision',
       },
       {
         id: 5,
@@ -526,7 +526,7 @@ export const About_LINKS = [
       },
       {
         id: 3,
-        url: "/about-us/#our-leaders",
+        url: "/about-us/#leaders",
         label: 'Leaders',
       },
       
