@@ -4,6 +4,7 @@ import { FAQS } from "..";
 import rehypeRaw from "rehype-raw";
 import Button from "@/components/Button";
 
+
 interface FAQProps {
   data: any;
   isHomepage?: boolean;
