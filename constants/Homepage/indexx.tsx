@@ -88,7 +88,7 @@ export default function HeroSliderTest() {
                             className="splide__splide"
                         >
                             <div className="   my-20 ">
-                                <ArticleCard date={undefined} title={"test"} content={"Sunday services"} imgSize={""} ImageProps={'/ecwa-logo.png'} />
+                                <ArticleCard date={undefined} link={"/"} linkLabel={"Join Live"} title={"Sunday services"} subtitle="9:57am - 12pm" content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} />
                             </div>
                         </SplideSlide>
                         <SplideSlide
@@ -96,7 +96,8 @@ export default function HeroSliderTest() {
                         >
                             <div className=" my-20   ">
 
-                                <ArticleCard date={undefined} title={"test"} content={"Wednesday Prayer Meeting"} imgSize={""} ImageProps={'/ecwa-logo.png'} />
+
+                                <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Wednesday Prayer Meeting "} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="7pm - 8pm" />
                             </div>
                         </SplideSlide>
                         <SplideSlide
@@ -105,7 +106,8 @@ export default function HeroSliderTest() {
                             <div className="  my-20  ">
 
 
-                                <ArticleCard date={undefined} title={"test"} content={"Friday Vigil"} imgSize={""} ImageProps={'/ecwa-logo.png'} />
+
+                                <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Friday Vigil"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="10pm - 12am" />
                             </div>
                         </SplideSlide>
                     </SplideTrack>
