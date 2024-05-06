@@ -1,22 +1,20 @@
 import "styles/globals.css";
+import "styles/app.scss";
+import "styles/portfolio.scss";
 import { useEffect } from "react";
 import App from "next/app";
 import type { AppProps } from "next/app";
-// import { config } from "@fortawesome/fontawesome-svg-core";
-// import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import Script from "next/script";
 // import { DefaultSeo } from "next-seo";
 import { useState } from "react";
-//@ts-ignore
-// import TagManager from "react-gtm-module";
 import { ModalContext } from "@/constants/lib/context/demo-modal";
 import { getGlobalData } from "@/constants/lib/util/api";
 import Layout from "@/constants/layout";
 export default function MyApp({ Component, pageProps }: AppProps) {
   //@ts-ignore
   const { global } = pageProps;
-  // config.autoAddCss = false;
+  // config.autoAddCss = false;import 'windi.css'
   const [modalVisible, setModalVisible] = useState(false);
   const [quoteModalVisible, setQuoteModalVisible] = useState(false);
 

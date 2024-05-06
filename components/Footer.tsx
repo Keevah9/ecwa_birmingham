@@ -72,97 +72,98 @@ function AccordionBlock(props: AccordionBlockProps) {
 
 const Footer = ({ footer }:any) => {
   return (
-    <footer className="lg:flexCente bg-ecwadarkblue min-h-[570px]">
-      <div className='flex max-container w-full text-center pt-16 '>
-        
+    <div className='bg-ecwadarkblue'>
+      <footer className="lg:flexCente  min-h-[570px]" style={{background: "url(/dust.webp)"}}>
+        <div className='flex max-container w-full text-center pt-16 '>
+
           <div className='flex flex-col w-full justify-center'>
             <Link href="/" >
-            <a className="pb-6 mx-auto lg:w-60"><Logo /></a>
-          </Link>
+              <a className="pb-6 mx-auto lg:w-60"><Logo /></a>
+            </Link>
             <p className='mt-2  text-white text-center '>1st Ariel Scout, Birmingham</p>
           </div>
-       
-      </div>
-      <div className="padding-containr  py-10 overflow-splide max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-between lg:flex-row">
-         
-<div className='w-full flex flex-col mt-6 lg:mt-0 gap-4'>
-            <div className='block w-full lg:hidden'><div className=" border-t- list-none border-[#223B50]">
-              <AccordionBlock title={FOOTER_LINKS[0].title}>
-                <ul className={"list-none p-0 pb-3"}>
-                  {FOOTER_LINKS[0].links.map((link: any) => (
-                    <NavLink
-                      category
-                      key={link.id}
-                    url={link.url}
-                      label={link.label}
-                    />
+
+        </div>
+        <div className="padding-containr  py-10 overflow-splide max-container flex w-full flex-col gap-14">
+          <div className="flex flex-col items-start justify-between lg:flex-row">
+
+            <div className='w-full flex flex-col mt-6 lg:mt-0 gap-4'>
+              <div className='block w-full lg:hidden'><div className=" border-t- list-none border-[#223B50]">
+                <AccordionBlock title={FOOTER_LINKS[0].title}>
+                  <ul className={"list-none p-0 pb-3"}>
+                    {FOOTER_LINKS[0].links.map((link: any) => (
+                      <NavLink
+                        category
+                        key={link.id}
+                        url={link.url}
+                        label={link.label}
+                      />
+                    ))}
+                  </ul>
+                </AccordionBlock>
+              </div>
+                <div>
+                  <AccordionBlock title={About_LINKS[0].title}>
+                    <ul className={"list-none p-0 pb-3"}>
+                      {About_LINKS[0].links.map((link: any) => (
+                        <NavLink
+                          category
+                          key={link.id}
+                          url={link.url}
+                          label={link.label}
+                        />
+                      ))}
+                    </ul>
+                  </AccordionBlock>
+                </div>
+                <AccordionBlock title={Invloved_LINKS[0].title}>
+                  <ul className={"list-none p-0 pb-3"}>
+                    {Invloved_LINKS[0].links.map((link: any) => (
+                      <NavLink
+                        category
+                        key={link.id}
+                        url={link.url}
+                        label={link.label}
+                      />
+                    ))}
+                  </ul>
+                </AccordionBlock>
+              </div>
+              <div className="flex lg:hidden mt-6 text-center justify-center items-center flex-col gap-5">
+                <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+                  {FOOTER_CONTACT_INFO.links.map((link) => (
+                    <Link
+                      href="/"
+                      key={link.label}
+                      className="flex gap-4 md:flex-col lg:flex-row"
+                    >
+                      <div>
+                        <p className="whitespace-nowrap text-white">
+                          {link.label}:
+                        </p>
+                        <p className="medium-14 whitespace-nowrap text-white">
+                          {link.url}
+                        </p>
+                      </div>
+                    </Link>
                   ))}
-                </ul>
-              </AccordionBlock>
-            </div>
-            <div>
-              <AccordionBlock title={About_LINKS[0].title}>
-                <ul className={"list-none p-0 pb-3"}>
-                    {About_LINKS[0].links.map((link: any) => (
-                    <NavLink
-                      category
-                      key={link.id}
-                      url={link.url}
-                      label={link.label}
-                    />
-                  ))}
-                </ul>
-              </AccordionBlock>
-            </div>
-              <AccordionBlock title={Invloved_LINKS[0].title}>
-                <ul className={"list-none p-0 pb-3"}>
-                  {Invloved_LINKS[0].links.map((link: any) => (
-                    <NavLink
-                      category
-                      key={link.id}
-                      url={link.url}
-                      label={link.label}
-                    />
-                  ))}
-                </ul>
-              </AccordionBlock>
-            </div>
-            <div className="flex lg:hidden mt-6 text-center justify-center items-center flex-col gap-5">
-              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                    href="/"
-                    key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row"
-                  >
-                    <div>
-                      <p className="whitespace-nowrap text-white">
-                        {link.label}:
-                      </p>
-                      <p className="medium-14 whitespace-nowrap text-white">
-                        {link.url}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
-              </FooterColumn>
-              <FooterColumn>
-                <ul className=" -mt-3 flex gap-4 ">
-                  {SOCIALS.links.map((link: FooterProps) => (
-                    <li key={link.id}>
-                      <Link href={`${link.url}`} >
-                        {/* <a href="">{link.label}</a> */}
-                        <Image src={link.label} alt="logo" width={24} height={24} />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </FooterColumn>
-            </div>
+                </FooterColumn>
+                <FooterColumn>
+                  <ul className=" -mt-3 flex gap-4 ">
+                    {SOCIALS.links.map((link: FooterProps) => (
+                      <li key={link.id}>
+                        <Link href={`${link.url}`} >
+                          {/* <a href="">{link.label}</a> */}
+                          <Image src={link.label} alt="logo" width={24} height={24} />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </FooterColumn>
+              </div>
 
             </div>
-</div>
+          </div>
           <div className='lg:flex hidden flex-wrap sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns, index) => (
               <FooterColumn title={columns.title} key={index}>
@@ -247,10 +248,11 @@ const Footer = ({ footer }:any) => {
           </div>
         </div>
 
-        
-      <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
-     
-    </footer>
+
+        <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
+
+      </footer>
+   </div>
   )
 }
 

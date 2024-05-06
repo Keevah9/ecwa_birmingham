@@ -23,7 +23,7 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
   const cancelButtonRef = useRef(null);
   const [success, setSuccess] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  console.log(modalVisible)
+
   const [formData, setFormData] = useState({
     floorWidth: "",
     floorLength: "",

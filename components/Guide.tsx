@@ -85,9 +85,9 @@ export const GuideItem = (props: GuideProps) => {
               className="splide__splide"
             >
 
-              <div className={` flex rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkbue' : 'bg-white '}`}>
-              <h4 className='text-whit  leading-[32px] mb-3'>Praise</h4>
-                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className={` flex rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkblue' : 'bg-white '}`}>
+                <h4 className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Praise</h4>
+                <p className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -109,9 +109,9 @@ export const GuideItem = (props: GuideProps) => {
               className="splide__splide"
             >
 
-              <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkbue' : 'bg-white '}`}>
-              <h4 className='text-whit leading-[32px] mb-3'>Prayers</h4>
-                <p className={``}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? ' bg-ecwadarkblue' : 'bg-white '}`}>
+                <h4 className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Prayers</h4>
+                <p className={`${props.Bg ? 'text-white' : ''} `}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
               </div>
 
 
@@ -143,7 +143,7 @@ interface GuideConProps{
 const Guide = (props:GuideConProps) => {
   return (
     <section className="flexCente flex-col">
-      <div className="padding-containe overflow-splide max-container w-full pb-">
+      <div className="padding-containe overflow-splide max-container w-full ">
         <Image src="/ecwa-logo.png" alt="camp" width={50} height={50} />
         <p className="uppercase border-b4 border-ecwadarkblue pb-1 w-fit mb-3 text-ecwaorange font-black">
           We are here...
@@ -154,7 +154,7 @@ const Guide = (props:GuideConProps) => {
         </div>
       </div>
       {/* <Camp/> */}
-      <GuideItem Bg ={props.Bg}/>
+      <GuideItem Bg/>
 
       {/* <div className="flexCenter max-container relative w-full">
         <Image 

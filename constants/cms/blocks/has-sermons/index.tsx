@@ -48,7 +48,7 @@ export default function HasSermonsBlock(props: any) {
   }
   //@ts-ignore
   const blockData = happyCustomers?.props?.global?.attributes;
-  console.log(happyCustomers)
+
   return (
     <> {blockData?.all_sermons.data && (
       <section className="relative overflow-splide  max-container h-full bg-ecwadarblu overflow-aut">

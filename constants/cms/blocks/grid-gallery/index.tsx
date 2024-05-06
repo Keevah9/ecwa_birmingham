@@ -83,14 +83,14 @@ export default function GridGalleryBlock(props: any) {
         <>
             <section className="max-container overflow-splide">
                 <span className="absolute -top-[10px]"></span>
-                {props?.data.SectionTitle && (
+                {props?.data?.SectionTitle && (
                     <h2 className={`${props.data.override === 'blue' && '!text-white'}`} >
                         <span className="absolute -top-[120px]"></span>
                         {props?.data.SectionTitle}
 
                     </h2>
                 )}
-                {props?.data.SectionContent && (
+                {props?.data?.SectionContent && (
                     <div className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-8`}>
                         <ReactMarkdown className={`${props.data.override === 'blue' && 't-white'} markdown`} rehypePlugins={[rehypeRaw]}>
                             {props?.data.SectionContent}
@@ -146,8 +146,20 @@ export default function GridGalleryBlock(props: any) {
                                             className="splide__splide"
                                         >
 
+                                            {/* <div className="container">
+                                                <div className="image-section">
+                                                    <img src="/church4.jpg" />
+                                                </div>
+                                                <div className="text-content">
+                                                    <span>{item.SectionTitle}</span>
+                                                    {item.SubTitle}
+                                                    <p>{item.Content}</p>
+                                                    <div className="social-media">
+                                                        <i className="bx bxl-facebook-circle"></i>
+                                                    </div>
+                                                </div>
+                                            </div> */}
                                             <ArticleCard link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
-
 
                                         </SplideSlide>
                                         </>
@@ -158,6 +170,7 @@ export default function GridGalleryBlock(props: any) {
                         </Splide> : <div className="grid gap-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 ">
                             {props.data.GridItems.map((item: any) => {
                                 return (
+                                    
                                     <ArticleCard link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
                                 );
                             })}

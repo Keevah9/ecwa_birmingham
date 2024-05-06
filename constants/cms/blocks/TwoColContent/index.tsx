@@ -67,40 +67,12 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
               </ReactMarkdown>
             </div>
           )}
-
-          {/* {props?.LinkListItems.length > 0 && (
-            <ul className="mt-3 flex lg:mt-6 items-center lg:gap-3 flex-wrap xl:flex-nowrap 2xl:gap-6">
-              {props?.LinkListItems.map((list: any) => {
-                return (
-                  <li key={list.id}>
-                    <Link href={`${list?.ListItemContent}`}>
-                      <a
-                        className={`barlow w-full items-center cursor-pointer ${list?.ListItemTitle !== "Why choose unique" &&
-                          list?.ListItemTitle !==
-                          "Learn more about our services" &&
-                          " hidden lg:flex items-center "
-                          } ${list?.ListItemTitle ===
-                          "Learn more about our services" && "hidden"
-                          } `}
-                      >
-                        {list?.ListItemTitle}{" "}
-                        <FontAwesomeIcon
-                          icon={faArrowRight}
-                          className={"text-md mt-1 relative pl-2"}
-                        />
-                      </a>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          )} */}
         </div>
         
-        {//@ts-ignore
-        !props?.data.FlipContent &&
-          <>{//@ts-ignore
-            props?.data?.Image?.data?.attributes?.url ? <div className="w-full  lg:w-1/2 relative  h-[350px] lg:h-[400px] "> <Image style={{ borderRadius: '10px' }} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}</>}
+      
+         {//@ts-ignore
+            props?.data?.Image?.data?.attributes?.url ? <div className={`w-full ${//@ts-ignore
+              props?.data.FlipContent ? 'hidden lg:block' : '' } lg:w-1/2 relative  h-[350px] lg:h-[400px] `}> <Image style={{ borderRadius: '10px' }} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}
       </div>
     </section>
   );
