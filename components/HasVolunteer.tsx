@@ -212,7 +212,7 @@ const HasVolunteers = () => {
     }
     //@ts-ignore
     const blockData = happyCustomers?.props?.global?.attributes;
-    console.log(blockData)
+   
     return (
         <div>
 {/* <VolunteerContainer data={blockData.hasVolunteer}/> */}

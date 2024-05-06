@@ -99,6 +99,7 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
+    img: "church4.jpg",
     color: '#FCCE33',
     url: "/ministries/childrens-ministries"
   },
@@ -109,7 +110,7 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
-
+    img: "church4.jpg",
     url: "/ministries/men-ministries"
   },
   {
@@ -119,7 +120,8 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
-    url: "/ministries/women-ministries"
+    url: "/ministries/women-ministries",
+    img: "church4.jpg",
   },
   {
     id: "4",
@@ -128,7 +130,8 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap4,
-    url: "/ministries/drama-ministries"
+    url: "/ministries/drama-ministries",
+    img: "church4.jpg",
   },
   {
     id: "3",
@@ -137,7 +140,8 @@ export const roadmap = [
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap4,
-    url: "/ministries/choir-ministries"
+    url: "/ministries/choir-ministries",
+    img: "church4.jpg",
   },
   
 ];

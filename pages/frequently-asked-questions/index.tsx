@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const FrequentlyAskedQuestions: NextPageWithLayout = (props: any) => {
   const { faqs } = props;
-  console.log(faqs)
+  
   return (
     <>
       {/* <SEO seoData={faqs?.SEO} title={faqs?.SEO.metaTitle} canonical={faqs?.SEO.canonicalURL} />       */}

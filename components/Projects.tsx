@@ -88,7 +88,7 @@ const ProjectsSection = (props:ProjectProps) => {
             <h2 className="text-center ">
                 Our Sermons
             </h2>
-            <div className=" flex mb-6 flex-row flex-wra md:justify-center overflow-x-scroll min-w-screen items-center gap-2 py-6">
+            <div className=" flex mb-6 flex-row lg:overflow-x-hidden md:justify-center overflow-x-scroll min-w-screen items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     name="All"
@@ -121,7 +121,7 @@ const ProjectsSection = (props:ProjectProps) => {
                     hasTrack={false}
                     options={{
                         //@ts-ignore
-                        rewind: "true",
+                        // rewind: "true",
                         perPage: 3,
                         perMove: 1,
                         pagination: false,
@@ -129,10 +129,10 @@ const ProjectsSection = (props:ProjectProps) => {
                         lazyLoad: "nearby",
                         gap: "1.5rem",
                         snap: true,
-                        speed: 1000,
+                        speed: 500,
                         easing: "linear",
-                        interval: 5000,
-                        type: "loop",
+                        interval: 3000,
+                        type: "slide",
                         autoplay: true,
                         breakpoints: {
                             "1200": {
@@ -181,16 +181,6 @@ const ProjectsSection = (props:ProjectProps) => {
                             </motion.li>
                             </SplideSlide>
                         ))}
-
-
-                        
-
-
-                    
-                        
-
-
-
                     </SplideTrack>
                 </Splide>
                 

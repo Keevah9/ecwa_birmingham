@@ -17,15 +17,15 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section  className={'relative'}>
+    <section className={'relative'}>
       <div className="max-container overflow-splide rounded-[10px]">
         <Heading
           title="ECWA Birmingham"
           text="We welcome you with great joy to ECWA Birmingham. We are here to share the great news of Jesus Christ to all that will listen. The name of the Lord is a strong tower; the righteous run into it and are safe."
           tag={'Join a Life Group'}
         />
-        
-        
+
+
         <div className="relative bg-conic-gradien">
           <div className="relative bg-ecwaorang z-1 flex items-center h-[39rem] mb-5 p-8 border- border-ecwadarkblue bg-conic-gradien border-n-1/10 rounded-[10px] overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
@@ -133,7 +133,22 @@ const Services = () => {
           {/* <Gradient /> */}
         </div>
       </div>
-      <AchievementsSection/>
+      <AchievementsSection />
+
+      <div className="container">
+        <div className="image-section">
+          <img src="/church.jpg" />
+        </div>
+        <div className="text-content">
+          <span>Title</span>
+          <span>role</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit.</p>
+          <div className="social-media">
+            <i className="bx bxl-facebook-circle"></i>
+          </div>
+        </div>
+      </div>
+
       {/* <Features/> */}
     </section>
   );

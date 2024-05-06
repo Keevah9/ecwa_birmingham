@@ -42,11 +42,15 @@ const HeroSlider = (props:  HeroSliderProps) => {
   return (
     <Section
       className=" bg-ecwadarkblue"
-     
     >
-      <div className=" relative" ref={parallaxRef}>
-        <div className="relative z-  bg-ecwadarkblu mx-auto text-center mb-[3.875rem md:mb- lg:mb-[6.25rem">
-          <div className="xs:mx-auto z-10 heroslider   ">
+      <div className="lg:h-[700px] relative" ref={parallaxRef} style={{
+        background: "url(/dust.webp)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center"
+      }}>
+        <div className="relative  z- bg-ecwadarkblu mx-auto text-center mb-[3.875rem md:mb- lg:mb-[6.25rem" >
+          {/* <img className="parallax__dust" src="/dust.webp" alt="" /> */}
+          <div className="xs:mx-auto max-containe  z-10 heroslider ">
             <Splide
               hasTrack={false}
               options={{
@@ -104,7 +108,7 @@ const HeroSlider = (props:  HeroSliderProps) => {
                                   height={28}
                                   alt="Curve"
                                 />
-                                <div className="max-w-2xl h-[3rem] mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
+                            <div className="max-w-2xl h-[3rem] drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)]  mt-10 mb-20" ><ReactMarkdown >{data.Content}</ReactMarkdown></div>
                               <div className="flex justify-center text-center mt-12 gap-8">
                                 {data.ButtonLabel && (
                                 <><Button type={"button"} title={data.ButtonLabel} link={`/${data.ButtonUrl}`} variant={"btn_orange"} /><Button type={"button"} title={'Contact Us'} link={`/contact-us`}  /></>

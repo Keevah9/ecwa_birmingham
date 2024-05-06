@@ -58,7 +58,7 @@ export async function getStaticProps({ params }) {
 }
 //@ts-ignore
 const Page: NextPageWithLayout = ({ data }) => {
-    console.log(data)
+   
     return (
         <>
             {data ? (

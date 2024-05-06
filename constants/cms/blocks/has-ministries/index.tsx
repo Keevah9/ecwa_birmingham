@@ -8,14 +8,15 @@ import HasVolunteers from "@/components/HasVolunteer";
 import VolunteerContainer from "@/components/volunteer-container";
 import { benefits } from "@/constants";
 import Roadmap from "@/components/Roadmap";
+import Portfolio from "@/components/Portfolio";
 export default function HasMinistriesBlock(props: any) {
   const router = useRouter();
   const benefitSlice= benefits.slice(0,6)
   return (
     <>
       {props?.data?.HasMinistries && (
-        <section className="relative bg-ecwadarkblue h-full bg-ecwadarblu overflow-auto">
-          <Roadmap/>
+        <section className="relative bg-ecwadarkblu h-full bg-ecwadarblu overflow-auto">
+          <Portfolio/>
         </section>
       )}
     </>

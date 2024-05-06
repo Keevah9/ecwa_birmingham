@@ -9,8 +9,8 @@ export default function Donate() {
         <section  className=" relative lg:flex-row flex-col-reverse ">
 
             <div className="  w-full gap-8 overflow-splide max-container  left-0 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left ">
-                <div> <h2 className="text-center lg:text-left lg:max-w-xl max-w-2xl mb-4 lg:mb-12 leading-[35px]">We believe in Teamwork through Trust and Respect Each Other. Enthusiastic Communication with Clients</h2>
-                    <div className="hidden lg:block"><Button type={"button"} title={"Donate"} link="/donate" /></div>
+                <div> <h2 className="text-center lg:text-left lg:max-w-xl max-w-2xl mb-4 lg:mb-12 leading-[42px]">We believe in Teamwork through Trust and Respect Each Other. Enthusiastic Communication with Clients</h2>
+                    <div className="hidden lg:block"><Button type={"button"} title={"Donate"} link="/donate" /> <Button type={"button"} title={"Contact us"} link="/contact-us" variant="btn" /></div>
                 </div>
                
                 <div className="lg:w-1/2 drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] text-left py-12 rounded-[10px] px-10 bg-white">
