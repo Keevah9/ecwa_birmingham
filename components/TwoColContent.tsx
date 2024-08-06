@@ -101,24 +101,24 @@ const FeatureCard = ({ icon, title, content, index }: any) => (
 
 const Business = () => (
   <section id="features" className={`  max-container overflow-splide`}>
-    <div className={`relativ flex lg:gap-8 mb-8 lg:flex-row flex-col items-cente justify-between`}>
+    <div className={`relativ flex lg:gap-8 mb-8 lg:flex-row flex-col items-center justify-between`}>
       <div >
         <span>About Us</span>
         <h2 className="leading-[35px]">
-          Lorem ipsum dolor sit amet
+          We are one body with Christ
         </h2>
-        <p className={`${styles.paragraph}  mb-8 max-w-[470px] mt-3`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.
+        <p className={`${styles.paragraph}  mb-8  mt-3`}>
+          We are one body with Christ, interconnected by His love and grace. Just as a body has many parts with different functions, each member of the body of Christ has a unique role to play in fulfilling His purposes. Together, we form a unified whole, bound together by our faith in Him. As one body, we share in His triumphs and struggles, supporting and encouraging one another in our journey of faith. Through Christ, we are united in purpose, empowered by His Spirit, and called to work together for the advancement of His kingdom. Let us embrace our unity in Christ, celebrating our diversity and rejoicing in the strength that comes from being one body in Him.
         </p>
 
         <div className="w-40 lg:block hidden"><Button title="More about us" style link="/about-us" variant="btn" /></div>
       </div>
-
-      <div className={` flex-col flex lg:w-[45%]`}>
+{/* 
+      <div className={` flex-col flex lg:w-[40%]`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index} />
         ))}
-      </div>
+      </div> */}
       <div className="w-40 block mt-8 mx-auto lg:hidden"><Button title="More about us" style link="/about-us" variant="btn" /></div>
    </div>
     <AchievementsSection />

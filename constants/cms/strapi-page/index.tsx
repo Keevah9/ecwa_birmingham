@@ -73,16 +73,12 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
             className={`  ${//@ts-ignore
               props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[600px] lg:h-[650px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
           >
-            <div className="w-full h-[600px] flex flex-col justify-center items-center" style={{
-              background: "url(/dust.webp)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center"
-            }}>
+            <div className="w-full h-[600px] flex flex-col justify-center items-center">
               <div className="max-container max-w-6xl overflow-hidden">
                 <h1 className={`max-container ${//@ts-ignore
                   props?.data?.SectionBg === 'blue' && 'text-white'} capitalize mb-8`}>{props?.data?.PageTitle}</h1>
                 {props?.data?.PageIntroductoryContent && (
-                  <div className={`max-w-5xl strapiPage pb-4 text-center mx-auto  xl:max-w-[50rem] ${//@ts-ignore
+                  <div className={`max-w-5xl strapiPage pb-4 text-center mx-auto  xl:max-w-[60rem] ${//@ts-ignore
                     props?.data?.SectionBg === 'blue' && 'text-white'} `}>
                     <ReactMarkdown className="markdown flexible-component" rehypePlugins={[rehypeRaw]}>
                       {props.data?.PageIntroductoryContent ||

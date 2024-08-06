@@ -51,16 +51,10 @@ export default function HasSermonsBlock(props: any) {
 
   return (
     <> {blockData?.all_sermons.data && (
-      <section className="relative overflow-splide  max-container h-full bg-ecwadarblu overflow-aut">
-          <ProjectsSection data={blockData?.all_sermons.data}/>
-          
+      <section className="relative overflow-splide  max-container h-full">
+          <ProjectsSection data={blockData?.all_sermons.data}/> 
         </section>
       )}
-     
-
-      {/* {router.asPath === 'sermons' || router.asPath === 'services' && <>
-      
-      </> } */}
     </>
   );
 }

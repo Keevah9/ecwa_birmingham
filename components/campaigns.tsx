@@ -12,7 +12,7 @@ export default function Campaigns() {
                 <div className=" w-fit shadow-m  text-center flex flex-col justify-center items-center  rounded-[10px] ">
                     <h2 className=" mt-4  text-white border-b-4 border-ecwaorange">Events</h2>
 
-                    <p className=" mb-10 mt-6 text-white max-w-md px-4 lg:px-0 lg:max-w-80">Your small donation will help us to provide education to undeYour small donation will help us to provide education to und</p>
+                    <p className=" mb-10 mt-6 text-white max-w-md px-4 lg:px-0 lg:max-w-">Join us for our church events! This special event is an opportunity for our congregation to come together and serve our local community. We&rdquo;ll have various activities, including a food drive and fun games for kids. There will also be inspiring worship sessions and prayer sessions to enjoy. Whether you&rdquo;re a long-time member or new to ECWA Birmingham, we invite you to be part of this day of service, fellowship, and celebration. Don&rdquo;t miss out on this chance to make a positive impact and connect with others in a meaningful way!</p>
                     <div className="mb-10 grid grid-cols-2 text-center items-center content-centr sm:grid-cols-3 sm:grid-cols-4 gap-4">
                         <div className="drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  bg-white rounded-[6px] py-4 px-5 text-center">
                             <span className="text-[28px]">200</span>
