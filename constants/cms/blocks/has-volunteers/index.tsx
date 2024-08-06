@@ -21,8 +21,6 @@ export default function HasVolunteersBlock(props: any) {
           {router.asPath === "/volunteer" ? 
           //@ts-ignore
           <VolunteerContainer data={benefits} /> : <div><VolunteerContainer data={benefitSlice} /> <div className="mt-16 text-center"> <Button title="See more" link="/volunteer" type={"button"} /></div></div>}
-
-
         </section>
       )}
     </>

@@ -19,7 +19,7 @@ interface RequestProps{
 bg?: string,
 data?: any
 }
-export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
+export default function PrayerRequest() {
   const { modalVisible, setModalVisible } = useContext(ModalContext);
   const cancelButtonRef = useRef(null);
   const [success, setSuccess] = useState(false);
@@ -83,9 +83,9 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
                 query: formData.query,
                 marketing: formData.marketing,
                 companyName: formData.companyName,
-                request: selectedItem.title,
+                // request: selectedItem.title,
               },
-              request: selectedItem.title,
+              // request: selectedItem.title,
               enquiryUrl: "",
               forename: formData.forename,
               surname: "",
@@ -173,7 +173,7 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="absolute bottom-0 left-0 right-0 top-0 h-full w-full transform  overflow-auto bg-white px-6 text-left shadow-xl transition-all sm:rounded-xl md:relative md:my-8  md:w-[90%] lg:max-w-6xl lg:p-0" style={{ backgroundColor: `${selectedItem.backgroundUrl}` }}>
+              <Dialog.Panel className="absolute bottom-0 left-0 right-0 top-0 h-full w-full transform  overflow-auto bg-white px-6 text-left shadow-xl transition-all sm:rounded-xl md:relative md:my-8  md:w-[90%] lg:max-w-6xl lg:p-0" >
                 <div>
                   <div
                     onClick={() => setModalVisible(false)}

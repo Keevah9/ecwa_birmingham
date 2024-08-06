@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import MenuToggle from "./MenuToggle";
 import Navigation from "./Navigation";
@@ -7,6 +7,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Logo from "../Logo";
 import Button from "@/components/Button";
+import PrayerRequest from "@/components/PrayerRequest";
+import { ModalContext } from "../lib/context/demo-modal";
 
 
 export default function Header({ global, header }: any) {
@@ -46,7 +48,12 @@ export default function Header({ global, header }: any) {
    
 
    
-   
+    const {
+        modalVisible,
+        setModalVisible,
+        quoteModalVisible,
+        setQuoteModalVisible,
+    } = useContext(ModalContext);
     const [scroll, setScroll] = useState(false);
     const router = useRouter();
     useEffect(() => {
@@ -82,6 +89,7 @@ export default function Header({ global, header }: any) {
                         <Button type={"submit"} link='/' title={"Click Here"} variant={"btn !text-white"}/>
                         
                     </div>
+                    {/* <PrayerRequest onCloseModal={setModalVisible(false)} /> */}
                     {/* <div className="pt-1">
                         <Socials
                             FbLink
