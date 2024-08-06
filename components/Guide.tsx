@@ -9,26 +9,7 @@ interface GuideProps{
 }
 export const GuideItem = (props: GuideProps) => {
   return (
-
     <>
-    {/* <div className='lg:gri hidden mt-8 grid-cols-4 gap-'>
-      <div className=' p-6 bg-ecwadarkblue'>
-        <h4 className='text-white leading-[32px] h-[4.5rem]'>All your heart</h4>
-        <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. </p>
-      </div>
-      <div className=' p-6 bg-ecwaorange'>
-        <h4 className='text-white  leading-[32px] h-[4.5rem]'>Praise</h4>
-        <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
-      </div>
-      <div className=' p-6 bg-ecwadarkblue'>
-        <h4 className='text-white leading-[32px] h-[4.5rem]'>Worships</h4>
-        <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
-      </div>
-      <div className=' p-6 bg-ecwaorange'>
-        <h4 className='text-white leading-[32px] h-[4.5rem]'>Prayers</h4>
-        <p className='text-white'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
-      </div>
-    </div> */}
       <div className='mt-8'>
          <Splide
         className="splide"
@@ -36,7 +17,7 @@ export const GuideItem = (props: GuideProps) => {
         options={{
           //@ts-ignore
           rewind: "true",
-          perPage: 4,
+          perPage: 3,
           perMove: 1,
           pagination: false,
           arrows: false,
@@ -65,29 +46,19 @@ export const GuideItem = (props: GuideProps) => {
         }}
       >
         <SplideTrack className="splide__track">
-
-
-
-          <SplideSlide
-
-            className="splide__splide"
+          <SplideSlide className="splide__splide"
           >
-
-              <div className='flex rounded-[5px] flex-col justify-center items-cente py-7 h-[13rem] px-6 bg-ecwaorange'>
-              <h4 className='text-whit leading-[32px] mb-3'>All your heart</h4>
-              <p className='text-whit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. </p>
+              <div className='flex rounded-[5px] flex-col justify-center bg-ecwadarkblue py-7 h-[16rem] px-6 '>
+              <h4 className='text-white leading-[32px] mb-3'>All of our hearts</h4>
+                <p className='text-white'>We serve God with all our hearts and give Him our best, offering our time, talents, and resources for His glory. It's a commitment to love Him above all else, to follow His commands faithfully, and to trust in His guidance completely. Serving God with all our heart is a joyful expression of gratitude for His love and grace, and it leads to a life of fulfillment, purpose, and blessing.</p>
             </div>
 
-
           </SplideSlide>
-            <SplideSlide
+            <SplideSlide className="splide__splide">
 
-              className="splide__splide"
-            >
-
-              <div className={` flex rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? 'bg-ecwadarkblue' : 'bg-white '}`}>
+              <div className={` flex rounded-[5px] flex-col justify-center py-7 px-6 h-[16rem] ${props.Bg ? 'bg-ecwadarkblue' : 'bg-white '}`}>
                 <h4 className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Praise</h4>
-                <p className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+                <p className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>In praise, we find strength, joy, and connection—a harmonious dance with the divine. With each word of praise, we honor the beauty of existence and celebrate the boundless grace that surrounds us</p>
               </div>
 
 
@@ -97,9 +68,9 @@ export const GuideItem = (props: GuideProps) => {
               className="splide__splide"
             >
 
-              <div className='flex  rounded-[5px] flex-col justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange'>
-              <h4 className='text-whit leading-[32px] mb-3'>Worships</h4>
-                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className='flex  rounded-[5px] flex-col justify-center py-7 px-6 h-[16rem] bg-ecwadarkblue'>
+              <h4 className='text-white leading-[32px] mb-3'>Worships</h4>
+                <p className='text-white'>In worship, we find solace, inspiration, and renewal—a divine dialogue that transcends time and space. It's a sacred journey where the mundane meets the miraculous, and the spirit finds its home in the presence of the divine.</p>
               </div>
 
 
@@ -109,29 +80,21 @@ export const GuideItem = (props: GuideProps) => {
               className="splide__splide"
             >
 
-              <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[13rem] ${props.Bg ? ' bg-ecwadarkblue' : 'bg-white '}`}>
-                <h4 className={`${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Prayers</h4>
-                <p className={`${props.Bg ? 'text-white' : ''} `}>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[16rem] ${props.Bg ? ' bg-ecwadarkblue' : 'bg-white '}`}>
+                <h4 className={` text-white ${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Prayers</h4>
+                <p className={`${props.Bg ? 'text-white' : ''} `}>In prayers, we pour out our hearts, seeking guidance, comfort, and strength. It's a testament to faith, a communion with the divine, where words may falter, but the spirit speaks volumes. Through prayer, we find solace, healing, and a connection to something greater than ourselves.</p>
               </div>
 
 
             </SplideSlide>
-            <SplideSlide
-
-              className="splide__splide"
+            <SplideSlide className="splide__splide"
             >
-
-              <div className='flex flex-col rounded-[5px] justify-center items-cente py-7 px-6 h-[13rem] bg-ecwaorange '>
-                <h4 className='text-whit leading-[32px] mb-3'>Bible Study</h4>
-                <p className='text-whit'>Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib.</p>
+              <div className='flex flex-col rounded-[5px] justify-center  py-7 px-6 h-[16rem] bg-ecwadarkblue '>
+                <h4 className='text-white leading-[32px] mb-3'>Bible Study</h4>
+                <p className='text-white'>Through diligent study, we gain insight into God's purpose, His promises, and His character. It's a chance to grow in knowledge, faith, and understanding, as we immerse ourselves in the living Word. Bible study is a sacred quest to know God more deeply, to walk in His ways, and to be transformed by His truth.</p>
               </div>
-
-
             </SplideSlide>
-          
-
-
-        </SplideTrack>
+            </SplideTrack>
       </Splide>
       
       </div></> 
@@ -150,45 +113,12 @@ const Guide = (props:GuideConProps) => {
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className=" max-w-xl leading-[35px]"> To join hands together, to take a step further to Jesus</h2>
-          <p className=" xl:max-w-[520px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib</p>
+          <p className=" xl:max-w-[520px]">Joining hands together signifies unity, strength, and support. Taking a step further towards Jesus represents a commitment to deepen one's faith and spiritual journey. It's a symbol of walking in the footsteps of Christ, following His teachings, and embracing His love and guidance in our lives. Together, as a community of believers, we strive to grow closer to Jesus, to live out His message of love and compassion, and to spread His light to others.</p>
         </div>
       </div>
       {/* <Camp/> */}
       <GuideItem Bg/>
 
-      {/* <div className="flexCenter max-container relative w-full">
-        <Image 
-          src="/boat.pn
-          alt="boat"
-          width={1440}
-          height={580}
-          className="w-full object-cover object-center 2xl:rounded-5xl"
-        />
-
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] md:left-[5%] lg:top-20">
-          <Image 
-            src="/meter.svg"
-            alt="meter"
-            width={16}
-            height={158}
-            className="h-full w-auto"
-          />
-          <div className="flexBetween flex-col">
-            <div className='flex w-full flex-col'>
-              <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Destination</p>
-                <p className="bold-16 text-blue-50">48 min</p>
-              </div>
-              <p className="bold-20 mt-2">Aguas Calientes</p>
-            </div>
-
-            <div className='flex w-full flex-col'>
-              <p className="regular-16 text-gray-20">Start track</p>
-              <h4 className="bold-20 mt-2 whitespace-nowrap">Wonorejo Pasuruan</h4>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </section>
   )
 }

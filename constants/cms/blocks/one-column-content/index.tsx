@@ -106,7 +106,7 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
             </div>
           )}
           {props?.data.Content && (
-            <div className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-2 lg:pb-0`}>
+            <div className={`  ${props.data.override === 'blue' && 't-white'} one-col blog pb-2 lg:pb-0`}>
               <ReactMarkdown className={`${props.data.override === 'blue' && 't-white'} markdown`} rehypePlugins={[rehypeRaw]}>
                 {props?.data.Content}
               </ReactMarkdown>
@@ -120,7 +120,7 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
             <>{props?.data?.OneColMultipleLists.length <= 4 && <div className={`  grid-cols-1 grid sm:grid-cols-2 lg:grid-cols-3  mt-10 gap-10 `}>
               {props?.data?.OneColMultipleLists?.map((item: OneColumnContentListsProp) => {
                 return (
-                  <div key={item.id}>
+                  <div key={item.id} className="">
                     <ul className={` w-fit`}>
                       <div className={`w-fit`}>
                         {item.SectionTitle && <h4 className={`${props.data.override === 'blue' && '!text-ecwadarkblue'}`}>{item.SectionTitle}</h4>}
@@ -141,7 +141,7 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
                           options={{
                             //@ts-ignore
                             rewind: "true",
-                            perPage: 4,
+                            perPage: 3,
                             perMove: 1,
                             pagination: false,
                             arrows: false,
@@ -154,8 +154,13 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
                             type: "loop",
                             autoplay: true,
                             breakpoints: {
+                              "1023": {
+                                arrows: false,
+                                perPage: 2
+                              },
                               "560": {
                                 arrows: false,
+                                perPage: 1
                               },
                             },
                           }}
@@ -169,11 +174,11 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
                                       key={item.id}
                                       className="splide__splide"
                                     >
-                                      <div className="text-center ">
+                                      <div className="text-center h-full py-6 px-3 rounded-[5px] bg-ecwadarkblue">
                                         <ul className={`text-center flex flex-col justify-center items-center `}>
                                           <div className={`!text-center flex flex-col justify-center items-center items-center`}>
-                                            {item.SectionTitle && <h4 className={` text-center leading-[32px] mb-4  max-w-[15rem] mx-auto h-[5rem] ${props.data.override === 'blue' && '!text-ecwadarkblue'}`}>{item.SectionTitle}</h4>}
-                                            {item.Content && <p className={`${props.data.override === 'blue' && 'text-white'}`}>{item.Content}</p>}
+                                            {item.SectionTitle && <h4 className={` text-center leading-[32px] mb-4 text-white max-w-[15rem] mx-auto h-[5rem] ${props.data.override === 'blue' && '!text-ecwadarkblue'}`}>{item.SectionTitle}</h4>}
+                                            {item.Content && <p className={`text-white ${props.data.override === 'blue' && 'text-white'}`}>{item.Content}</p>}
                                           </div>
                                         </ul>
                                       </div>

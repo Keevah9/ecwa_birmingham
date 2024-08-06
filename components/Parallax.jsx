@@ -24,21 +24,14 @@ const Parallax = ({ type }) => {
                     {type === "services" ? "What We Do?" : "How we serve God?"}
                 </motion.h2> */}
                     <motion.h2 className="text-white" style={{ y: yText }}>
-                        ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.
+                        Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."
                     </motion.h2>
-                    {/* <p className="text-white max-w-xl mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim.
-
-                    </p> */}
                     </div>
               
                 <motion.div className="mountains"></motion.div>
                 <motion.div
                     className="planets"
-                    style={{
-                        y: yBg,
-                        backgroundImage: `url(${type === "services" ? "/planets.png" : "/dust.webp"
-                            })`,
-                    }}
+                    
                 ></motion.div>
                 <motion.div style={{ x: yBg }} className="stars"></motion.div>
             </div>

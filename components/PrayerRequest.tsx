@@ -195,16 +195,14 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
                       </p> */}
                     </div>
                   ) : (
-                    <div className="mb-26 gap-6 h-full justify-between  lg:flex">
+                    <div className="mb-26 gap-6 h-full justify-between  lg:fle">
                       <div className="relative mt-8 rounded-md pt-6 w-full sm:mt-12 lg:mt-0 lg:w-[45%] lg:rounded-none   ">
                         <div className="rounded-[10px] px-8 lg:mt-10 lg:max-w-lg lg:px-10 ">
                           <h4 className="leading-[32px] text-white lg:mt-6 ">
-                           {selectedItem.title}
+                           Your Prayer Request
                           </h4>
                           <div className="flex items-center justify-between gap-4 pb-6 lg:pb-0">
-                            <p className=" mt-8 text-white lg:max-w-full">
-                                {selectedItem.content}
-                            </p>
+                           
                             {/* <div className="absolute bottom-3 right-2 block min-w-[106px] sm:static sm:min-h-[130px] sm:min-w-[145px] lg:hidden ">
                                   <Image
                                     src={MobileModalImage}
@@ -237,14 +235,7 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
                             <Alert type={"error"} message={formError} />
                           </div>
                         )}
-                        <div className=" md:max-w-xl">
-                          <Dialog.Title
-                            as="h4"
-                            className="text-white mb-4"
-                          >
-                            Volunteer for {selectedItem.title}
-                          </Dialog.Title>
-                        </div>
+                        
                         <div className="request lg:w-[95%]">
                           <div className="gap-5 lg:flex lg:gap-3">
                             <FormInput
@@ -356,7 +347,7 @@ export default function RequestCallBack({ selectedItem, onCloseModal }:any) {
                           <div className="w-full pb-3 ">
                             <FormInput
                               type={"textarea"}
-                              label={"Do you have any additional message?"}
+                              label={"Message"}
                               value={formData.message}
                               required
                               otherOptions

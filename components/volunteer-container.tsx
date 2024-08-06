@@ -96,13 +96,13 @@ const VolunteerContainer = (props: VolunteerDataProps) => {
                             >
 
                                 <div
-                                    className="block shadow-xl relative p-0.5 rounded-[5px] bg-no-repeat bg-[length:100%_100%] md:max-w-[27rem] "
+                                    className="block shadow-md relative p-0.5 rounded-[5px] bg-no-repeat bg-[length:100%_100%] md:max-w-[27rem] "
                                     style={{
                                         background: `${item.backgroundUrl}`,
                                     }}
                                     key={item.id}
                                 >
-                                    <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] ">
+                                    <div className="relative z-2 flex flex-col h-[25.5rem] p-[2.4rem] ">
                                         <h5 className="h5 mb-5 text-white font-extrabold">{item.title}</h5>
                                         <p className="body-2 mb-6 text-white text-n-3">{item.text}</p>
                                         <div className="flex items-center justify-between mt-auto">

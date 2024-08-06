@@ -93,9 +93,9 @@ export default function Pastors(props: any) {
                     </h2>
                 )}
 
-                <div className={` one-col blog pb-8`}>
+                <div className={` max-w-5xl  one-col blog pb-8`}>
                     <ReactMarkdown className={`} markdown`} rehypePlugins={[rehypeRaw]}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi dolores corrupti nisi voluptates nihil sunt assumenda reiciendis dolorem ab perferendis voluptatum placeat, aliquid rerum earum deserunt distinctio ullam? Delectus.
+                        At ECWA Birmingham, we are blessed with a dedicated and passionate leadership team committed to serving our congregation and community. Our Senior Pastor, Rev'd Atunde, provides spiritual oversight and guidance, delivering inspiring sermons and leading us in worship. Alongside him, our Associate Pastors, focus on specific ministries, ensuring that every member of our church is nurtured and spiritually equipped. Our Elders, a group of seasoned and wise leaders, work closely with the pastoral team to make prayerful decisions and provide pastoral care to our members.
                     </ReactMarkdown>
                 </div>
 

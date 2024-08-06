@@ -73,7 +73,7 @@ function AccordionBlock(props: AccordionBlockProps) {
 const Footer = ({ footer }:any) => {
   return (
     <div className='bg-ecwadarkblue'>
-      <footer className="lg:flexCente  min-h-[570px]" style={{background: "url(/dust.webp)"}}>
+      <footer className="lg:flexCente  min-h-[570px]">
         <div className='flex max-container w-full text-center pt-16 '>
 
           <div className='flex flex-col w-full justify-center'>

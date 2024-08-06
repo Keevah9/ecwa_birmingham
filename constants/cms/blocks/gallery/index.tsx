@@ -81,7 +81,7 @@ export default function GalleryBlock(props: any) {
            
             <><div className="max-container">
               <h2>Our Galleries</h2>
-              <p className="pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorum doloremque facilis similique dolor repellendus quasi atque sequi odio eum?</p>
+              <p className="pb-6 max-w-5xl ">Explore our gallery to see the impact of our dedicated volunteers in action! Each photo captures the heart and enthusiasm of those who contribute their time and skills to make a difference. From community events to service projects, our volunteers play a crucial role in our mission. Browse through these moments to witness the spirit of giving and the positive change we create together.</p>
             </div><GridGallery GridGalleryImages={props.data.galleries.data} /></>
             
         // <></>

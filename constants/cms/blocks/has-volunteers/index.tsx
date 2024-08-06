@@ -12,14 +12,11 @@ export default function HasVolunteersBlock(props: any) {
         <section className="relative max-container h-full overflow-splide">
 
           <h2 className={`${props.data.override === 'blue' && '!text-white'}`} >
-
-            Lorem ipsum dolor sit amet
-
+            JOIN US
           </h2>
 
-
-          <p className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-7`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim. Vivamus dapibus, urna et vestibulum fringilla, lorem risus suscipit nib
+          <p className={`${props.data.override === 'blue' && 't-white'} max-w-5xl one-col blog pb-7`}>
+            Becoming a part of our units is a rewarding experience where you can grow, connect, and contribute to our community. Whether you’re interested in leadership, service, or special projects, joining a unit offers you a chance to make a meaningful impact. Dive in, get involved, and be part of something special. Join us today and help shape the future together!
           </p>
           {router.asPath === "/volunteer" ? 
           //@ts-ignore

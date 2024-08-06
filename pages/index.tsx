@@ -34,15 +34,10 @@ export default function Home(props: any) {
   return (
     <div>
 <HeroSlider HeroSlider={props.home.HeroSlider}/>
-
-      <Hero />
-      {/* <HomeSection/> */}
-      {/* <Camp /> */}
       <Guide Bg/>
-      {/* <Services/> */}
       <Features />
      <GridGallery SectionTitle={props.home.Gallery.SectionTitle} GridGalleryImages={props.home.Gallery.Gallery[0].galleries.data}/>
-      <div style={{background: "url(/dust.webp)"}} > <HasSermonsBlock/>
+      <div> <HasSermonsBlock/>
         <div className="mx-auto w-40 flex justify-center lg:-mt-20 -mt-8 mb-28 lg:mb-32">
           <Button type={"button"} title="See all Sermons" style variant="btn"  link="/sermons" />
         </div></div>
@@ -51,10 +46,6 @@ export default function Home(props: any) {
         </section>
       <Campaigns />
       <HeroSliderTest />
-      {/* <div>
-        <section className="max-container overflow-splide"><Heading tag="Our Ministries" title="How We Serve God" className={undefined} text={undefined} /></section>
-        <div className="-mt-12"> <Roadmap /></div>
-      </div> */}
      
         <Parallax type="portfolio" />
 

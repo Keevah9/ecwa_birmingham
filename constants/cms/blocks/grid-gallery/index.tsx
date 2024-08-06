@@ -91,7 +91,7 @@ export default function GridGalleryBlock(props: any) {
                     </h2>
                 )}
                 {props?.data?.SectionContent && (
-                    <div className={`${props.data.override === 'blue' && 't-white'} one-col blog pb-8`}>
+                    <div className={`${props.data.override === 'blue' && 't-white' } max-w-3xl one-col blog pb-8`}>
                         <ReactMarkdown className={`${props.data.override === 'blue' && 't-white'} markdown`} rehypePlugins={[rehypeRaw]}>
                             {props?.data.SectionContent}
                         </ReactMarkdown>
