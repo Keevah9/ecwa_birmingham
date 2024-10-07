@@ -109,11 +109,11 @@ const HeroSlider = (props:  HeroSliderProps) => {
           <div className="relative z-10 p-0.5 rounded-2xl">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div>
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[10rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl lg:flex">
                     <li className="p-5">Jesus Christ is the TRUTH, WAY & LIFE</li>
                   </ul>
-                </ScrollParallax>
+                </ScrollParallax> */}
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification

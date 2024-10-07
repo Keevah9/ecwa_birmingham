@@ -2,14 +2,13 @@ import Image from "next/image";
 import "@splidejs/react-splide/css";
 import BgLeftImg1 from "../../../../public/img/bgrightimg.png";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
 import Button from "@/components/Button";
 export default function HasHistoryBlock(props: any) {
   const router = useRouter();
   return (
     <>
       {props?.data?.HasHistory && (
-        <section className="relative h-ful bordr bg-ecwadarblue overflow-auto">
+        <section className="relative hidden bg-ecwadarblue overflow-auto">
           <span id="our-history" className=""></span>
           <div className="bg- max-container overflow-splide text-cente py- relative">
             <div className="flex h-ful text-center justify-center items-center overflow-aut flex-col w-full h-full">

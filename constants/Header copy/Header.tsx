@@ -78,6 +78,7 @@ export default function Header({ global, header }: any) {
     }
     return (
         <>
+        {/* <PrayerRequest selectedItem={setModalVisible(true)} onCloseModal={setModalVisible(false)} /> */}
             <div className="bg-ecwadarkblue">
                 <div className={" max-container hidden items-center justify-center gap-6 py-2 text-[15px] text-white lg:flex"}
                 >

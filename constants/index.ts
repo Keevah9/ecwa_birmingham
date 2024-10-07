@@ -295,7 +295,7 @@ export const benefits = [
   {
     id: "3",
     title: "Choir",
-    text: "Our choir team brings vibrant energy and harmony to our worship services. With a diverse range of voices and a passion for music, they lead us in song, enhancing our spiritual experience. Their dedication and talent shine through in every performance, inspiring our congregation and creating a joyful atmosphere for all.",
+    text: "Our choir team brings vibrant energy and harmony to our worship services. With a diverse range of voices and a passion for music, they lead us in song, enhancing our spiritual experience. Their dedication and talent shine through in every performance.",
     backgroundUrl: "#DD90F0",
     iconUrl: "/benefits/icon-4.svg",
     imageUrl: "/ecwa-logo.png",
@@ -305,7 +305,7 @@ export const benefits = [
   {
     id: "4",
     title: "Ushering",
-    text: "Our Ushering Team plays a crucial role in creating a welcoming and organized environment during our services. They assist with seating, guide attendees, and ensure that everyone feels comfortable and cared for. Their dedication helps to make our worship experience smooth and enjoyable for all.",
+    text: "Our Ushering Team plays a crucial role in creating a welcoming and organized environment during our services. They assist with seating, guide attendees, and ensure that everyone feels comfortable and cared for.",
     backgroundUrl: "#7ADB78",
     iconUrl: "/benefits/icon-1.svg",
     imageUrl: "/ecwa-logo.png",
@@ -315,7 +315,7 @@ export const benefits = [
   {
     id: "5",
     title: "Logistics",
-    text: "Our dedicated logistics team ensures the smooth and efficient movement of members and instruments from point A to point B. With expertise in inventory management, transportation coordination, and supply chain optimization, they are crucial in maintaining timely deliveries and exceptional service.",
+    text: "Our dedicated logistics team ensures the smooth and efficient movement of members and instruments from point A to point B. With expertise in transportation coordination.",
     backgroundUrl: "#FA8D41 ",
     iconUrl: "/benefits/icon-2.svg",
     imageUrl: "/ecwa-logo.png",

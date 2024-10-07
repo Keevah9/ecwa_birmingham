@@ -7,7 +7,7 @@ export default function CarFinanceGetStarted() {
         <>
             <h5 className={"mb-6 uppercase text-ecwaorange font-black text-[18px]"}>Our Ministries</h5>
             <ul className={"list-none"}>
-                <LinkBlock label={"Children Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/children-ministries"} />
+                <LinkBlock label={"Children Ministries"} description={""} url={"/ministries/children-ministries"} />
                 <LinkBlock label={"Women Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/women-ministries"} />
                 <LinkBlock label={"Men Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/men-ministries"} />
                 <LinkBlock label={"Family Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/family-ministries"} />

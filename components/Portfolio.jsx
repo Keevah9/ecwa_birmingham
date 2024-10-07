@@ -74,7 +74,7 @@ const Portfolio = () => {
         <div className="">
         <div className="portfolio" ref={ref}>
             <div className="relative hover:bg-ecwaorange  overflow-hidden">
-                <div className="relative h-[500px] lg:h-[700px] w-full">
+                {/* <div className="relative h-[500px] lg:h-[700px] w-full">
                     <iframe
                         title="Choir's ministration"
                         width="100%"
@@ -84,7 +84,7 @@ const Portfolio = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
-                </div>
+                </div> */}
                 </div>
            <div className="bg-ecwaorang">
                     <div className="max-container">

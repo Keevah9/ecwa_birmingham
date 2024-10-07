@@ -5,7 +5,7 @@ import React from "react";
 
 interface LinkBlockProps {
     label: string;
-    description: string;
+    description?: string;
     url: string;
     dummy?: boolean;
 }
@@ -29,9 +29,9 @@ export default function LinkBlock(props: LinkBlockProps) {
                             <span className={"hover:opacity-60 text-ecwadarkblue"}>
                                 {props.label}
                             </span>
-                            <div className={"mt-2 text-[16px]"}>
+                            {/* <div className={"mt-2 text-[16px]"}>
                                 {props.description}
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* <FontAwesomeIcon

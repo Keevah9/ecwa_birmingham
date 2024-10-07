@@ -17,7 +17,7 @@ export default function HeroSliderTest() {
                     </div>
                     <Link href={'https://www.youtube.com/embed/vsypFJ5mNw0'}>                        
                         <a target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" className="text-center flex items-center justify-center mt-16 mb-10 lg:mb-0 text-white text-[25px] lg:mt-0 bg-ecwaorange h-36 w-36 rounded-full" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clip-rule="evenodd" />
+                            <path fillRule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clipRule="evenodd" />
                         </svg></a>
                         
                     </Link>
@@ -35,9 +35,9 @@ export default function HeroSliderTest() {
                 </div>
                 <div className="hidden lg:grid sm:grid-cols-3 grid-cols-1 z-20 lg:grid-cols-3 items-center justify-center max-container my-20 lg:my-0 lg:absolute left-0 right-0 gap-6 mx-auto w-full -bottom-48 ">
 
-                    <ArticleCard date={undefined} link={"/"} linkLabel={"Join Live"} title={"Sunday services"} subtitle="9:57am - 12pm" content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."}  />
-                    <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Wednesday Prayer "} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="7pm - 8pm"  />
-                    <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Friday Vigil"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="10pm - 12am"  />
+                    <ArticleCard date={undefined} link={"/"} linkLabel={"Join Live"} title={"Sunday services"} subtitle="10am - 12pm" content={"Join our sunday service"}  />
+                    <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Wednesday Prayer "} content={"Join our prayer session"} subtitle="7pm - 8pm"  />
+                    <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Friday Vigil"} content={"Join our last friday vigil"} subtitle="10pm - 12am"  />
                 </div>
                 
             </div>

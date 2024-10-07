@@ -37,10 +37,10 @@ export default function Home(props: any) {
       <Guide Bg/>
       <Features />
      <GridGallery SectionTitle={props.home.Gallery.SectionTitle} GridGalleryImages={props.home.Gallery.Gallery[0].galleries.data}/>
-      <div> <HasSermonsBlock/>
+      {/* <div> <HasSermonsBlock/>
         <div className="mx-auto w-40 flex justify-center lg:-mt-20 -mt-8 mb-28 lg:mb-32">
           <Button type={"button"} title="See all Sermons" style variant="btn"  link="/sermons" />
-        </div></div>
+        </div></div> */}
         <section>
           <Pastors/>
         </section>

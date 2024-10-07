@@ -51,7 +51,7 @@ export default function HasSermonsBlock(props: any) {
 
   return (
     <> {blockData?.all_sermons.data && (
-      <section className="relative overflow-splide  max-container h-full">
+      <section className="relative hidden overflow-splide  max-container h-full">
           <ProjectsSection data={blockData?.all_sermons.data}/> 
         </section>
       )}

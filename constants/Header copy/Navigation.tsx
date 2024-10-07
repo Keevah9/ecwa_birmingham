@@ -37,19 +37,16 @@ function Navigation() {
                 <li className={"group"}>
                     {/* <NavLink url={"/"} label={"I am New"} /> */}
                     <NavLink url={"/about-us"} label={"About us"} />
-                    <MegaMenuDropdown>
+                    {/* <MegaMenuDropdown>
                         <div className={"max-w-[1110px]  mx-auto grid grid-cols-2 gap-20"}>
                             <div>
                                 <SearchGetStarted />
                             </div>
-                            {/* <div>
-                                <SearchMakes />
-                            </div> */}
                             <div>
                                 <SearchModels />
                             </div>
                         </div>
-                    </MegaMenuDropdown>
+                    </MegaMenuDropdown> */}
                 </li>
                 <li className={"group"}>
                     <NavLink url={"/services"} label={"Services"} />

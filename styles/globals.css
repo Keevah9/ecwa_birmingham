@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   @apply font-exo;
  
@@ -576,4 +576,7 @@ flex-direction: column;
         li,
         a {
           @apply text-[17px] !important
+        }
+        h3{
+          @apply mb-4
         }

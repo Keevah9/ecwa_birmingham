@@ -9,7 +9,7 @@ export default function SupportFaqs() {
             <ul className={"list-none"}>
                 <LinkBlock label={"Frequently Asked Questions"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/frequently-asked-questions"} />
                 <LinkBlock label={"Volunteer"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/volunteer"} />
-                <LinkBlock label={"Prayer Request"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/prayer-request"} />
+                {/* <LinkBlock label={"Prayer Request"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/prayer-request"} /> */}
                 {/* <StandardLink label={"See all frequently asked questions"} url={"/frequently-asked-questions"} highlight /> */}
             </ul>
         </>

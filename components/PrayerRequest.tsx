@@ -19,7 +19,7 @@ interface RequestProps{
 bg?: string,
 data?: any
 }
-export default function PrayerRequest() {
+export default function PrayerRequest({onCloseModal, selectedItem}: any) {
   const { modalVisible, setModalVisible } = useContext(ModalContext);
   const cancelButtonRef = useRef(null);
   const [success, setSuccess] = useState(false);

@@ -50,7 +50,7 @@ export const GuideItem = (props: GuideProps) => {
           >
               <div className='flex rounded-[5px] flex-col justify-center bg-ecwadarkblue py-7 h-[16rem] px-6 '>
               <h4 className='text-white leading-[32px] mb-3'>All of our hearts</h4>
-                <p className='text-white'>We serve God with all our hearts and give Him our best, offering our time, talents, and resources for His glory. It&rdquo;s a commitment to love Him above all else, to follow His commands faithfully, and to trust in His guidance completely. Serving God with all our heart is a joyful expression of gratitude for His love and grace, and it leads to a life of fulfillment, purpose, and blessing.</p>
+                <p className='text-white'>We serve God with all our hearts and give Him our best, offering our time, talents, and resources for His glory. It&rdquo;s a commitment to love Him above all else, to follow His commands faithfully, and to trust in His guidance completely.</p>
             </div>
 
           </SplideSlide>
@@ -82,7 +82,7 @@ export const GuideItem = (props: GuideProps) => {
 
               <div className={` rounded-[5px] flex flex-col justify-center items-cente py-7 px-6 h-[16rem] ${props.Bg ? ' bg-ecwadarkblue' : 'bg-white '}`}>
                 <h4 className={` text-white ${props.Bg ? 'text-white' : ''} leading-[32px] mb-3`}>Prayers</h4>
-                <p className={`${props.Bg ? 'text-white' : ''} `}>In prayers, we pour out our hearts, seeking guidance, comfort, and strength. It&rdquo;s a testament to faith, a communion with the divine, where words may falter, but the spirit speaks volumes. Through prayer, we find solace, healing, and a connection to something greater than ourselves.</p>
+                <p className={`${props.Bg ? 'text-white' : ''} `}>In prayers, we pour out our hearts, seeking guidance, comfort, and strength. It&rdquo;s a testament to faith, a communion with the divine, where words may falter, but the spirit speaks volumes. </p>
               </div>
 
 
@@ -91,7 +91,7 @@ export const GuideItem = (props: GuideProps) => {
             >
               <div className='flex flex-col rounded-[5px] justify-center  py-7 px-6 h-[16rem] bg-ecwadarkblue '>
                 <h4 className='text-white leading-[32px] mb-3'>Bible Study</h4>
-                <p className='text-white'>Through diligent study, we gain insight into God&rdquo;s purpose, His promises, and His character. It&rdquo;s a chance to grow in knowledge, faith, and understanding, as we immerse ourselves in the living Word. Bible study is a sacred quest to know God more deeply, to walk in His ways, and to be transformed by His truth.</p>
+                <p className='text-white'>Through diligent study, we gain insight into God&rdquo;s purpose, His promises, and His character. It&rdquo;s a chance to grow in knowledge, faith, and understanding, as we immerse ourselves in the living Word. </p>
               </div>
             </SplideSlide>
             </SplideTrack>
