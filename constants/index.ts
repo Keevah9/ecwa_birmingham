@@ -1,9 +1,4 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
   chromecast,
   disc02,
   discord,
@@ -540,8 +535,9 @@ export const Invloved_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Church', url: '123-456-7890' },
+    { label: 'Church', url: ' 07727 239477' },
     { label: 'Email Officer', url: 'ecwa@gmail.com' },
+    {label: '1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR'}
   ],
 };
 

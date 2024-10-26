@@ -3540,7 +3540,7 @@ next-seo@^6.0.0:
   resolved "https://registry.npmjs.org/next-seo/-/next-seo-6.6.0.tgz"
   integrity sha512-0VSted/W6XNtgAtH3D+BZrMLLudqfm0D5DYNJRXHcDgan/1ZF1tDFIsWrmvQlYngALyphPfZ3ZdOqlKpKdvG6w==
 
-next@^12.3.2, "next@^8.1.1-canary.54 || >=9.0.0", next@>=10.2.0:
+next@^10.0.0, next@^12.3.2, "next@^8.1.1-canary.54 || >=9.0.0", next@>=10.2.0:
   version "12.3.4"
   resolved "https://registry.npmjs.org/next/-/next-12.3.4.tgz"
   integrity sha512-VcyMJUtLZBGzLKo3oMxrEF0stxh8HwuW976pAzlHhI3t8qJ4SROjCrSh1T24bhrbjw55wfZXAbXPGwPt5FLRfQ==
@@ -3566,10 +3566,10 @@ next@^12.3.2, "next@^8.1.1-canary.54 || >=9.0.0", next@>=10.2.0:
     "@next/swc-win32-ia32-msvc" "12.3.4"
     "@next/swc-win32-x64-msvc" "12.3.4"
 
-nextjs-breadcrumbs@^0.9.4:
-  version "0.9.4"
-  resolved "https://registry.npmjs.org/nextjs-breadcrumbs/-/nextjs-breadcrumbs-0.9.4.tgz"
-  integrity sha512-5HiNxBqkwlkIBFHv5g9A6ZpwlzJUYjFVOt/B2su2TAvWJYAWiDvFqGp5n2xdamcH2wX8zqzDT5vtt7qNc3zXog==
+nextjs-breadcrumbs@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.npmjs.org/nextjs-breadcrumbs/-/nextjs-breadcrumbs-0.9.9.tgz"
+  integrity sha512-hbCrPneMAxAm3IU5NNDFqoPP6pthvInShu5bidnEyMLIC+HawYo0eW+s9CDSoJ7fCR7hKv+vnQuLlgmVBe5UqQ==
 
 node-addon-api@^7.0.0:
   version "7.1.1"
