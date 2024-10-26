@@ -34,7 +34,7 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
         {//@ts-ignore
         props?.data.FlipContent &&
           <>{//@ts-ignore
-            props?.data?.Image?.data?.attributes?.url ? <div className="w-full lg:w-1/2 relative h-[350px] lg:h-[400px] "> <Image style={{borderRadius:'10px'}} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}</> }
+            props?.data?.Image?.data?.attributes?.url ? <div className="w-full lg:w-1/2 relative h-[350px] lg:h-[450px] "> <Image style={{borderRadius:'10px'}} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}</> }
       </div>
 
       <div className={`flex w-full justify-center items-center ${//@ts-ignore
@@ -72,7 +72,7 @@ export default function TwoColumnContentBlock(props: TwoColContentProps) {
       
          {//@ts-ignore
             props?.data?.Image?.data?.attributes?.url ? <div className={`w-full ${//@ts-ignore
-              props?.data.FlipContent ? 'hidden lg:block' : '' } lg:w-1/2 relative  h-[350px] lg:h-[400px] `}> <Image style={{ borderRadius: '10px' }} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}
+              props?.data.FlipContent ? 'hidden lg:block' : '' } lg:w-1/2 relative  h-[350px] lg:h-[450px] `}> <Image style={{ borderRadius: '10px' }} src={props?.data?.Image?.data?.attributes?.url} width={400} height={400} layout="fill" /></div> : null}
       </div>
     </section>
   );

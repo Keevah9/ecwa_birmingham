@@ -102,7 +102,7 @@ export default function Pastors(props: any) {
                 {blockData?.Ministries?.length > 0 &&
 
 
-                    <>{blockData?.Ministries?.length > 4 ?
+                    <>{blockData?.Ministries?.length > 3 ?
                         <Splide
                             className="splide"
                             hasTrack={false}
@@ -147,7 +147,7 @@ export default function Pastors(props: any) {
                                             className="splide__splide"
                                         >
 
-                                            <ArticleCard featuredImage={item.Image.data.attributes.url} link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
+                                            <ArticleCard featuredImage={item.Image.data.attributes.url} link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} imgSize={""} subtitle={item.SubTitle} ImageProps={item.Image.data.attributes.url} />
 
 
                                         </SplideSlide>
@@ -159,7 +159,7 @@ export default function Pastors(props: any) {
                         </Splide> : <div className="grid gap-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 ">
                             {blockData?.Ministries.map((item: any) => {
                                 return (
-                                    <ArticleCard key={item.id} link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
+                                    <ArticleCard key={item.id} link={item.LinkUrl} featuredImage={item.Image.data.attributes.url}  linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={item.Image.data.attributes.url} subtitle={item.SubTitle} ImageProps={item.Image.data.attributes.url} />
                                 );
                             })}
                         </div>}

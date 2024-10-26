@@ -580,3 +580,10 @@ flex-direction: column;
         h3{
           @apply mb-4
         }
+
+        .one-col .markdown{
+          img{
+            height: 650px;
+            width: 70%
+          }
+        }
