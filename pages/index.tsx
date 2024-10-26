@@ -50,7 +50,7 @@ export default function Home(props: any) {
       <Portfolio />
       
       <Benefits />
-      <Donate />
+      {/* <Donate /> */}
       
     </div>
   )

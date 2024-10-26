@@ -139,11 +139,11 @@ const Footer = ({ footer }:any) => {
                     >
                       <div>
                         <p className="whitespace-nowrap text-white">
-                          {link.label}:
+                          {link.label}
                         </p>
-                        <p className="medium-14 whitespace-nowrap text-white">
+                        {/* <p className="medium-14 whitespace-nowrap text-white">
                           {link.url}
-                        </p>
+                        </p> */}
                       </div>
                     </Link>
                   ))}
@@ -202,20 +202,12 @@ const Footer = ({ footer }:any) => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                    href="/"
-                    key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row"
-                  >
-                    <div>
-                      <p className="whitespace-nowrap text-white">
-                        {link.label}:
-                      </p>
-                      <p className="medium-14 whitespace-nowrap text-white">
-                        {link.url}
+                  
+                    <div className=''>
+                      <p className="whitespace-nowrap  text-white">
+                        {link.label}
                       </p>
                     </div>
-                  </Link>
                 ))}
               </FooterColumn>
               <FooterColumn>
@@ -224,7 +216,7 @@ const Footer = ({ footer }:any) => {
                     <li key={link.id}>
                       <Link href={`${link.url}`} >
                         {/* <a href="">{link.label}</a> */}
-                        <Image src={link.label} alt="logo" width={24} height={24} />
+                        <p className='cursor-pointer' ><Image src={link.label} alt="logo" width={24} height={24} /></p>
                       </Link>
                     </li>
                   ))}
@@ -248,7 +240,8 @@ const Footer = ({ footer }:any) => {
           </div>
         </div>
 
-
+<p className="w-full text-center mt-8 text-white">   1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR
+</p>
         <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
 
       </footer>

@@ -535,9 +535,7 @@ export const Invloved_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Church', url: ' 07727 239477' },
-    { label: 'Email Officer', url: 'ecwa@gmail.com' },
-    {label: '1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR'}
+    {  label: ' 07727 239477' },
   ],
 };
 
@@ -546,18 +544,18 @@ export const SOCIALS = {
   links: [
     {
       id: 1,
-      url: "/facebook.com",
+      url: "/https://www.facebook.com/ecwabirminghamuk/videos/2781727922003051/?mibextid=WC7FNe&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2FFs6AREBvYZmZ4ovK%2F%3Fmibextid%3DWC7FNe&rdid=XplpCbb3a98DTsSs",
       label: '/fb.svg',
     },
     {
       id: 2,
-      url: "/instagram.com",
+      url: "/https://www.instagram.com/reel/DBWe2N6oinF/?igsh=czJleTU1a3l4emVo",
       label: '/ig.svg',
     },
    
     {
       id: 4,
-      url: '/youtube.com',
+      url: '/yhttps://www.tiktok.com/@ecwabirminghamuk/video/7427898038439464224?_r=1&_t=8qhrvLo8kgy',
       label: '/yt.svg',
     }
   ],

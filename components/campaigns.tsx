@@ -39,35 +39,36 @@ export default function Campaigns() {
             <div className=" absolut lg:w-1/2 bg-ecwaorange right-10 px-6 2xl:px-  lg:max-container py-20 lg:py-0 left-0 flex flex-col gap-6 items-center justify-center  ">
                 <div className=""
                 ><Image src="/ecwa-logo.png" alt="camp" width={80} height={80} /></div>
+                
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-start lg:items-center gap-6 w-fit px-6 py-4 bg-white">
                     <div className=" bg-ecwaorange bg-opacity-40 rounded-[10px] text-center">
-                        <p className="px-3 pt-4 pb-3 text-ecwadarkblue font-[500] text-[16px]">Oct 19 2024</p>
-                        <span className="bg-ecwadarkblue text-whit rounded-b-[10px] py-2 text-[14px] px-3">7:00am</span>
+                        <p className="px-3 pt-4 pb-3 text-ecwadarkblue font-[500] text-[16px]">Oct 9 2024</p>
+                        <span className="bg-ecwadarkblue text-whit rounded-b-[10px] py-2 text-[14px] px-3">10:00am</span>
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Women&apos;s Anniversary </p>
-                        <Button type={"button"} title={" Event Details"} link="/events/event-two" />
+                        <Button type={"button"} title={" Event Details"} link="/events/womens-anniversary" />
                     </div>
                 </div>
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-start lg:items-center gap-6 w-fit px-6 py-4 bg-white">
                     <div className=" bg-ecwaorange bg-opacity-40 rounded-[10px] text-center">
                         <p className="px-3 pt-4 pb-3 text-ecwadarkblue font-[500] text-[16px]">Oct 19 2024</p>
-                        <span className="bg-ecwadarkblue text-whit rounded-b-[10px] py-2 text-[14px] px-3">7:00am</span>
+                        <span className="bg-ecwadarkblue text-whit rounded-b-[10px] py-2 text-[14px] px-3">10:00am</span>
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Wedding Ceremony</p>
-                        <Button type={"button"} title={" Event Details"} link="/events/event-one" />
+                        <Button type={"button"} title={" Event Details"} link="/events/wedding-ceremony" />
                     </div>
                 </div>
                 
                 <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]  rounded-[10px] flex items-start lg:items-center gap-6 w-fit px-6 py-4 bg-white">
                     <div className=" bg-ecwaorange bg-opacity-40 rounded-[10px] text-center">
-                        <p className="px-3 pt-4 pb-3 text-ecwadarkblue font-[500] text-[16px]">Oct 19 2024</p>
+                        <p className="px-3 pt-4 pb-3 text-ecwadarkblue font-[500] text-[16px]">Oct 24-27 2024</p>
                         <span className="bg-ecwadarkblue text-whit rounded-b-[10px] py-2 text-[14px] px-3">7:00am</span>
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Church Anniversary</p>
-                        <Button type={"button"} title={" Event Details"} link="/events/event-three" />
+                        <Button type={"button"} title={" Event Details"} link="/events/church-anniversary" />
                     </div>
                 </div>
 

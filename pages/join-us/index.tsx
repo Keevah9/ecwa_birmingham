@@ -56,8 +56,8 @@ const joinUs = [
     {
         id: 1,
         Question: "Visit your first ECWA Birmingham service",
-        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><p> cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.Nunc ut sem vitae risus tristique posuere.</p>",
-        btnLabel1: "Get directions",
+        Answer: "<p>Join us at 10am at our church address -  1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR</p>",
+        // btnLabel1: "Get directions",
         BtnLink1: "/",
         BtnLink2: "/"
     },

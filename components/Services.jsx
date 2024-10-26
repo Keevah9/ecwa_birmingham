@@ -22,7 +22,7 @@ const Services = () => {
         <Heading
           title="ECWA Birmingham"
           text="We welcome you with great joy to ECWA Birmingham. We are here to share the great news of Jesus Christ to all that will listen. The name of the Lord is a strong tower; the righteous run into it and are safe."
-          tag={'Join a Life Group'}
+          tag={'Join a Living Group'}
         />
 
 
