@@ -477,11 +477,11 @@ export const FOOTER_LINKS = [
         url: "/ministries",
         label: 'Ministries',
       },
-      {
-        id: 4,
-        url: "/events",
-        label: 'Events',
-      },
+      // {
+      //   id: 4,
+      //   url: "/events",
+      //   label: 'Events',
+      // },
       {
         id: 6,
         url: "/frequently-asked-questions",
@@ -504,25 +504,16 @@ export const About_LINKS = [
         label: 'About Us',
       },
       {
-        id: 4,
-        url: "/about-us/#our-history",
-        label: 'ECWA history',
-      },
-      {
         id: 2,
         label: "Vision",
-        url: '/about-us/#vision',
+        url: '/about-us#visions',
       },
       {
         id: 5,
-        url: "/about-us/#misions",
+        url: "/about-us#missions",
         label: 'Misions',
       },
-      {
-        id: 3,
-        url: "/about-us/#leaders",
-        label: 'Leaders',
-      },
+  
       
     ],
   }
@@ -542,12 +533,7 @@ export const Invloved_LINKS = [
         id: 2,
         url: "/join-us",
         label: 'I am new',
-      },
-      {
-        id: 3,
-        url: "/donate",
-        label: 'Give',
-      },
+      }
     ],
   }
   ]

@@ -10,7 +10,7 @@ export default function CarFinanceGetStarted() {
                 <LinkBlock label={"Children Ministries"} description={""} url={"/ministries/children-ministries"} />
                 <LinkBlock label={"Women Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/women-ministries"} />
                 <LinkBlock label={"Men Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/men-ministries"} />
-                <LinkBlock label={"Family Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/family-ministries"} />
+                {/* <LinkBlock label={"Family Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/family-ministries"} /> */}
                 <LinkBlock label={"Choir Ministries"} description={"Atque deleniti ea veritatis in sequi? Quia exercitationem libero vel."} url={"/ministries/choir-ministries"} />
                 <StandardLink label={"See all ministries"} url={"/ministries"} highlight />
             </ul>

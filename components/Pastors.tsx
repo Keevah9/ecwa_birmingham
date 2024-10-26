@@ -147,7 +147,7 @@ export default function Pastors(props: any) {
                                             className="splide__splide"
                                         >
 
-                                            <ArticleCard featuredImage={item.Image.data.attributes.url} link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} content={item.Content} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
+                                            <ArticleCard featuredImage={item.Image.data.attributes.url} link={item.LinkUrl} linkLabel={item.LinkLabel} title={item.SectionTitle} imgSize={""} subtitle={item.SubTitle} ImageProps={undefined} />
 
 
                                         </SplideSlide>

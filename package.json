@@ -23,9 +23,9 @@
     "framer-motion": "^10.16.1",
     "fslightbox-react": "^1.6.2-2",
     "lightgallery": "^2.7.1",
-    "next": "12.3.2",
+    "next": "^12.3.2",
     "next-seo": "^6.0.0",
-    "nextjs-breadcrumbs": "^1.1.9",
+    "nextjs-breadcrumbs": "^0.9.4",
     "react": "^18",
     "react-animated-numbers": "^0.16.0",
     "react-dom": "^18",
@@ -41,9 +41,10 @@
     "resend": "^1.0.0",
     "sass": "^1.76.0",
     "scroll-lock": "^2.1.5",
-    "sharp": "^0.30.7",
+    "sharp": "^0.33.5",
     "styled-components": "^6.0.0-rc.3",
-    "windicss-webpack-plugin": "^1.8.0"
+    "windicss-webpack-plugin": "^1.8.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/node": "^20",

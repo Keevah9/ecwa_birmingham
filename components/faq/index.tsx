@@ -26,7 +26,7 @@ export function FAQS(props: FAQProps) {
           className={`mr-3  w-full list-none leading-[32px] font-bold leading-[22px] ${props.joinUs ? 'text-[22px] flex sm:items-center text-white ' : 'text-[18px] text-ecwadarkblue'}`}
           itemProp="name"
         >
-          {props.joinUs && <span className=" h-12 max-w-12 text-center text-[25px] items-center justify-center lg:w-12  text-ecwadarkblue bg-ecwaorange rounded-full inline-flex flex-grow text-center mr-3">{props.number}</span>}  <p className={`${props.joinUs ? ' text-[18px] sm:text-[22px] max-w-[10rem] sm:max-w-[20rem] md:max-w-full flex items-center text-white ' : 'text-[18px] text-ecwadarkblue'}  leading-[30px]`}>{props.question}</p>
+          {props.joinUs && <span className=" h-12 max-w-12 text-center text-[25px] items-center justify-center lg:w-12 text-ecwadarkblue bg-ecwaorange rounded-full inline-flex flex-gro text-center mr-3">{props.number}</span>}  <p className={`${props.joinUs ? ' text-[18px] sm:text-[22px] max-w-[10rem] sm:max-w-[20rem] md:max-w-full flex items-center text-white ' : 'text-[18px] text-ecwadarkblue'}  leading-[30px]`}>{props.question}</p>
         </div>
         
         {props.joinUs ? <span className="ml-auto flex text-[#223B50] px-2 py-2 text-[16px] ">

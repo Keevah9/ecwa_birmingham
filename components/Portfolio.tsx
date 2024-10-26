@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { roadmap } from "@/constants";
 import Button from "./Button";
-
+//@ts-ignore
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 const items = [
     {
         id: 1,
@@ -30,27 +32,25 @@ const items = [
     },
 ];
 
-const Single = ({ item }) => {
+const Single = ({ item }:any) => {
     const ref = useRef();
 
-    const { scrollYProgress } = useScroll({
-        target: ref,
-    });
+  
 
-    const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+    // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
     return (
     
-            <div className="container-ele max-containe pt-16">
-                <div className="wrapper">
-                    <div className="imageContainer " ref={ref}>
+            <div className="pt-16">
+                <div className=" flex flex-col">
+                    <div className="i" >
                         <img src={item.img} alt="" className="rounded-[10px]" />
                     </div>
-                    <motion.div className="textContainer" style={{ y }}>
+                    <div className="mt-4" >
                         <h4>{item.title}</h4>
-                        <p className="text-black">{item.text}</p>
+                        <p className="text-black mt-2 mb-6">{item.text}</p>
                         <Button title="View ministry" variant="btn" link={item.url}/>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
     
@@ -60,19 +60,11 @@ const Single = ({ item }) => {
 const Portfolio = () => {
     const ref = useRef();
 
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["end end", "start start"],
-    });
-
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-    });
+    
 
     return (
         <div className="">
-        <div className="portfolio" ref={ref}>
+        <div className="portfolio">
             <div className="relative hover:bg-ecwaorange  overflow-hidden">
                 {/* <div className="relative h-[500px] lg:h-[700px] w-full">
                     <iframe
@@ -86,13 +78,68 @@ const Portfolio = () => {
                     ></iframe>
                 </div> */}
                 </div>
-           <div className="bg-ecwaorang">
+           {/* <div className="bg-ecwaorang">
                     <div className="max-container">
                         {roadmap.map((item) => (
                             <Single item={item} key={item.id} />
                         ))}
                     </div>
-           </div>
+           </div> */}
+
+           <Splide
+                className="splide"
+                hasTrack={false}
+                options={{
+                    //@ts-ignore
+                    rewind: "true",
+                    perPage: 3,
+                    perMove: 1,
+                    pagination: false,
+                    arrows: false,
+                    lazyLoad: "nearby",
+                    gap: "1.5rem",
+                    snap: true,
+                    speed: 1000,
+                    easing: "linear",
+                    interval: 5000,
+                    type: "loop",
+                    autoplay: true,
+                    breakpoints: {
+                        "1024": {
+                            arrows: false,
+                            perPage: 2.5,
+                        },
+                        "920": {
+                            arrows: false,
+                            perPage: 2,
+                        },
+                        "540": {
+                            arrows: false,
+                            perPage: 1,
+                        },
+                    },
+                }}
+            >
+                <SplideTrack className="splide__track">
+
+
+                    {roadmap.map((item: any) => {
+                        return (
+                            <><SplideSlide
+                                key={item.id}
+                                className="splide__splide"
+                            >
+
+<Single item={item} key={item.id} />
+
+
+                            </SplideSlide>
+                            </>
+                        );
+                    })}
+
+                </SplideTrack>
+            </Splide> 
             </div>
         </div>
     );

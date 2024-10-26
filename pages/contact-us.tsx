@@ -120,24 +120,21 @@ export default function Contact() {
     const [isMarketing, setIsMarketing] = useState(true);
     return (
         <section className="max-container overflow-splide">
-            <div className="flex lg:flex-row gap-10 flex-col">
+            <div className="flex lg:flex-row items-center gap-10 flex-col">
                 <div className="lg:w-1/2"><span>Contact us</span>
                     <h2 className="leading-[35px">We are always happy to hear from you</h2>
-                    <div className="mt-12">
+                    <div className="mt-4">
                         <div>
                             <li className="flex w-full  gap-6 items-start">
-                                <div className="rounded-full flex items-center justify-center p-4 lg:p-6 bg-ecwadarkblue">
-                                    <Image src={'/map.svg'} alt="map" width={28} height={28} />
-                                </div>
-                                <div><h4 className=" mt- max-w-[18rem] capitalize text-ecwaorange leading-9">
-                                    Our Location
-                                </h4>
-                                    <p className=" mt-4  lg:bg-none">
+                                {/* 
+                                 */}
+                                <div>
+                                    <p className=" text-[20px] lg:bg-none">
                                         We are always happy to hear from you
                                     </p></div>
                             </li>
                         </div>
-                        <div className="my-6">
+                        <div className="my-6 hidden">
                             <li className="flex w-full  gap-6 items-start">
                                 <div className="rounded-full flex items-center justify-center p-4 lg:p-6 bg-ecwadarkblue">
                                     <Image src={'/map.svg'} alt="map" width={28} height={28} />
@@ -150,19 +147,7 @@ export default function Contact() {
                                     </p></div>
                             </li>
                         </div>
-                        <div>
-                            <li className="flex w-full  gap-6 items-start">
-                                <div className="rounded-full flex items-center justify-center p-4 lg:p-6 bg-ecwadarkblue">
-                                    <Image src={'/map.svg'} alt="map" width={28} height={28} />
-                                </div>
-                                <div><h4 className=" mt- max-w-[18rem] capitalize text-ecwaorange leading-9">
-                                    Our Location
-                                </h4>
-                                    <p className=" mt-4  lg:bg-none">
-                                        We are always happy to hear from you
-                                    </p></div>
-                            </li>
-                        </div>
+                        
                     </div>
                     </div>
                
@@ -222,7 +207,7 @@ export default function Contact() {
                             }}
                         />
                     </div>
-                    <div className="my-4 inline cursor-pointer flex-row-reverse justify-start gap-4 ">
+                    {/* <div className="my-4 inline cursor-pointer flex-row-reverse justify-start gap-4 ">
                         <input
                             id="query"
                             name="query"
@@ -243,8 +228,8 @@ export default function Contact() {
                             I’m happy to be contacted with regard to my
                             query only.
                         </label>
-                    </div>
-                    <div className="mt-2 block cursor-pointer flex-row-reverse justify-start gap-4 ">
+                    </div> */}
+                    {/* <div className="mt-2 block cursor-pointer flex-row-reverse justify-start gap-4 ">
                         <input
                             name="marketing"
                             id="marketing"
@@ -264,9 +249,9 @@ export default function Contact() {
                         <label htmlFor="marketing" className="-mt-1 inline text-[13px] font-normal">
                             I am happy to be added to the newsletter.
                         </label>
-                    </div>
+                    </div> */}
                     <span
-                        className=" mt-8 block text-cente w-40 border"
+                        className="block text-cente w-40"
                         onClick={validateAndCreate}
                     >
                         <Button type={"button"} title={"Send us a Message"} variant={"btn_blue"} style/>

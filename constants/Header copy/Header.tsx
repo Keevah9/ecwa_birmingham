@@ -39,8 +39,8 @@ export default function Header({ global, header }: any) {
                         variant="btn_blue"
                         link='/donate'
                     /> */}
-                    <Button type={"button"} title={'I am new'} variant={"btn"} link="/join-us" /><div className="sm:block hidden"><Button type={"button"} link="/" title={'Give'} /></div>
-                </div>
+                    <Button type={"button"} title={'I am new'} variant={"btn"} link="/join-us" />
+                    </div>
             </nav>
         );
     }

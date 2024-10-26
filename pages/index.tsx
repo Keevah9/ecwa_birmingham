@@ -11,12 +11,13 @@ import Campaigns from "@/components/campaigns";
 import Button from "@/components/Button";
 import HasSermonsBlock from "@/constants/cms/blocks/has-sermons";
 import Parallax from "@/components/Parallax";
-import Portfolio from "@/components/Portfolio";
+// import Portfolio from "@/components/Portfolio";
 
 import React from "react";
 import GridGallery from "@/components/grid-gallery";
 import HasPastorsBlock from "@/constants/cms/blocks/HasPastors";
 import Pastors from "@/components/Pastors";
+import Portfolio from "@/components/Portfolio";
 
 
 export const getStaticProps: GetStaticProps = async () => {

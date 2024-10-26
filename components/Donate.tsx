@@ -8,13 +8,13 @@ export default function Donate() {
     return (
         <section  className=" relative lg:flex-row flex-col-reverse ">
 
-            <div className="  w-full gap-8 overflow-splide max-container  left-0 flex flex-col items-center justify-center text-center lg:text-left ">
+            <div className="  w-full gap-8 max-container drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] left-0 flex flex-col items-center justify-center text-center lg:text-left ">
                 <div> 
                     {/* <h2 className="text-center lg:text-left lg:max-w-xl max-w-2xl mb-4 lg:mb-12 leading-[42px]">Join</h2> */}
                     {/* <div className="hidden lg:block"><Button type={"button"} title={"Donate"} link="/donate" /> <Button type={"button"} title={"Contact us"} link="/contact-us" variant="btn" /></div> */}
                 </div>
                
-                <div className="lg:w-1/2 drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] text-left py-12 rounded-[10px] px-10 bg-white">
+                <div className="lg:w-1/2  text-left py-12 rounded-[10px] px-10 bg-white">
                     <Image src="/ecwa-logo.png" alt="camp" width={50} height={50} />
                     <span className="font-black uppercase text-ecwaorange">Contact Us</span>
                     <h2 className=" mt-4 ">Be a part of us
