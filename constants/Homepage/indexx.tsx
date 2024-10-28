@@ -88,7 +88,7 @@ export default function HeroSliderTest() {
                             className="splide__splide"
                         >
                             <div className="   my-20 ">
-                                <ArticleCard date={undefined} link={"/"} linkLabel={"Join Live"} title={"Sunday services"} subtitle="9:57am - 12pm" content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} />
+                                <ArticleCard date={undefined} link={"/"} linkLabel={"Join Live"} title={"Sunday services"} subtitle="9:57am - 12pm" content={"Join our sunday service"} />
                             </div>
                         </SplideSlide>
                         <SplideSlide
@@ -97,7 +97,7 @@ export default function HeroSliderTest() {
                             <div className=" my-20   ">
 
 
-                                <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Wednesday Prayer Meeting "} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="7pm - 8pm" />
+                                <ArticleCard link={"/"} linkLabel={"Join live"} date={undefined} title={"Wednesday Prayers "} content={"Join our Wednesday prayer meeting"} subtitle="7pm - 8pm" />
                             </div>
                         </SplideSlide>
                         <SplideSlide
@@ -105,9 +105,7 @@ export default function HeroSliderTest() {
                         >
                             <div className="  my-20  ">
 
-
-
-                                <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Friday Vigil"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget risus mauris. Sed pharetra sem in nunc pulvinar dignissim."} subtitle="10pm - 12am" />
+                                <ArticleCard link={"/"} linkLabel={"Join Live"} date={undefined} title={"Friday Vigil"} content={"Join our last friday vigil."} subtitle="10pm - 12am" />
                             </div>
                         </SplideSlide>
                     </SplideTrack>

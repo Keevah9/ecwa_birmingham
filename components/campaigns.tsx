@@ -68,7 +68,7 @@ export default function Campaigns() {
                     </div>
                     <div>
                         <p className=" mb-3 font-[600]">Church Anniversary</p>
-                        <Button type={"button"} title={" Event Details"} link="/events/church-anniversary" />
+                        <Button type={"button"} title={" Event Details"} link="/events/12th-church-anniversary" />
                     </div>
                 </div>
 

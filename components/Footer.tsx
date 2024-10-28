@@ -201,9 +201,9 @@ const Footer = ({ footer }:any) => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
-                  
-                    <div className=''>
+                {FOOTER_CONTACT_INFO.links.map((link, index) => (
+             
+                    <div className='' key={index}>
                       <p className="whitespace-nowrap  text-white">
                         {link.label}
                       </p>
