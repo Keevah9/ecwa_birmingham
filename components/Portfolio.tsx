@@ -46,16 +46,16 @@ const Single = ({ item }:any) => {
                     <div className="i" >
                         <img src={item.img} alt="" className="rounded-[10px]" />
                     </div>
-                    <div className="mt-4" >
+                    <div className="mt-4 px-4" >
                         <h4>{item.title}</h4>
                         <p className="text-black mt-2 mb-6">{item.text}</p>
-                        <Button title="View ministry" variant="btn" link={item.url}/>
+                        <Button title="View ministry" variant="btn mx-auto text-center" link={item.url}/>
                     </div>
                 </div>
             </div>
     
     );
-};
+}
 
 const Portfolio = () => {
     const ref = useRef();

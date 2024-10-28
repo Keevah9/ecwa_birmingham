@@ -71,7 +71,7 @@ export default function Roadmap(props: MinistriesProps) {
               <div className="relative z-1">
                
 
-                <div className="mb-10  -my-10 -mx-15">
+                <div className="mb-10  -mx-15">
                 </div>
                 <div className="px-6 pt-6 pb-2 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
                   <h4 className="h4 mb-4 hover:text-white">{choir.title}</h4>
