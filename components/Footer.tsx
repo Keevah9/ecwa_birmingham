@@ -240,7 +240,7 @@ const Footer = ({ footer }:any) => {
           </div>
         </div>
 
-<p className="w-full text-center mt-8 text-white">   1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR
+<p className="w-full text-center mt-8 text-white mx-mx-auto max-max-w-sm text-text-wrap">   1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR
 </p>
         <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
 

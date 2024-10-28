@@ -58,13 +58,12 @@ const joinUs = [
         Question: "Visit your first ECWA Birmingham service",
         Answer: "<p>Join us at 10am at our church address -  1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR</p>",
         // btnLabel1: "Get directions",
-        BtnLink1: "/",
-        BtnLink2: "/"
+        
     },
     {
         id: 2,
         Question: "Discover volunteer opportunities",
-        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p> ",
+        Answer: "<p>Join us to serve in the house of the Lord. There are differeny units where your talents can be useful.</p> ",
         btnLabel1: "Learn more",
         BtnLink1: "/volunteer",
         
@@ -72,7 +71,7 @@ const joinUs = [
     {
         id: 3,
         Question: "Our Ministries",
-        Answer: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>  ",
+        Answer: "<p>Our purpose is to seserve God and the society at large and we at Ecwa Birmingham are doing it through our various ministries.</p>  ",
         btnLabel1: "Learn more",
         BtnLink1: "/ministries",
     },
@@ -306,7 +305,7 @@ export default function JoinUs() {
 
                 </div>
             </section>
-            <section className="max-container">
+            <section className="max-container hidden">
                 <div className="flex items-center lg:flex-row gap-10 flex-col">
                     <div className="lg:w-1/2"><span>Contact us</span>
                         <h2>We are always happy to hear from you</h2>
