@@ -583,7 +583,8 @@ flex-direction: column;
 
         .one-col .markdown{
           img{
-            height: 650px;
-            width: 70%
+            @apply lg:h-[650px] lg:w-[80%]
+            
+            
           }
         }
