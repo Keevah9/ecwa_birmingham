@@ -29,7 +29,7 @@ function ArticleCard(props: ArticleCardProps) {
           
             <Image  style={{ borderRadius: "10px"}}
               priority
-              src={props.featuredImage}
+              src={props?.featuredImage}
               // width={300}
               // height={200}
               objectFit="cover"
