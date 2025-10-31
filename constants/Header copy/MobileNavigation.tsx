@@ -87,7 +87,7 @@ function MobileNavigation() {
                                 "mt-4 rounded-lg flex flex-col justify-center text-center gap-5 bg-ecwadarkblue text-white p-1 py-3 pt-4 items-center "
                             }
                         >
-                            Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Learn more abut us
                             <Button type={"button"} link="/about-us" title={'About us'} />
                         </p>
                         <div className={"mt-8 mb-10"}>
@@ -112,14 +112,7 @@ function MobileNavigation() {
                     </>
                 </NavLink>
                 <NavLink label={"Services"}>
-                    {/* <>
-                        <div className={"my-10"}>
-                            <WhyFinance />
-                        </div>
-                        <div className={"mb-10"}>
-                            <WhyFaqs />
-                        </div>
-                    </> */}
+                   <></>
                 </NavLink>
                 <NavLink label={"Sermons"} >
                     <>
