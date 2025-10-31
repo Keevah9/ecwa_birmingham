@@ -159,7 +159,7 @@ export default function GridGalleryBlock(props: any) {
                                                     </div>
                                                 </div>
                                             </div> */}
-                                            <ArticleCard featuredImage={item.Image.data.attributes.url} link={item?.LinkUrl} linkLabel={item?.LinkLabel} title={item?.SectionTitle} content={item?.Content} imgSize={""} subtitle={item?.SubTitle} ImageProps={undefined} />
+                                            <ArticleCard featuredImage={item.Image?.data?.attributes?.url} link={item?.LinkUrl} linkLabel={item?.LinkLabel} title={item?.SectionTitle} content={item?.Content} imgSize={""} subtitle={item?.SubTitle} ImageProps={undefined} />
 
                                         </SplideSlide>
                                         </>
@@ -171,7 +171,7 @@ export default function GridGalleryBlock(props: any) {
                             {props.data.GridItems.map((item: any) => {
                                 return (
                                     
-                                    <ArticleCard link={item?.LinkUrl} linkLabel={item?.LinkLabel} title={item?.SectionTitle} content={item?.Content} imgSize={""} subtitle={item?.SubTitle} ImageProps={undefined} />
+                                    <ArticleCard featuredImage={item.Image?.data?.attributes?.url} link={item?.LinkUrl} linkLabel={item?.LinkLabel} title={item?.SectionTitle} content={item?.Content} imgSize={""} subtitle={item?.SubTitle} ImageProps={undefined} />
                                 );
                             })}
                         </div>}
