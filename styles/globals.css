@@ -64,7 +64,7 @@ html {
   }
 
   section {
-    @apply my-16 lg:my-26
+    @apply my-16 lg:my-24
   }
 
   .max-container {
