@@ -225,7 +225,7 @@ const Footer = ({ footer }:any) => {
               </br>
               <a href="mailto:birminghamecwa@gmail.com"> birminghamecwa@gmail.com</a>
             </div>
-
+</div>
             {/* <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
                 <ul className=" flex gap-4 ">
@@ -239,15 +239,15 @@ const Footer = ({ footer }:any) => {
                 </ul>
               </FooterColumn>
             </div> */}
-          </div>
-        </div>
+       
 
 <p className="w-full px-6  text-center mt-8 text-white mx-mx-auto max-max-w-sm text-text-wrap">   3-9 Sladepool Farm Rd. Maypole Birmingham B14 5DJ
 </p>
         <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
 
-      </footer>
-   </div>
+      </footer >
+        </div>
+   
   )
 }
 
