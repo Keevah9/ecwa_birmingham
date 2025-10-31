@@ -120,7 +120,7 @@ export default function Contact() {
     const [isMarketing, setIsMarketing] = useState(true);
     return (
         <section className="max-container overflow-splide">
-            <div className="flex lg:flex-row items-center gap-10 flex-col">
+            <div className="flex text-center items-center gap-10 flex-col">
                 <div className="lg:w-1/2"><span>Contact us</span>
                     <h2 className="leading-[35px">We are always happy to hear from you</h2>
                     <div className="mt-4">
