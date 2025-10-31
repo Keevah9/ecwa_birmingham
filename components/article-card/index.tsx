@@ -7,7 +7,7 @@ import Button from "../Button";
 interface ArticleCardProps {
   featuredImage?: string;
   date?: any;
-  title: string;
+  title?: string;
   content?: string;
   imgSize?: string
   ImageProps?: any;
