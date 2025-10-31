@@ -472,11 +472,11 @@ export const FOOTER_LINKS = [
         url: "/ministries",
         label: 'Ministries',
       },
-      // {
-      //   id: 4,
-      //   url: "/events",
-      //   label: 'Events',
-      // },
+      {
+        id: 4,
+        url: "/safeguarding",
+        label: 'Safeguarding',
+      },
       {
         id: 6,
         url: "/frequently-asked-questions",
