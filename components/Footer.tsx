@@ -88,7 +88,8 @@ const Footer = ({ footer }: any) => {
               </a>
             </Link>
             <p className="mt-2 text-white text-center">
-            3-9 Sladepool Farm Road, Maypole Birmingham B14 5DJ
+            ECWA CHURCH MAYPOLE </br>
+            SOLUTION CENTER BIRMINGHAM
             </p>
           </div>
         </div>
@@ -225,7 +226,7 @@ const Footer = ({ footer }: any) => {
           3-9 Sladepool Farm Road, Maypole Birmingham B14 5DJ
         </p>
         <p className="w-full text-center mt-10 pb-16 text-white">
-          2024 ECWA Birmingham | All rights reserved
+          2025 ECWA Birmingham | All rights reserved
         </p>
       </footer>
     </div>
