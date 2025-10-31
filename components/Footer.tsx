@@ -87,7 +87,9 @@ const Footer = ({ footer }: any) => {
                 <Logo />
               </a>
             </Link>
-            <p className="mt-2 text-white text-center">1st Ariel Scout, Birmingham</p>
+            <p className="mt-2 text-white text-center">
+            3-9 Sladepool Farm Road, Maypole Birmingham B14 5DJ
+            </p>
           </div>
         </div>
 
@@ -220,7 +222,7 @@ const Footer = ({ footer }: any) => {
 
         {/* Address + Copyright */}
         <p className="w-full px-6 text-center mt-8 text-white max-w-sm mx-auto">
-          3-9 Sladepool Farm Rd. Maypole Birmingham B14 5DJ
+          3-9 Sladepool Farm Road, Maypole Birmingham B14 5DJ
         </p>
         <p className="w-full text-center mt-10 pb-16 text-white">
           2024 ECWA Birmingham | All rights reserved
