@@ -71,7 +71,7 @@ const StrapiPage: NextPageWithLayout = (props: LocalProps) => {
 
           <div
             className={`  ${//@ts-ignore
-              props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[600px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
+              props?.data?.SectionBg === 'blue' && 'bg-ecwadarkblue'} h-[500px] flex flex-col justify-center items-center overflow-splide  ${props?.data?.PageTitle ? "pt-4 lg:pt-2 " : ""} ${props?.data?.SectionBg === 'orange' && 'bg-[#FA8D41] text-whit'} ${props?.data?.SectionBg === 'pink' && 'bg-[#DD90F0] text-whit'} text-left  `}
           >
             <div className="w-full h-[600px] flex flex-col justify-center items-center">
               <div className="max-container max-w-6xl overflow-hidden">

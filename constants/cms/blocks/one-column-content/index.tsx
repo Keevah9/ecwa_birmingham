@@ -84,7 +84,7 @@ export default function OneColumnContentBlock(props: OneColumnContentProp) {
         <div className="max-container overflow-splide">
           {/* <span className="absolute -top-[10px]"></span> */}
           {props?.data.SectionTitle && (
-            <h2 className={`leading-[35px] ${props.data.override === 'blue' && '!text-white'}`} >
+            <h2 className={`leading-[35px] text-center ${props.data.override === 'blue' && '!text-white'}`} >
               {/* <span className="absolute -top-[10px]"></span> */}
               {props?.data.SectionTitle}
 
