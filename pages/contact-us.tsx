@@ -120,16 +120,16 @@ export default function Contact() {
     const [isMarketing, setIsMarketing] = useState(true);
     return (
         <section className="max-container overflow-splide">
-            <div className="flex text-center items-center gap-10 flex-col">
-                <div className="lg:w-1/2"><span>Contact us</span>
-                    <h2 className="leading-[35px">We are always happy to hear from you</h2>
+            <div className="flex  items-center gap-10 flex-col">
+                <div className="lg:w-1/2 text-center"><span>Contact us</span>
+                    <h2 className="leading-[35px text-center">We are always happy to hear from you</h2>
                     <div className="mt-4">
                         <div>
                             <li className="flex w-full  gap-6 items-start">
                                 {/* 
                                  */}
                                 <div>
-                                    <p className=" text-[20px] lg:bg-none">
+                                    <p className=" text-[20px] text-center lg:bg-none">
                                         We are always happy to hear from you
                                     </p></div>
                             </li>
@@ -142,7 +142,7 @@ export default function Contact() {
                                 <div><h4 className=" mt- max-w-[18rem] capitalize text-ecwaorange leading-9">
                                     Our Location
                                 </h4>
-                                    <p className=" mt-4  lg:bg-none">
+                                    <p className=" mt-4 text-center lg:bg-none">
                                         We are always happy to hear from you
                                     </p></div>
                             </li>
