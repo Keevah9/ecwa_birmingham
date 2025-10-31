@@ -112,14 +112,14 @@ function MobileNavigation() {
                     </>
                 </NavLink>
                 <NavLink label={"Services"}>
-                    <>
+                    {/* <>
                         <div className={"my-10"}>
                             <WhyFinance />
                         </div>
                         <div className={"mb-10"}>
                             <WhyFaqs />
                         </div>
-                    </>
+                    </> */}
                 </NavLink>
                 <NavLink label={"Sermons"} >
                     <>
