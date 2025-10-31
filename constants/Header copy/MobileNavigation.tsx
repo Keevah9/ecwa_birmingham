@@ -93,11 +93,12 @@ function MobileNavigation() {
                         <div className={"mt-8 mb-10"}>
                             <SearchGetStarted />
                         </div>
-                        {/* <div className={"mb-10"}>
-                            <SearchMakes />
-                        </div> */}
+                       
                         <div className={"mb-10"}>
                             <SearchModels />
+                        </div>
+                         <div className={"mb-10"}>
+                            <SearchMakes />
                         </div>
                     </>
                 </NavLink>
