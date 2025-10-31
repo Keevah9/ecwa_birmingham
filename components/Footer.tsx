@@ -164,6 +164,7 @@ const Footer = ({ footer }:any) => {
 
             </div>
           </div>
+          </div>
           <div className='lg:flex hidden flex-wrap sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns, index) => (
               <FooterColumn title={columns.title} key={index}>
@@ -225,7 +226,7 @@ const Footer = ({ footer }:any) => {
               </br>
               <a href="mailto:birminghamecwa@gmail.com"> birminghamecwa@gmail.com</a>
             </div>
-</div>
+
             {/* <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
                 <ul className=" flex gap-4 ">
