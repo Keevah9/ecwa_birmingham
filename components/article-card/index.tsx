@@ -45,7 +45,7 @@ function ArticleCard(props: ArticleCardProps) {
       {/* <p>{moment(props.date).format("DD MMM, YYYY")}</p> */}
       <div className={`px-4 h-full px-4 py-8 lg:px-8 group-hover:text-ecwaorange group-hover:bg-ecwadarkblue`}>
         <span>{props?.subtitle}</span>
-        <h4 itemProp="title" className={` ${props?.title?.length > 20 && 'h-[4.5rem]'} leading-[30px]  max-w-sm my-3 text-ecwadarkblue`}>
+        <h4 itemProp="title" className={` leading-[30px] h-[4.5rem]  max-w-sm my-3 text-ecwadarkblue`}>
           {props?.title}
         </h4>
         {props?.content ? (
