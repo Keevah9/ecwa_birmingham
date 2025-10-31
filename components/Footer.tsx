@@ -74,7 +74,7 @@ const Footer = ({ footer }:any) => {
   return (
     <div className='bg-ecwadarkblue'>
       <footer className="lg:flexCente  min-h-[570px]">
-        <div className='flex max-container w-full text-center pt-16 '>
+        <div className='flex max-container w-full text-center pt-12 '>
 
           <div className='flex flex-col w-full justify-center'>
             <Link href="/" >
@@ -222,6 +222,8 @@ const Footer = ({ footer }:any) => {
                   ))}
                 </ul>
               </FooterColumn>
+              </br>
+              <a href="mailto:birminghamecwa@gmail.com"> birminghamecwa@gmail.com</a>
             </div>
 
             {/* <div className="flex flex-col gap-5">
@@ -240,7 +242,7 @@ const Footer = ({ footer }:any) => {
           </div>
         </div>
 
-<p className="w-full px-6  text-center mt-8 text-white mx-mx-auto max-max-w-sm text-text-wrap">   1st Ariel Scout Group Building Selly Oak, Opposite, 5 & 7 Gibbins Rd, Birmingham B29 6QR
+<p className="w-full px-6  text-center mt-8 text-white mx-mx-auto max-max-w-sm text-text-wrap">   3-9 Sladepool Farm Rd. Maypole Birmingham B14 5DJ
 </p>
         <p className="w-full text-center mt-10 pb-16 text-white">2024 ECWA Birmingham | All rights reserved</p>
 
